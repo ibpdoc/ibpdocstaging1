@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="reference _Skins_Side_Nav_2023_feb" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Adding business logic |Working with templates|Template token syntax" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Advanced tokens</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/ib_platform.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/TableStyles/ib-table.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-164223934-1">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-164223934-1');
+	/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Welcome.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style=" text-align: right; color:white; font-size: 9pt; background:#001649 ; margin-bottom: 15px; padding: 4px 12px; ">Documentation Version 
+			<select id="versionSelect"><option value="default">6.8.0</option><option value="v6.7.4">6.7.4</option><option value="v6.7.2">6.7.2</option><option value="v6.7.1">6.7.1</option></select><script>/* <![CDATA[ */
+				const select = document.querySelector('#versionSelect');
+				select.addEventListener('change', function() {
+				const selectedVersion = this.value;
+				const currentUrl = window.location.href;
+				let newUrl = '';
+
+				if (selectedVersion !== "default") {
+				if (currentUrl.match(/\/v\d+(\.\d+(\.\d+)?)?\//) === null) {
+				const tempURL = new URL(currentUrl);
+				newUrl = tempURL.protocol + '//' + tempURL.hostname + '/' + selectedVersion + tempURL.pathname;
+				} else {
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, `/${selectedVersion}/`);
+				}
+				} else {
+				// If "default" is selected, remove the versioned part from the URL
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, '/');
+				}
+
+				window.location.href = newUrl;
+				});
+		/* ]]> */</script></div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div class="home-container">
+                                        <div class="topic-body">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 class="referencetitle" id="Advancedtokens" data-magellan-target="Advancedtokens">Advanced tokens</h1>
+                                                <p class="shortdesc">
+                                                    <div class="draft-comment">needs tech review (6/17)</div>
+                                                    <div class="draft-comment">Reviewers, a lot of the descriptions below include the phrase
+      "assigned to current user" what does this mean? </div>
+                                                </p>
+                                                <div class="section">
+                                                    <p>The following tokens provide advanced functionality that you can use in templates and
+        formulas. <span class="mc-variable IB.ProductName variable">Platform</span> replaces the token with the content described below:</p>
+                                                    <table style="mc-table-style: url('../Resources/TableStyles/ib-table.css');" class="TableStyle-ib-table" cellspacing="0">
+                                                        <thead>
+                                                            <tr class="TableStyle-ib-table-Head-Header1">
+                                                                <th class="TableStyle-ib-table-HeadE-Column1-Header1">Token</th>
+                                                                <th class="TableStyle-ib-table-HeadD-Column1-Header1">Will be replaced with ...</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#TODAY}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">Today's date in the user-selected format</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{#SESSION_ID} </code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">User's session ID</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{#PAGE_ID}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">ID of current page</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#HOST_NAME}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">Host name of the server running the <span class="mc-variable IB.ProductName variable">Platform</span> instance</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#LINK.<span class="varname">objName</span>}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">Link to the object's view page assigned to current user </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#LINK.<span class="varname">objName</span>#<span class="varname">id</span>}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">ID of the object's view page assigned to current user </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#LINK.<span class="varname">objName</span>#<span class="varname">12345</span>}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">URL to the object's page specified by the original ID (only available for
+                view, new record, and edit pages and only if more than one page of each type exists
+                (e.g. at least two view pages)) </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#LINK.<span class="varname">objName</span>#generic}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">URL to the object's generic page assigned to current user </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#LINK.<span class="varname">objName</span>#template}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">URL to the templates page </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#LINK.<span class="varname">objName</span>#import}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">URL to the object's import page </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#LINK.<span class="varname">objName</span>#search}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">URL to the object's search page </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#LINK.<span class="varname">123456</span>#tab}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">URL to the generic or web tab specified by the original ID </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#OBJ_ID.<span class="varname">objName</span>}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">Object definition ID for the specified object </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#CURR_USER.<span class="varname">fieldName</span>}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">Value of the specified <span class="varname">fieldName</span> for the currently logged in user</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#CURR_CUSTM.<span class="varname">fieldName</span>}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">Value of the specified <span class="varname">fieldName</span> for the current customer</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#SETTINGS.<span class="varname">fieldName</span>}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">Value of the specified <span class="varname">fieldName</span> for Company-wide
+                Settings</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#ISV_VALUE.<span class="varname">fieldName</span>}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">ISV customers only: Value of the specified <span class="varname">fieldName</span> for
+                an ISV account. The fields must be marked as <span class="uicontrol">Make this field available
+                  for related ISV customers</span>, see <a href="Using the ISV Partner application.htm" class="MCXref xref">Using the ISV Partner application</a></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#PORTAL. <span class="varname">688851</span>.#id}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">ID of the portal with the specified original ID </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#PORTAL.<span class="varname">688851</span>.<span class="varname">705908</span>#id}
+                </code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">ID of the portal page with the specified original ID</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#PORTAL.<span class="varname">688851</span>.<span class="varname">705908</span>#url}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">URL of the portal page with the specified original ID. This token can be used
+                in the user interface.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#PORTAL.<span class="varname">688851</span>.<span class="varname">705908</span>#link}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">Link to the portal page with the specified original ID</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#PORTAL.<span class="varname">688851</span>.<span class="varname">705908</span>#emailUrl
+                  } </code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">URL of the portal page with the specified original ID. This token can be used
+                in emails.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#PORTAL.<span class="varname">688851</span>.logout#url} </code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">URL to the logout page for the portal with the specified original ID</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#PORTAL.688851.logout#link} </code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">Link to the logout page for the portal with specified original ID</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#PORTAL.688851.emailUrl} </code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">URL to Portal's main page which is safe to use in emails</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#REPORT.<span class="varname">123456</span>#body}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">The HTML body of a text-based report with the specified original ID</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#REPORT.<span class="varname">123456</span>#url}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">The resource URL that generates the report with the specified
+                original ID. <div class="note"><b>Note: </b>This is not available for tabular
+                  reports.</div></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#REPORT.123456#body? fieldName=fieldValue}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">The HTML body of a text-based report filtered by a field value. The
+                  <span class="varname">fieldName</span> parameter specifies the integration name of a field
+                by which to filter, <span class="varname">fieldValue</span> specifies the value on which to
+                filter, such as <code>country=USA</code>.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#FILTER} </code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">HTML with content of current report filters. For template-based reports
+                only.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#CURR_VISIT.name} </code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">Display name of the current portal user</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#CURR_VISIT.id} </code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">ID of the current portal user</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#CURR_VISIT.loginName} </code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">Login name of the current portal user</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#UID}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">Unique string ID of objects imported from an external database or an OpenEdge
+                Service.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{!#CP_TOKEN}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">A client principal token used to access a JSDO Invoke method
+                on an OpenEdge Data Object from <span class="mc-variable IB.ProductName variable">Platform</span> Object script. This token can be used in an
+                HTTP header under the header name <code>X-OE-CLIENT-CONTEXT-ID</code>.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><code>{! #CSRF_TOKEN} </code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1"><span class="mc-variable IB.ProductName variable">Platform</span> servlets are now guarded with CSRF tokens and thus making the platform
+                more secure. Any custom code that directly hits a <span class="mc-variable IB.ProductName variable">Platform</span> servlet with POST call
+                requires CSRF token to be passed in the call. For details about CSRF, please refer
+                  <a target="_blank" href="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)">https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)</a></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyB-Column1-Body1"><code>{!name#ssolink#Okta_Saml}</code>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyA-Column1-Body1">
+                                                                    <p>This token generates the record view link for any SAML authenticated users. In this token, <code>Okta_Saml</code> is the SAML profile name. </p>
+                                                                    <div class="note"><b>Note</b>: Separate tokens are available for every SAML profile in the tenant.</div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <h2 id="TokensforJobHistoryTemplateHelper" data-magellan-target="TokensforJobHistoryTemplateHelper">Tokens for <a name="Job_History_Template_Helper"></a>Job History Template Helper</h2>
+                                                    <p>The following tokens are available under <span class="uicontrol">Job History</span> template helper. The application developer can use these tokens as preferred.</p>
+                                                    <table style="mc-table-style: url('../Resources/TableStyles/ib-table.css');" class="TableStyle-ib-table" cellspacing="0">
+                                                        <thead>
+                                                            <tr class="TableStyle-ib-table-Head-Header1">
+                                                                <th class="TableStyle-ib-table-HeadE-Column1-Header1">Token</th>
+                                                                <th class="TableStyle-ib-table-HeadD-Column1-Header1">Will be replaced with ...</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1">
+                                                                    <p><code>{!#JOB.jobType}</code>
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">
+                                                                    <p>The type of the background job.</p>
+                                                                    <p>For example: Import job, Generate Report, List View Export, Mass-Update etc.</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1">
+                                                                    <p><code>{!#JOB.objName}
+</code>
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">
+                                                                    <p>The name of the object on which the job is initiated.</p>
+                                                                    <p>For example: Users</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1">
+                                                                    <p><code>{!#JOB.name}
+</code>
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">
+                                                                    <p>The details of the job.</p>
+                                                                    <p>For example: Export List View : "All Users" [xls] on USER</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1">
+                                                                    <p><code>{!#JOB.status}</code><![CDATA[
+]]></p>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">
+                                                                    <p>The status of the job.</p>
+                                                                    <p>For example: Complete or Error</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1">
+                                                                    <p><code>{!#JOB.file#url}</code><![CDATA[
+]]></p>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">The URL of the generated job file available for download.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1">
+                                                                    <p><code>{!#JOB.errorFile#url}
+</code>
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">The URL of the error file for failed jobs.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1">
+                                                                    <p><code>{!#JOB.createdBy}</code>
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">The name of the user who initiated the job.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1">
+                                                                    <p><code>{!#JOB.startedAt}
+</code>
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">The time of job when started.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1">
+                                                                    <p>{<code>!#JOB.startedAt#iso}
+</code></p>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">The time of job when started in ISO format.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1">
+                                                                    <p><code>{!#JOB.finishedAt}
+</code>
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">The time of job when finished.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1">
+                                                                    <p><code>{!#JOB.finishedAt#iso}</code><![CDATA[
+]]></p>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">The time of job when finished in ISO format.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1">
+                                                                    <p><code>{!#JOB.duration}
+</code>
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">The duration of the completed/failed job.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyB-Column1-Body1">
+                                                                    <p><code>{!#JOB.properties}</code>
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyA-Column1-Body1">
+                                                                    <p>The record level details of the job performed.</p>
+                                                                    <p>For example: Exported 10000 of 10000 total records</p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu-container">
+                                            <div data-sticky-container="" id="pgErsTK0G0Ku4_BVKSRiag">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="pgErsTK0G0Ku4_BVKSRiag:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="small" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_topic_menu mc-component">
+                                                        <li><a href="#Advancedtokens">Advanced tokens</a>
+                                                        </li>
+                                                        <ul>
+                                                            <li><a href="#TokensforJobHistoryTemplateHelper">Tokens for Job History Template Helper</a>
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="right-align"><a class="footer1" href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/linkedin-2--v1.png" alt="Linkedin" /></a><a class="footer1" href="https://twitter.com/InfiniteBlueHQ" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/twitter.png" alt="Twitter" /></a><a class="footer1last" href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/0572ed/youtube-play.png" alt="YouTube" /></a>
+                                        </div>
+                                        <div class="right-align-2"><a class="footer2" href="https://www.infiniteblue.com" target="_blank">Copyright © 2024 Infinite Blue. All Rights Reserved.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

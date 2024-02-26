@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="concept _Skins_Side_Nav_2023_feb" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Advanced setup and administration|Installing and administering Private Cloud|Multi-server environments" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Deploying Platform on AWS</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/ib_platform.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/TableStyles/ib-table.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-164223934-1">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-164223934-1');
+	/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Welcome.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style=" text-align: right; color:white; font-size: 9pt; background:#001649 ; margin-bottom: 15px; padding: 4px 12px; ">Documentation Version 
+			<select id="versionSelect"><option value="default">6.8.0</option><option value="v6.7.4">6.7.4</option><option value="v6.7.2">6.7.2</option><option value="v6.7.1">6.7.1</option></select><script>/* <![CDATA[ */
+				const select = document.querySelector('#versionSelect');
+				select.addEventListener('change', function() {
+				const selectedVersion = this.value;
+				const currentUrl = window.location.href;
+				let newUrl = '';
+
+				if (selectedVersion !== "default") {
+				if (currentUrl.match(/\/v\d+(\.\d+(\.\d+)?)?\//) === null) {
+				const tempURL = new URL(currentUrl);
+				newUrl = tempURL.protocol + '//' + tempURL.hostname + '/' + selectedVersion + tempURL.pathname;
+				} else {
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, `/${selectedVersion}/`);
+				}
+				} else {
+				// If "default" is selected, remove the versioned part from the URL
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, '/');
+				}
+
+				window.location.href = newUrl;
+				});
+		/* ]]> */</script></div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div class="home-container">
+                                        <div class="topic-body">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 class="concepttitle" id="DeployingPlatformonAWS" data-magellan-target="DeployingPlatformonAWS">Deploying Platform on AWS</h1>
+                                                <p>Ensure that you have the following AWS account information in place: <ul><li>AWS_ACCESS_KEY</li><li>AWS_SECRET_KEY</li><li>EIP allocation IDs – 2 free IDs. These are needed to setup as public IP for your
+					NAT gateway</li><li>Key pair name</li><li>SSL certificates uploaded to your AWS account (if planning to setup environment
+					on Https)</li><li>Execute the following command to get the <code>SSL_ARN</code> value. You can
+					execute the following command <code>aws iam list-server-certificates</code>
+					on any ec2 machine or any Linux machine which has AWS cli libraries installed. </li></ul></p>
+                                                <p>Ensure that in addition to Java v8 (Java 9 is not supported), the following
+			software is installed on a Linux machine. </p>
+                                                <p>
+                                                    <table class="TableStyle-ib-table" style="mc-table-style: url('../Resources/TableStyles/ib-table.css');" cellspacing="0">
+                                                        <col style="width: 50%;" class="TableStyle-ib-table-Column-Column1" />
+                                                        <col style="width: 50%;" class="TableStyle-ib-table-Column-Column1" />
+                                                        <thead>
+                                                            <tr class="TableStyle-ib-table-Head-Header1">
+                                                                <th class="TableStyle-ib-table-HeadE-Column1-Header1">Software</th>
+                                                                <th class="TableStyle-ib-table-HeadD-Column1-Header1">Steps to install on Amazon Linux</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1">Packer 1.0.4 </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">
+                                                                    <p>
+                                                                        <ul>
+                                                                            <li>Download from <a target="_blank" href="https://www.packer.io/downloads.html">https://www.packer.io/downloads.html</a> and extract it.</li>
+                                                                            <li>Set packer directory in <span class="filepath">PATH</span>.</li>
+                                                                            <li>Execute <code>packer --version</code> .</li>
+                                                                        </ul>
+                                                                    </p>
+                                                                    <p>Result: This returns 1.0.4</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1">Ansible 2.3</td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">
+                                                                    <p>Execute the following commands:<ul><li><code>sudo yum update</code></li><li><code>sudo yum-config-manager --enable epel</code></li><li><code>sudo yum install ansible</code></li><li><code>ansible --version</code></li></ul></p>
+                                                                    <p>Result: Ensure that this returns ansible 2.3.1.0</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1">Pip</td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">
+                                                                    <p>This is pre-installed in Amazon Linux 2017</p>
+                                                                    <p>
+                                                                        <div class="note"><b>Note: </b>In the CentOS machine, you can install Pip with the command <code>yum
+									install python2-pip</code></div>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1">Botocore</td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">
+                                                                    <p>This is pre-installed in Amazon Linux 2017</p>
+                                                                    <p>
+                                                                        <div class="note"><b>Note: </b>In the CentOS machine, you can install Botocor with the command
+									<code>sudo pip install botocore</code></div>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1">Boto3</td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">Execute <code>sudo pip install boto3</code></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1">Python MySQL Module</td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">
+                                                                    <p>
+                                                                        <ul>
+                                                                            <li>Execute <code>sudo yum -y install gcc</code></li>
+                                                                            <li>Execute <code>sudo yum install mysql mysql-devel mysql-libs
+									</code></li>
+                                                                            <li>Execute <code>sudo yum install python27-devel </code></li>
+                                                                            <li>Execute <code>sudo pip install
+									MySQL-python</code></li>
+                                                                            <li>Execute <code>sudo pip install
+										mysql-python</code></li>
+                                                                        </ul>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyB-Column1-Body1">MySQL Client</td>
+                                                                <td class="TableStyle-ib-table-BodyA-Column1-Body1">Execute <code>yum install mysql client</code></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </p>
+                                                <p>Perform the following steps to deploy Platform cluster on AWS.</p>
+                                                <p>
+                                                    <ol>
+                                                        <li value="1">Login to the Platform website (<a target="_blank" href="https://infiniteblue.com/private-cloud-downloads">https://infiniteblue.com/private-cloud-downloads</a>) and download
+					<span class="filepath">aws.zip</span>.</li>
+                                                        <li value="2">Extract <span class="filepath">aws.zip</span>. The directory structure looks like below
+					after extraction.<p><pre>|--- aws
+     |--- build
+     |--- cluster-config	
+     |--- codebits
+          |--- lib.zip
+          |--- rollbase.zip
+          |--- webapps.zip
+     |--- deploy
+     |--- nginx
+     |--- installers
+     |--- build_version.txt </pre></p></li>
+                                                        <li value="3">Copy third-party jars (e.g. mysql-connector.jar) to the <span class="filepath">…
+						/aws/build/custom/lib</span> directory.<p><pre>|---aws
+    |---build
+        |---custom
+            |---lib
+                |--- mysql-connector.jar
+</pre></p></li>
+                                                        <li value="4">Copy the third-party license files to the <span class="filepath">…/aws/build/custom/config </span> directory.</li>
+                                                        <li value="5">Download Tomcat and Java software to the <span class="filepath">…/aws/installers</span>
+					directory.</li>
+                                                        <li value="6">Copy <span class="filepath">local_policy.jar</span> and <span class="filepath">US_export_policy.jar
+					</span> to the <span class="filepath">…/aws/installers </span> directory. (This is
+					optional and is required only in case of a 256-bit security key).<p><pre>|--- aws
+|---installers
+    |--- apache-tomcat-8.0.26.tar.gz
+    |--- jdk-8u144-linux-x64.tar.gz
+    |--- local_policy.jar
+    |--- US_export_policy.jar
+</pre></p></li>
+                                                    </ol>
+                                                </p>
+                                                <h2 id="GeneratingtheConfigurationFiles" data-magellan-target="GeneratingtheConfigurationFiles"> Generating the Configuration Files
+        </h2>
+                                                <p>To get configuration details in a var.json file for creating an AMI, perform the
+			following steps.</p>
+                                                <p>
+                                                    <ol>
+                                                        <li value="1">Browse to
+						<span class="filepath">…/aws/cluster-config/Cluster-Config-Generation-Tool-win32-ia32</span>.</li>
+                                                        <li value="2">Execute <code>Cluster-Config-Generation-Tool.exe</code>(on
+					Windows).</li>
+                                                        <li value="3">Provide the required details in the AMI Creation tab as shown below.<div class="note"><b>Note: </b>Ensure
+						that the downloaded versions of Tomcat and Java match with the versions
+						entered in the <span class="uicontrol">AMI Creation </span> tab. If you chose
+						"us-east-1" as the <span class="uicontrol">AWS Region</span>, specify "ami-a4c7edb2"
+						as the <span class="uicontrol">Base AMI Id</span>.</div></li>
+                                                        <li value="4">Click <span class="uicontrol">Generate AMi Configuration</span>. The
+						<span class="filepath">var.json</span> file is generated.</li>
+                                                        <li value="5">Copy the <span class="filepath">var.json</span> to the
+						<span class="filepath">…/aws/build/config</span> directory.</li>
+                                                        <li value="6">Provide required details in the <span class="uicontrol">Topology Configuration</span> as
+					shown below.</li>
+                                                        <li value="7">Click <span class="uicontrol">Generate Configuration</span>. The
+						<span class="filepath">topology.json</span> is generated.</li>
+                                                        <li value="8">Provide required details in the <span class="uicontrol">Configuration</span>
+						tab.<div class="note"><b>Note: </b>The Platform AMI field value can be entered only after performing
+						the steps mentioned in the section Creating a Platform AMI. Ensure that you
+						update this value after creating the Platform AMI.</div></li>
+                                                        <li value="9">Click <span class="uicontrol">Generate App Configuration</span>. The
+						<span class="filepath">app.config</span> file is generated.</li>
+                                                        <li value="10">Copy the <span class="filepath">topology.json</span> and <span class="filepath">app.config</span>
+					files to the <span class="filepath">…/aws/deploy/config_files</span> directory.</li>
+                                                    </ol>
+                                                </p>
+                                                <h2 id="CreatingaPlatformAMI" data-magellan-target="CreatingaPlatformAMI">Creating a Platform AMI
+        </h2>
+                                                <p>Perform the following steps to create a Platform AMI.</p>
+                                                <p>
+                                                    <ol>
+                                                        <li value="1">Set <code>AWS_ACCESS_KEY</code> and <code>AWS_SECRET_KEY</code> as
+					environment
+					variables.<pre>export AWS_ACCESS_KEY=XXXXXXXXXXXXXXXXXXXX
+export AWS_SECRET_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+</pre></li>
+                                                        <li value="2">Run the following command to create a Platform Base
+						AMI.<pre>cd /aws/build
+packer build -var-file=config/var.json templates/image_build_aws
+</pre><div class="note"><b>Note: </b>If you encounter any issues, to troubleshoot, run the above command in the
+						debug mode by executing the following:<p><code>packer
+								build -debug -var-file=config/var.json
+								templates/image_build_aws</code></p></div></li>
+                                                    </ol>
+                                                </p>
+                                                <h2 id="SettinguptheEnvironment" data-magellan-target="SettinguptheEnvironment">Setting up the Environment
+        </h2>
+                                                <p>Perform the following steps to set up the environment.</p>
+                                                <p>
+                                                    <ol>
+                                                        <li value="1">Make sure that <span class="uicontrol">Java</span> is set in
+						<span class="filepath">PATH</span> and execute the following
+							commands:<p><code>cd /aws/deploy/playbooks</code></p><p><code>ansible-playbook -i ../inventory/host
+							init.yml</code></p><p><code>ansible-playbook -i ../inventory/host
+							deploy-vpc.yml</code></p><p><code>ansible-playbook -i
+							../inventory/host create-rds.yml</code></p><p><code>ansible-playbook
+							-i ../inventory/host
+							create-asg.yml</code></p><p><code>ansible-playbook -i
+							../inventory/host
+							create-hooks.yml</code></p><p><code>ansible-playbook -i
+							../inventory/host launch-cluster.yml</code></p><div class="note"><b>Note: </b>After completing the above steps, you should be able to access the
+						environment with the following URL -
+							http://&lt;hostname&gt;/router/login/loginPrivate.jsp<p><ul><li>Every playbook is expected to be completed with
+									success status and execution of next playbook depends on the
+									previous one.</li><li>Playbooks are idempotent - if there is an issue
+									with execution of a specific playbook, you can safely re-run the
+									same playbook after fixing the problem</li></ul></p></div></li>
+                                                    </ol>
+                                                </p>
+                                                <p>Execute the below command to shutdown the entire cluster environment.</p>
+                                                <p><code>ansible-playbook -i ../inventory/host admin-shutdown-cluster.yml</code>
+                                                </p>
+                                                <p>For more information on starting/shutting down high availabilty clusters, see <a href="Working with high availability clusters.htm">Working with high availability clusters</a>.</p>
+                                            </div>
+                                        </div>
+                                        <div class="menu-container">
+                                            <div data-sticky-container="" id="sCYm7URt70WnMtNRPGHSqQ">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="sCYm7URt70WnMtNRPGHSqQ:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="small" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_topic_menu mc-component">
+                                                        <li><a href="#DeployingPlatformonAWS">Deploying Platform on AWS</a>
+                                                        </li>
+                                                        <ul>
+                                                            <li><a href="#GeneratingtheConfigurationFiles"> Generating the Configuration Files
+        </a>
+                                                            </li>
+                                                            <li><a href="#CreatingaPlatformAMI">Creating a Platform AMI
+        </a>
+                                                            </li>
+                                                            <li><a href="#SettinguptheEnvironment">Setting up the Environment
+        </a>
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="MCMiniTocBox_0 miniToc nocontent" data-mc-autonum="Related Topics:" data-mc-depth="1" data-mc-toc="True"><span class="autonumber"><span class="miniTocBoxTitle">Related Topics:</span></span>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="right-align"><a class="footer1" href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/linkedin-2--v1.png" alt="Linkedin" /></a><a class="footer1" href="https://twitter.com/InfiniteBlueHQ" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/twitter.png" alt="Twitter" /></a><a class="footer1last" href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/0572ed/youtube-play.png" alt="YouTube" /></a>
+                                        </div>
+                                        <div class="right-align-2"><a class="footer2" href="https://www.infiniteblue.com" target="_blank">Copyright © 2024 Infinite Blue. All Rights Reserved.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

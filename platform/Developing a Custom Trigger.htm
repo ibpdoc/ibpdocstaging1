@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="task _Skins_Side_Nav_2023_feb" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Adding business logic |Triggers and workflows|Trigger overview|Working with custom triggers" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Developing a Custom Trigger</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/ib_platform.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-164223934-1">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-164223934-1');
+	/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Welcome.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style=" text-align: right; color:white; font-size: 9pt; background:#001649 ; margin-bottom: 15px; padding: 4px 12px; ">Documentation Version 
+			<select id="versionSelect"><option value="default">6.8.0</option><option value="v6.7.4">6.7.4</option><option value="v6.7.2">6.7.2</option><option value="v6.7.1">6.7.1</option></select><script>/* <![CDATA[ */
+				const select = document.querySelector('#versionSelect');
+				select.addEventListener('change', function() {
+				const selectedVersion = this.value;
+				const currentUrl = window.location.href;
+				let newUrl = '';
+
+				if (selectedVersion !== "default") {
+				if (currentUrl.match(/\/v\d+(\.\d+(\.\d+)?)?\//) === null) {
+				const tempURL = new URL(currentUrl);
+				newUrl = tempURL.protocol + '//' + tempURL.hostname + '/' + selectedVersion + tempURL.pathname;
+				} else {
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, `/${selectedVersion}/`);
+				}
+				} else {
+				// If "default" is selected, remove the versioned part from the URL
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, '/');
+				}
+
+				window.location.href = newUrl;
+				});
+		/* ]]> */</script></div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div class="home-container">
+                                        <div class="topic-body">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 class="tasktitle" id="DevelopingaCustomTrigger" data-magellan-target="DevelopingaCustomTrigger">Developing a Custom Trigger</h1>
+                                                <div class="context">
+                                                    <p>The section describes how to develop a custom trigger. <span class="mc-variable IB.CompanyName variable">Infinite Blue</span> recommends
+				that before developing a custom trigger, you understand the implementation and
+				configuration required for a trigger (<a href="Working with custom triggers.htm" class="MCXref xref">Working with custom triggers</a>) and review the
+				reference implementation in the custom development toolkit (<a href="Custom development toolkit for custom triggers.htm" class="MCXref xref">Custom development toolkit for custom triggers</a>).</p>
+                                                    <p>Perform the steps below to develop a custom trigger: </p>
+                                                </div>
+                                                <ol class="steps">
+                                                    <li class="step" value="1"><span class="cmd">Create a Java project for custom trigger development.</span>
+                                                        <div class="info">
+                                                            <p>This project should contain implementation classes—primarily,
+						a design-time trigger class and a runtime trigger class.</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="step" value="2"><span class="cmd">Create a design-time class that defines trigger properties. This class must implement the
+					following abstracts methods:</span>
+                                                        <div class="info">
+                                                            <ul>
+                                                                <li><code>getRuntimeClassName()</code>: Returns the fully-qualified name of the run-time
+							trigger class</li>
+                                                                <li><code>getTimingMask()</code>: Returns the trigger's timing options (defined in
+								<code>ITriggerConstants</code> interface) joined by the binary
+							OR</li>
+                                                                <li><code>getConfigHTML()</code>: Returns an HTML string
+							with controls to configure trigger -specific information during the
+							trigger configuration process.</li>
+                                                                <li><code>getVerifyJS()</code>: Returns  JavaScript string
+							that validates input data during the trigger configuration process.</li>
+                                                                <li><code>getProperties()</code>: Returns the trigger's properties after the trigger
+							configuration is completed </li>
+                                                                <li><code>isSystem()</code>: Returns <code>true</code> for system batch job triggers and
+								<code>false</code> for other triggers. </li>
+                                                            </ul>
+                                                            <div class="note"><b>Note: </b><b>Custom Development Toolkit</b> provides a sample design-time class,
+							<span class="filepath">CustomTriggerConfig.java</span>, for your
+						reference.</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="step" value="3"><span class="cmd">Create a runtime class that defines the trigger action. This class must
+					implement the following abstract methods:</span>
+                                                        <div class="info">
+                                                            <ul>
+                                                                <li><code>trigger()</code>: Performs the trigger-specific
+							action and contains the trigger's logic.</li>
+                                                            </ul>
+                                                            <p>To perform the trigger-specific action, a runtime class uses the <code>TriggerRunner</code> instance, which is passed as a
+						parameter to get the necessary run-time information, including:<ul><li><code>getCustomer()</code>:
+								Returns the current trigger instance representing customer zone</li><li><code>getHttpRequest()</code>:
+								Returns an HTTP request for UI-driven triggers</li><li><code>getSharedValue()</code>:
+								Returns the value set by previous triggers (in a chain)</li><li><code>getTransaction()</code>:
+								Returns the current database transaction. This instance is passed to
+								the data-handler classes to perform update operations</li><li><code>getUser()</code>: Returns
+								the currently logged-in user (if any)</li></ul></p>
+                                                            <p>For more information about the run-time information, refer to the <span class="filepath">JavaDoc</span> folder in the <b>Custom Development Toolkit</b>. <div class="noteWarning"><b>Warning: </b>To
+							prevent your data from getting corrupted, ensure that there are no
+							create, commit, or rollback transactions in your custom trigger.
+							Instead, use transaction instance from the
+								<code>TriggerRunner</code> instance.</div></p>
+                                                            <div class="note"><b>Note: </b><b>Custom Development Toolkit</b> provides a sample run-time class,
+							<span class="filepath">CustomTrigger.java</span>, for your reference.</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="step" value="4"><span class="cmd">From the <span class="uicontrol">System Console &gt;
+						Control Panel &gt; Configuration &gt; Events</span>, modify the
+					configuration and add the custom trigger’s event under the <code>&lt;events&gt;</code> tag in the following format to make
+					the custom trigger available in Platform:</span>
+                                                        <div class="info"><pre>&lt;Event id="<span class="varname">name_of_Run-time_Class</span>" className="<span class="varname">fully_qualified_name_of_design-time_class</span>"/&gt;</pre>
+                                                            <p>For example, if your runtime trigger class name is <span class="filepath">CustomTrigger</span> and design-time trigger class
+						name is <span class="filepath">CustomTriggerConfig</span>, then add
+						the following event under the <code>events</code>
+						tag:<pre>&lt;Event id="CustomTrigger" className="trigger.CustomTriggerConfig"/&gt;</pre></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="step" value="5"><span class="cmd">In the <span class="filepath">lang_en.properties</span>
+					file and, optionally, resource files of other languages, add the custom
+					trigger’s language translations in the following format:</span>
+                                                        <div class="info"><pre>name_of_Run-time_Class_name={<span class="varname">Trigger_name_to_be_displayed_on_Platform_pages</span>}
+name_of_Run-time_Class_type={<span class="varname">Trigger_type_to_be_displayed_on_Platform_pages</span>}
+name_of_Run-time_Class_descr={<span class="varname">Trigger_description_to_be_displayed_on_Platform_pages</span>}
+</pre>
+                                                            <p>For example, if your run-time trigger class name is
+							<span class="filepath">CustomTrigger</span>, then add the
+						following entries in <span class="filepath">lang_en.properties</span>:<pre>CustomTrigger_name=Custom Trigger
+CustomTrigger_type=Custom
+CustomTrigger_descr=Sample Platform triggers
+</pre>
+						If you installed PAS, the default location of this file is <span class="filepath">Pas_Instance\rollbase\res</span>.</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="step" value="6"><span class="cmd">Compile the custom trigger code (with atleast two Java classes)
+					to create a JAR file. </span>
+                                                        <div class="info">
+                                                            <p>Ensure that  the following Platform JAR files are in the CLASSPATH during
+						compilation.</p>
+                                                            <ul>
+                                                                <li><span class="filepath">rb_util.jar</span>:
+							Platform utilities file.<p>If you installed Progress
+								Application Server (PAS), the default location of this file is
+									<span class="filepath">Progress\Rollbase\Pas_Instance\common\lib</span>. Else the location is <span class="filepath">InfiniteBlue\Rollbase\apache-tomcat-x.x.x\rollbase\lib</span>.</p></li>
+                                                                <li><span class="filepath">rb_core.jar</span>: Core
+							Platform classes file. <p>If you installed PAS, the
+								default location of this file is <span class="filepath">Pas_Instance\webapps\prod1\WEB-INF\lib</span>. Else the location is <span class="filepath">\apache-tomcat-x.x.x\webapps\prod1\WEB-INF\lib</span>.</p></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="step" value="7"><span class="cmd">Build a JAR file of your java project.</span>
+                                                        <div class="info">
+                                                            <div class="note"><b>Note: </b>The <b>Custom Development Toolkit</b> includes ANT
+							<span class="filepath">build.xml</span> file that you can use to
+						build a custom JAR file.</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="step" value="8"><span class="cmd">Stop your Web server(s).</span>
+                                                    </li>
+                                                    <li class="step" value="9"><span class="cmd">Copy the JAR file to the <span class="filepath">WEB-INF/lib</span> directory of all the servers that
+					must execute this custom trigger:</span>
+                                                        <div class="info">
+                                                            <ul>
+                                                                <li><span class="filepath">master</span>: Master server that serves
+							the master zone only</li>
+                                                                <li><span class="filepath">prod1</span>: Production server that
+							serves all customer zones</li>
+                                                                <li><span class="filepath">workflow</span>: Serves delayed events for
+							all zones</li>
+                                                                <li><span class="filepath">search</span>: Serves search calls for all
+							zones</li>
+                                                                <li><span class="filepath">webapi</span>: Serves SOAP calls for all
+							zones</li>
+                                                                <li><span class="filepath">rest</span>: Serves REST calls for all
+							zones</li>
+                                                                <li><span class="filepath">storage</span>: Serves spreadsheet imports
+							for all zones</li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="step" value="10"><span class="cmd">Restart your Web server for the changes to take effect. </span>
+                                                        <div class="info">Enusre that the modified <span class="filepath">events.xml</span>
+					and <span class="filepath">lang_xx.properties</span> files are located
+					in the shared directory of your Platform Private Cloud installation.</div>
+                                                        <div class="stepresult">Your custom trigger will then be available in Platform
+					and appear as one of the trigger types on the <span class="uicontrol">New
+						Trigger</span> page (<a href="Creating a trigger.htm#ebd1552977200875" class="MCXref xref">Creating a trigger</a>).</div>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="menu-container">
+                                            <div data-sticky-container="" id="KCKgUFvWTEOhiRStNUZYzw">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="KCKgUFvWTEOhiRStNUZYzw:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="small" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_topic_menu mc-component">
+                                                        <li><a href="#DevelopingaCustomTrigger">Developing a Custom Trigger</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="right-align"><a class="footer1" href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/linkedin-2--v1.png" alt="Linkedin" /></a><a class="footer1" href="https://twitter.com/InfiniteBlueHQ" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/twitter.png" alt="Twitter" /></a><a class="footer1last" href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/0572ed/youtube-play.png" alt="YouTube" /></a>
+                                        </div>
+                                        <div class="right-align-2"><a class="footer2" href="https://www.infiniteblue.com" target="_blank">Copyright © 2024 Infinite Blue. All Rights Reserved.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

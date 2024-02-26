@@ -1,0 +1,3140 @@
+/*<meta />*/
+
+/*
+===============================
+    Infinite Blue-specific styles for the Madcap Flare Wysiwyg (XML Editor)]
+===============================
+*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+@font-face 
+{
+	font-family: "Helvetica";
+}
+
+*
+{
+	font-family: Helvetica;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+*[class~="hi-d/b"]
+{
+	font-weight: bold;
+	font-family: inherit;
+}
+
+*[class~="pr-d/pt"]
+{
+	display: block;
+	font-weight: normal;
+	font-family: "Courier New";
+}
+
+*[class~="pr-d/pd"]
+{
+	display: block;
+	margin-left: 2em;
+	margin-top: 1em;
+}
+
+*[class~="sw-d/varname"]
+{
+	font-style: italic;
+	font-weight: normal;
+	display: inline;
+	font-family: "Courier New";
+}
+
+*[outputclass="synmeta"]
+{
+	font-size: 170%;
+	font-family: "Helvetica";
+}
+
+*[outputclass="keylabel"]
+{
+	font-size: 80%;
+}
+
+*[outputclass="shrink"]
+{
+	font-size: 80%;
+}
+
+*[outputclass="shrink_i"]
+{
+	font-size: 80%;
+}
+
+*[outputclass="osrestrict"]
+{
+	display: block;
+	font-weight: normal;
+	font-family: Helvetica;
+	color: black;
+	margin: 0.3em 0;
+}
+
+*[class~="topic/title"]
+{
+	display: block;
+	font-weight: normal;
+	font-family: Helvetica;
+	background-color: inherit;
+	margin: 0.3em 0;
+}
+
+*[class~="required-cleanup"]
+{
+	color: red;
+}
+
+*[class~="topic/note"]
+{
+	display: block;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: 0em;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-width: thin;
+	border-color: black;
+}
+
+*[class~="topic/note"]:before
+{
+	content: "Note: ";
+	font-weight: bold;
+	display: inline;
+	margin-left: 0em;
+}
+
+*[class~="topic/note"][type="note"]:before
+{
+	content: "Note: ";
+	font-weight: bold;
+	display: inline;
+}
+
+*[class~="topic/note"][type="caution"]:before
+{
+	content: "Caution: ";
+}
+
+*[class~="topic/note"][type="important"]:before
+{
+	content: "Important: ";
+}
+
+*[class~="topic/note"][type="tip"]:before
+{
+	content: "Tip: ";
+}
+
+*[class~="topic/note"][type="warning"]:before
+{
+	content: "Warning: ";
+}
+
+*[class~="topic/li"]
+{
+	margin-left: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	display: list-item;
+}
+
+*[class~="topic/keyword"]
+{
+	display: inline;
+	font-weight: normal;
+}
+
+*[class~="sw-d/userinput"]
+{
+	display: inline;
+	font-family: "Courier New";
+	font-size: 10pt;
+	padding: 0px;
+	background-color: transparent;
+	color: inherit;
+	border: none;
+}
+
+*[class~="pr-d/codeblock"]
+{
+	display: block;
+	white-space: pre;
+	margin: 0.8em 0;
+	padding: 2px;
+	background-color: #e0e0e0;
+	color: black;
+	border: none;
+	font-family: "Courier New";
+}
+
+*[class~="pr-d/codeph"]
+{
+	display: inline;
+	font-family: "Courier New";
+}
+
+*[class~="pr-d/filepath"]
+{
+	display: inline;
+	font-family: "Courier New";
+}
+
+*[class~="sw-d/filepath"]
+{
+	display: inline;
+	font-family: "Courier New";
+}
+
+/*
+===============================
+Making unsupported element display as red
+===============================
+*/
+
+*[class~="pr-d/apiname"]
+{
+	color: red;
+}
+
+*[class~="pr-d/paramname"]
+{
+	color: red;
+}
+
+*[class~="pr-d/cmdname"]
+{
+	color: red;
+}
+
+*[class~="sw-d/cmdname"]
+{
+	color: red;
+}
+
+*[class~="sw-d/cmdname"]
+{
+	color: red;
+}
+
+*[class~="pr-d/option"]
+{
+	color: red;
+}
+
+*[class~="pr-d/option"]
+{
+	color: red;
+}
+
+*[class~="topic/q"]:before
+{
+	content: "\"";
+	color: red;
+	background-color: inherit;
+}
+
+*[class~="topic/q"]:after
+{
+	content: "\"";
+	color: red;
+	background-color: inherit;
+}
+
+*[class~="pr-d/parmname"]
+{
+	color: red;
+	font-style: normal;
+}
+
+*[class~="pr-d/plentry"][conref] > *
+{
+	display: none;
+}
+
+*[class~="pr-d/plentry"][conref] > *[class~="pr-d/plentry"]
+{
+	display: inherit;
+}
+
+/*
+  ===========================
+  Topic elements.
+  ===========================
+ */
+
+/*
+  The <topic> element is the top-level DITA element for
+  a single-subject topic or article. Other top-level
+  DITA elements that are more content-specific are
+  <concept>, <task>, <reference>, and <glossary>.
+ */
+
+*[class~="topic/topic"]
+{
+	display: block;
+	margin: 0.5em 0;
+	padding-left: 0.5em;
+}
+
+*[class~="topic/body"]
+{
+	display: block;
+}
+
+div.NewRowClass1 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+div.NewRowClass1 > div:nth-child(1)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.NewRowClass1 > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.NewRowClass1 > div:nth-child(3)
+{
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+pre
+{
+	font-family: monospace;
+	text-align: left;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-size: 10pt;
+	background: #f5f5f5;
+}
+
+img
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	max-width: 100%;
+	height: auto !important;
+	mc-thumbnail: none;
+}
+
+div:nth-child(2)
+{
+	text-align: justify;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+code
+{
+	font-family: monospace;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-size: 11pt;
+	color: #696969;
+}
+
+h1
+{
+	font-style: normal;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	color: #0572ed;
+	font-family: 'Helvetica';
+	font: Helvetica;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: left;
+}
+
+h2
+{
+	color: #0572ed;
+	font: Helvetica;
+	font-family: 'Helvetica';
+	font-style: normal;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	mc-heading-level: 2;
+	font-size: 1.8em;
+	font-weight: bold;
+	text-align: left;
+}
+
+h3
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font: Helvetica;
+	font-family: 'Helvetica';
+	color: #0572ed;
+	mc-heading-level: 3;
+	font-size: 1.6em;
+	font-weight: bold;
+	text-align: left;
+}
+
+h4
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-family: 'Helvetica';
+	mc-heading-level: 0;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #001649;
+	text-align: left;
+}
+
+h5
+{
+	mc-heading-level: 0;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-weight: normal;
+	font-size: 1.4em;
+	font-family: 'Helvetica';
+	color: #001649;
+	font-weight: bold;
+	text-align: left;
+}
+
+h6
+{
+	mc-heading-level: 0;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-family: Helvetica;
+	font-weight: normal;
+	font-size: 1.3em;
+	color: #001649;
+	font-weight: bold;
+	text-align: left;
+}
+
+p.TOC1
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-family: Helvetica;
+	font-size: 14pt;
+	mc-auto-number-format: '{n}. ';
+	mc-auto-number-offset: 2px;
+	color: #0572ed;
+}
+
+::marker
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+::before
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+::after
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.mc-variable
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-family: 'Helvetica';
+}
+
+figcaption
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+figure
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+br::before
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+br
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+s
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+button
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+colgroup
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+noframes
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+frameset
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+frame
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+form
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+fieldset
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+style
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+head
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+area
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+map
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+col
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+legend
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+option
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+optgroup
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+datalist
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+q
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+nav
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+header
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+canvas
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+aside
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+article
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+var
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+tt
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+sub
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+strong
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+strike
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+samp
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+u
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-family: 'Helvetica';
+}
+
+small
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+kbd
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+ins
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+i
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+em
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+del
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+cite
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+big
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+b
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-family: 'Helvetica';
+}
+
+acronym
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+abbr
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+dir
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+menu
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+center
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+dd
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+blockquote
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+address
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+caption
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+tfoot
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+tbody
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+thead
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+a.Popup
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+a.MCBreadcrumbsLink
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	color: #001649;
+}
+
+a.MCBreadcrumbsPrefix
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	color: #001649;
+}
+
+a.MCBreadcrumbsSelf
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	color: #001649;
+}
+
+a.MiniTOC1
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	color: #001649;
+}
+
+a.MiniTOC1:link
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	color: #001649;
+}
+
+a.GlossaryPageTerm
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+a:link
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	color: #0572ed;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:visited
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	cursor: pointer;
+}
+
+a:focus
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	color: #0572ed;
+}
+
+a:hover
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	color: #0572ed;
+	font-size: ;
+}
+
+a:active
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+a
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-family: 'Helvetica';
+	color: #0572ed;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+hr
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+script
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+object
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+textarea
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+input
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+select
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+codeph
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	text-align: left;
+}
+
+dt
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+dl
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+tr
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+ol
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.state
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.SeeIndexTerms
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.SeeIndex
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.SeeAlsoIndexTerms
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.SeeAlsoIndex
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.SearchHighlight9
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.SearchHighlight8
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.SearchHighlight7
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.SearchHighlight6
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.SearchHighlight5
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.SearchHighlight4
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.SearchHighlight3
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.SearchHighlight2
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.SearchHighlight10
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.SearchHighlight1
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.SearchHighlight
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.boolean
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-family: 'Helvetica';
+}
+
+li::marker
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+body
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-size: 14px;
+}
+
+html.topic
+{
+	mc-hyphenate: never;
+}
+
+html
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p.TOC9
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	mc-heading-level: 0;
+}
+
+p.TOC8
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	mc-heading-level: 0;
+}
+
+p.TOC7
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	mc-heading-level: 0;
+}
+
+p.TOC6
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	mc-heading-level: 0;
+	color: #0572ed;
+}
+
+p.TOC5
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	mc-heading-level: 0;
+	color: #0572ed;
+}
+
+p.TOC4
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-family: Helvetica;
+	font-size: 12.5;
+	color: #0572ed;
+}
+
+p.TOC3
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-family: Helvetica;
+	font-size: 14px;
+	color: #0572ed;
+}
+
+p.TOC2
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-family: Helvetica;
+	font-size: 13.5 pt;
+	color: #0572ed;
+}
+
+p.ListOf
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p.IndexHeading
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p.Index9
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p.Index8
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p.Index7
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p.Index5
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p.Index4
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p.Index3
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p.Index2
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p.Index1
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p.ConceptContext
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p.Concept
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.Row-8-4::before
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.Row-8-4::after
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.Row-8-4
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.Row-6-6::before
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.Row-6-6::after
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.Row-6-6
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.Row-4-4-4::before
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.Row-4-4-4::after
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.Row-4-4-4
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.NewRowClass1
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.GlossaryPageTerm
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.GlossaryPageHeading
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.GlossaryPageEntry
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.GlossaryPageDefinition
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div:nth-child(3)
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div:nth-child(1)
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div::before
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div::after
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+*::before
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+*::after
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p.Index6
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p.MiniTOC1
+{
+	font-weight: normal;
+	display: list-item;
+	margin-left: 10pt;
+	list-style-type: square;
+	list-style-position: outside;
+	margin: 5px 0px 5px 10px;
+	margin-bottom: 5pt;
+	margin-top: 5pt;
+	font-style: normal;
+	text-decoration: underline;
+}
+
+div.MCMiniTocBox
+{
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-bottom: 15%;
+	width: 100%;
+	clear: both;
+}
+
+div.MCMiniTocBox_0
+{
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-bottom: 15%;
+	width: 100%;
+	clear: both;
+}
+
+@media screen
+{
+	*[class~="topic/topic"]
+	{
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+	*[class~="topic/body"]
+	{
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+}
+
+/*
+  The generic title.
+ */
+
+*[class~="topic/title"]
+{
+	display: block;
+	font-weight: bold;
+	background-color: inherit;
+	margin: 0.3em 0;
+	border-bottom: 1px solid;
+}
+
+/*
+  Reduce the font size.
+ */
+
+*[class~="topic/topic"] > *[class~="topic/title"]
+{
+	font-size: 1.8em;
+	border-bottom: 1px solid #002244;
+}
+
+* *[class~="topic/topic"] > *[class~="topic/title"]
+{
+	font-size: 1.6em;
+	border-bottom: 1px solid #002244;
+}
+
+* * *[class~="topic/topic"] > *[class~="topic/title"]
+{
+	font-size: 1.4em;
+	border-bottom: none;
+}
+
+* * * *[class~="topic/topic"] > *[class~="topic/title"]
+{
+	font-size: 1.2em;
+}
+
+* * * * *[class~="topic/topic"] > *[class~="topic/title"]
+{
+	font-size: 1em;
+}
+
+/*
+  The alternate title element.
+ */
+
+*[class~="topic/titlealts"]
+{
+	display: block;
+}
+
+*[class~="topic/section"],
+*[class~="topic/fig"]
+{
+	margin-top: 12pt;
+	display: block;
+}
+
+*[class~="topic/section"] > *[class~="topic/title"],
+*[class~="topic/example"] > *[class~="topic/title"]
+{
+	display: block;
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 6pt;
+	margin-bottom: 2pt;
+}
+
+h1.concepttitle
+{
+	font-style: normal;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	color: #0572ed;
+	font-family: 'Helvetica';
+	font: Helvetica;
+	mc-heading-level: 1;
+	font-size: 1.8em;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-weight: bold;
+}
+
+html.concept
+{
+	font-family: Helvetica;
+	mc-hyphenate: never;
+}
+
+body.conbody
+{
+	margin-top: 6pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p
+{
+	text-align: justify;
+	font-family: 'Helvetica';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	margin-top: 0pt;
+	margin-bottom: 9px;
+}
+
+table.simpletable
+{
+	border-left: thin solid gray;
+	border-right: thin solid gray;
+	border-top: thin solid gray;
+	border-bottom: thin solid gray;
+	border-collapse: collapse;
+	margin-top: 12pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+td.stentry
+{
+	border-left: thin solid gray;
+	border-right: thin solid gray;
+	border-top: thin solid gray;
+	border-bottom: thin solid gray;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.section
+{
+	margin-top: 12pt;
+	text-align: justify;
+	font-size: 10pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font: Se;
+	font-family: 'Helvetica';
+}
+
+h2.sectiontitle
+{
+	font-family: 'Helvetica';
+	font-style: normal;
+	font: Helvetica;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	mc-heading-level: 2;
+	font-weight: normal;
+	font-size: 1.7em;
+	color: #0572ed;
+}
+
+div.fig
+{
+	margin-top: 12pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+ul
+{
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	padding-inline-start: 10px;
+}
+
+li
+{
+	margin-left: 20pt;
+	margin-top: 6pt;
+	margin-bottom: 2pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-size: 14px;
+	font-family: 'Helvetica';
+	padding-inline-start: 10px;
+}
+
+span.uicontrol
+{
+	font-weight: bold;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-family: 'Helvetica';
+}
+
+span.cite
+{
+	font-style: italic;
+	color: red;
+	text-decoration: underline;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.wintitle
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-weight: bold;
+}
+
+h1.tasktitle
+{
+	font-style: normal;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	color: #0572ed;
+	font-family: 'Helvetica';
+	font: Helvetica;
+	mc-heading-level: 1;
+	font-size: 1.8em;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-weight: bold;
+}
+
+html.task
+{
+	mc-hyphenate: never;
+}
+
+body.taskbody
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.context
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+ol.steps
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+li.step
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.cmd
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.stepresult
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-family: 'Helvetica';
+}
+
+div.result
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+/*
+===============================
+Alert - Start
+===============================
+*/
+
+div.note
+{
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-color: #ebf3ff;
+	background-position: 9px 0px;
+	background-repeat: no-repeat;
+	border: solid 1px #0572ed;
+	border-radius: 6px;
+	line-height: 18px;
+	overflow: hidden;
+	padding: 15px 50px;
+	background-image: url('../Images/icons/alert/note.png');
+	background-position: 13px 13px;
+	background-size: 24px;
+	font-size: 14px;
+	margin: 5px;
+}
+
+div.error
+{
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-color: #f59d74;
+	background-position: 9px 0px;
+	background-repeat: no-repeat;
+	border: solid 1px #ee1b22;
+	border-radius: 6px;
+	line-height: 18px;
+	overflow: hidden;
+	padding: 15px 50px;
+	background-image: url('../Images/icons/alert/error.png');
+	background-position: 13px 13px;
+	background-size: 24px;
+	font-size: 14px;
+	margin: 5px;
+}
+
+div.noteWarning
+{
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-color: #f9bda3;
+	background-position: 9px 0px;
+	background-repeat: no-repeat;
+	border: solid 1px #ef5b18;
+	border-radius: 6px;
+	line-height: 18px;
+	overflow: hidden;
+	padding: 15px 50px;
+	background-image: url('../Images/icons/alert/warning.png');
+	background-position: 13px 13px;
+	background-size: 24px;
+	font-size: 14px;
+	margin: 5px;
+}
+
+div.noteCaution
+{
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-color: #ffefcf;
+	background-position: 9px 0px;
+	background-repeat: no-repeat;
+	border: solid 1px #ffb111;
+	border-radius: 6px;
+	line-height: 18px;
+	overflow: hidden;
+	padding: 15px 50px;
+	background-image: url('../Images/icons/alert/caution.png');
+	background-position: 13px 13px;
+	background-size: 24px;
+	font-size: 14px;
+	margin: 5px;
+}
+
+div.example
+{
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-color: #ccd9e9;
+	background-position: 9px 0px;
+	background-repeat: no-repeat;
+	border: solid 1px #004293;
+	border-radius: 6px;
+	line-height: 18px;
+	overflow: hidden;
+	padding: 15px 50px;
+	background-image: url('../Images/icons/alert/example.png');
+	background-position: 13px 13px;
+	background-size: 24px;
+	font-size: 14px;
+	margin: 5px;
+}
+
+div.prereq
+{
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-color: #ebf3ff;
+	background-position: 9px 0px;
+	background-repeat: no-repeat;
+	border: solid 1px #9cc1ff;
+	border-radius: 6px;
+	line-height: 18px;
+	overflow: hidden;
+	padding: 15px 50px;
+	background-image: url('../Images/icons/alert/pre-req.png');
+	background-position: 13px 13px;
+	background-size: 24px;
+	font-size: 14px;
+	margin: 5px;
+}
+
+div.topic-note
+{
+	margin-top: 6pt;
+	text-align: justify;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-size: 14px;
+	padding: 10px;
+	color: #ffffff;
+	background: #023366;
+	border: solid 1px #add8e6;
+	border-radius: 10px;
+	border-bottom-width: 1px;
+	border-left-color: #f37c20;
+	border-left-width: 2px;
+	border-top-color: #f37c20;
+	border-top-width: 2px;
+	font-family: 'Helvetica';
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+}
+
+/*
+===============================
+Alert - End
+===============================
+*/
+
+table
+{
+	border-left: thin solid gray;
+	border-right: thin solid gray;
+	border-top: thin solid gray;
+	border-bottom: thin solid gray;
+	border-collapse: collapse;
+	margin-top: 12pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+td
+{
+	border-left: thin solid gray;
+	border-right: thin solid gray;
+	border-top: thin solid gray;
+	border-bottom: thin solid gray;
+	text-align: justify;
+	border-left-style: solid;
+	border-left-width: thin;
+	border-left-color: gray;
+	border-right-style: solid;
+	border-right-width: thin;
+	border-right-color: gray;
+	border-top-style: solid;
+	border-top-width: thin;
+	border-top-color: gray;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-bottom-color: gray;
+	mc-hyphenate: never;
+	font-size: 14px;
+	font-family: Helvetica;
+	padding: 5px;
+	vertical-align: baseline;
+}
+
+th
+{
+	border-left: thin solid gray;
+	border-right: thin solid gray;
+	border-top: thin solid gray;
+	border-bottom: thin solid gray;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.userinput
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.draft-comment
+{
+	background-color: #FF99FF;
+	border-left: thin solid black;
+	border-right: thin solid black;
+	border-top: thin solid black;
+	border-bottom: thin solid black;
+	margin-top: 6pt;
+	margin-bottom: 2pt;
+	display: none;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p.shortdesc
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.filepath
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	text-decoration: underline;
+}
+
+div.info
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.choices
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.choice
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-family: 'Helvetica';
+}
+
+ol.substeps
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+ul.substeps
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+li.substep
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.noteWarning
+{
+	margin-top: 6pt;
+}
+
+div.postreq
+{
+	text-align: justify;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-size: 14px;
+}
+
+span.varname
+{
+	font-family: monospace;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+h1.referencetitle
+{
+	font-style: normal;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	color: #0572ed;
+	font-family: 'Helvetica';
+	font: Helvetica;
+	mc-heading-level: 1;
+	font-size: 1.8em;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-weight: bold;
+}
+
+html.reference
+{
+	font-family: Helvetica;
+	mc-hyphenate: never;
+}
+
+body.refbody
+{
+	margin-top: 6pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+table.properties
+{
+	border-left: thin solid gray;
+	border-right: thin solid gray;
+	border-top: thin solid gray;
+	border-bottom: thin solid gray;
+	border-collapse: collapse;
+	margin-top: 12pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+tr.property
+{
+	margin-top: 6pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+td.proptype
+{
+	font-weight: bold;
+	border-left: thin solid gray;
+	border-right: thin solid gray;
+	border-top: thin solid gray;
+	border-bottom: thin solid gray;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+td.propvalue
+{
+	border-left: thin solid gray;
+	border-right: thin solid gray;
+	border-top: thin solid gray;
+	border-bottom: thin solid gray;
+	margin-left: 20pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.option
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.tabletitle
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-weight: bold;
+	line-height: 14pt;
+	text-decoration: underline;
+	padding-bottom: 10px;
+}
+
+table.choicetable
+{
+	border-left: thin solid gray;
+	border-right: thin solid gray;
+	border-top: thin solid gray;
+	border-bottom: thin solid gray;
+	border-collapse: collapse;
+	margin-top: 12pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+tr.chrow
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+td.choption
+{
+	border-left: thin solid gray;
+	border-right: thin solid gray;
+	border-top: thin solid gray;
+	border-bottom: thin solid gray;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+td.chdesc
+{
+	border-left: thin solid gray;
+	border-right: thin solid gray;
+	border-top: thin solid gray;
+	border-bottom: thin solid gray;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.prereq
+{
+	text-align: justify;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-size: 14px;
+}
+
+sup
+{
+	vertical-align: super;
+	mc-hyphenate: never;
+	font-size: 14px;
+}
+
+span.term
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.menucascade
+{
+	font-weight: bold;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+pre.lines
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.sectiondiv
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.parml
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+div.plentry
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p.pt
+{
+	font-weight: bold;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p.pd
+{
+	margin-left: 20pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-size: 14px;
+}
+
+span.cmdname
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.parmname
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+dl.sl
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+dt.sli
+{
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+span.apiname
+{
+	font-family: monospace;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+h1.title
+{
+	font-style: normal;
+	font-family: 'Helvetica';
+	font: Helvetica;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	mc-heading-level: 0;
+	font-weight: bold;
+	color: #0572ed;
+	font-size: 4 em;
+}
+
+p.title
+{
+	line-height: 15px;
+	color: #ffffff;
+	text-decoration: none;
+	font-family: 'Helvetica';
+	font-size: 2em;
+	font: Helvetica;
+	text-align: right;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+h2.title
+{
+	font-family: 'Helvetica';
+	font-style: normal;
+	font: Helvetica;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	mc-heading-level: 0;
+	font-weight: bold;
+	color: #0572ed;
+	font-size: 4em;
+}
+
+@media only screen and (max-device-width: 1279px)
+{
+	div.NewRowClass1 > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.NewRowClass1 > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.NewRowClass1 > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.welcome_01 > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.welcome_01 > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.welcome_01 > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.welcome_lastrow > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.welcome_lastrow > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.welcome_lastrow > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-device-width: 767px)
+{
+	div.NewRowClass1 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.NewRowClass1 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.NewRowClass1 > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.welcome_01 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.welcome_01 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.welcome_01 > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.welcome_lastrow > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.welcome_lastrow > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.welcome_lastrow > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+}
+
+p.codeph
+{
+	font-family: 'Courier New';
+	font-size: 11pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	text-align: left;
+}
+
+codeph.codeph
+{
+	font-family: monospace;
+	font-size: 11pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	color: #696969;
+	text-align: left;
+}
+
+table.ibplatform01
+{
+	border-left: thin solid gray;
+	border-right: thin solid gray;
+	border-top: thin solid gray;
+	border-bottom: thin solid gray;
+	border-collapse: collapse;
+	margin-top: 12pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+@media print
+{
+	h2.sectiontitle
+	{
+		mc-heading-level: 0;
+		font-size: 1.7em;
+		color: #0572ed;
+		font-weight: bold;
+	}
+
+	h2
+	{
+		font-size: 1.7em;
+		font-weight: bold;
+	}
+
+	h3
+	{
+		color: #0572ed;
+		font-size: 1.6em;
+		font-weight: bold;
+	}
+
+	h4
+	{
+		color: #0572ed;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+	h5
+	{
+		color: #0572ed;
+		font-size: 1.4em;
+		font-family: 'Helvetica';
+		font-weight: bold;
+	}
+
+	h6
+	{
+		font-family: 'Helvetica';
+		color: #0572ed;
+		font-size: 1.3em;
+		font-weight: bold;
+	}
+
+	span.varname
+	{
+		font-size: 11pt;
+	}
+
+	code
+	{
+		font-size: 11pt;
+	}
+
+	h1.title
+	{
+		mc-heading-level: 0;
+	}
+
+	h1.displayonly
+	{
+		mc-heading-level: 0;
+	}
+
+	drophead
+	{
+		font-family: 'Helvetica';
+		font-size: 1.8em;
+	}
+
+	td
+	{
+		border-bottom: none 2px #ffffff;
+		border: none 2px transparent;
+		border-left: none 2px #ffffff;
+		border-right: none 2px #ffffff;
+		border-top: none 2px #ffffff;
+	}
+}
+
+h1.Specialclass
+{
+	font-size: 1.8em;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+}
+
+p.h2
+{
+	font-family: 'Helvetica';
+	font-size: 18pt;
+	font-weight: bold;
+	font-style: normal;
+	font: Helvetica;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	mc-heading-level: 0;
+	color: #0572ed;
+}
+
+div.note-list
+{
+	margin-top: 6pt;
+}
+
+li.note
+{
+	margin-left: 20pt;
+	margin-top: 6pt;
+	margin-bottom: 2pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-size: 14px;
+	font-style: italic;
+	color: #003366;
+}
+
+h1.displayonly
+{
+	font-style: normal;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	color: #0572ed;
+	font-family: 'Helvetica';
+	font: Helvetica;
+	font-size: 1.8em;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	mc-heading-level: 0;
+	font-weight: bold;
+}
+
+table.clear
+{
+	border-collapse: collapse;
+	margin-top: 12pt;
+	mc-hyphenate: never;
+	width: 100%;
+	border-right: solid 1px #ffffff;
+	border-left: solid 1px #ffffff;
+	border-top: solid 1px #ffffff;
+	border-bottom: solid 1px #ffffff;
+	padding-left: 10px;
+}
+
+div.MCMiniTocBox,
+div.MCMiniTocBox_0
+{
+	mc-auto-number-format: 'Related Topics:';
+	mc-auto-number-class: miniTocBoxTitle;
+}
+
+span.miniTocBoxTitle
+{
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 10px;
+	padding: 10px 0px 0px;
+}
+
+/*==Master Page Topic Layout==*/
+
+div.topic-layout	/*This layout was created using the Responsive Layout Editor in MadCap Flare. Go to: Home Ribbon > Styles Section > Responsive Layout*/
+{
+	mc-grid-row: true;
+	margin: 0 auto;
+	background-color: #FFF;
+	padding: 0 25px;
+	min-height: 85vh;
+	margin-top: 15px;
+}
+
+div.topic-layout::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.topic-layout::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.topic-layout > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.topic-layout > div:nth-child(1)
+{
+	width: 70%;
+	margin-left: 2%;
+	padding: 20px 10px;
+}
+
+div.topic-layout > div:nth-child(2)	/*Menu Proxy and toolbar container*/
+{
+	width: 25%;
+	margin-left: 0;
+	margin-right: 0;
+	border-right: solid 0px #d3d3d3;
+	padding-right: 20px;
+	padding: 25px;
+	min-height: 85vh;
+	/*ensures that the vertical border line reaches the bottom of the topic container*/
+}
+
+/*==Note==*/
+
+p.note
+{
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-color: #f0f7fb;
+	background-image: url('../../Images/icons/note.png');
+	background-position: 9px 9px;
+	background-repeat: no-repeat;
+	border: solid 1px #3498db;
+	border-radius: 6px;
+	line-height: 18px;
+	mc-auto-number-format: '{b}Note: {/b}';
+	overflow: hidden;
+	padding: 15px 50px;
+}
+
+pre.apiexample
+{
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-color: #f0f7fb;
+	background-image: url('../../Images/icons/example.png');
+	background-repeat: no-repeat;
+	border: solid 1px #3498db;
+	border-radius: 6px;
+	line-height: 18px;
+	overflow: hidden;
+	font-family: monospace;
+	text-align: left;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-size: 10pt;
+	padding-right: 0px;
+	background-position: 0.5px;
+	padding: 10px 15px 10px 45px;
+}
+
+codeph.codeph-bold
+{
+	font-family: monospace;
+	font-size: 11pt;
+	mc-hyphenate: never;
+	vertical-align: baseline;
+	font-weight: bold;
+	text-align: left;
+}
+
+div.home-container	/*wraps the content on the home page*/
+{
+	margin-left: ;
+	width: ;
+	padding-bottom: 15%;
+	margin-bottom: 10px;
+}
+
+p.Code_Snippet
+{
+	color: #000;
+	font-family: 'Courier New', CourierPS, courier6, Monospace, "Lucida Console" !important;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	text-align: Left;
+	text-indent: -1.81rem;
+	text-transform: none;
+	vertical-align: baseline;
+	margin: 0 0 0 1.81rem;
+	font-size: 10pt;
+}
+
+p.Code_Snippet_grayed
+{
+	font-family: 'Courier New', CourierPS, Monospace, "Lucida Console" !important;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	text-align: Left;
+	text-transform: none;
+	vertical-align: baseline;
+	color: #3d3d3d;
+	border-radius: 4px;
+	overflow: auto;
+	padding: 7px;
+	background-color: #e9eff2 !important;
+	margin: 5px;
+	font-size: 10pt;
+}
+
+/*==Elements for the left side of Master Page layout==*/
+
+div.side-menu	/*This is the div that the menu proxy is contained in*/
+{
+	padding-left: 10px;
+	margin-top: 15px;
+}
+
+/*Styles that provide the border radius to the menu proxy items*/
+
+ul.menu._Skins_SideMenu.mc-component li > a.selected
+{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-radius: 5px;
+}
+
+ul.menu._Skins_SideMenu.mc-component li > a:hover
+{
+	background-color: #D9443F;
+	border-radius: 5px;
+}
+
+ul.menu._Skins_SideMenu.mc-component ul > li > a:hover
+{
+	background-color: #D9443F;
+	border-radius: 5px;
+}
+
+ul.menu._Skins_SideMenu.mc-component ul ul > li > a:hover
+{
+	background-color: #D9443F;
+	border-radius: 5px;
+}
+
+ul.menu._Skins_SideMenu.mc-component ul ul ul > li > a:hover
+{
+	background-color: #D9443F;
+	border-radius: 5px;
+}
+
+ul.menu._Skins_SideMenu.mc-component ul ul ul ul > li > a:hover
+{
+	background-color: #D9443F;
+	border-radius: 5px;
+}
+
+span.beta
+{
+	color: #ffffff;
+	font-size: 14px;
+	vertical-align: middle;
+	text-align: center;
+	border-radius: 5px;
+	background: #0572ed;
+	padding: 1px 4px;
+}
+
+/*END/>*/
+
+.height-container-sidenav
+{
+	padding-bottom: 0px;
+}
+
+/* Footer Start*/
+
+.footer
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	border-top: 2px;
+	border-top-color: #001649;
+}
+
+.icons
+{
+	padding-top: 1rem;
+}
+
+.icons a
+{
+	text-decoration: none;
+	font-size: 2rem;
+	margin: 0.5rem;
+	color: #f4f4f4;
+}
+
+.twitter-icon,
+.facebook-icon,
+.instagram-icon,
+.linkedin-icon,
+.googleplus-icon,
+.youtube-icon,
+.foursquare-icon
+{
+	opacity: .8;
+	filter: alpha(opacity=80);
+	/* For IE8 and earlier */
+}
+
+.twitter-icon:hover,
+.facebook-icon:hover,
+.instagram-icon:hover,
+.linkedin-icon:hover,
+.googleplus-icon:hover,
+.youtube-icon:hover,
+.foursquare-icon:hover
+{
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+	/* For IE8 and earlier */
+}
+
+.company-name
+{
+	
+}
+
+@media (max-width: 500px)
+{
+	html
+	{
+		font-size: 50%;
+	}
+}
+
+@media (min-width: 501px) and (max-width: 768px)
+{
+	html
+	{
+		font-size: 50%;
+	}
+}
+
+/* Footer End */
+/* Begin BUTTONS for Show/Hide ToC  */
+
+button.toggle-toc-on-button .button-icon,
+button.toggle-toc-off-button .button-icon
+{
+	background-size: 20px !important;
+}
+
+/* End BUTTONS for Show/Hide ToC  */
+/*****Start Custom SideNav Styles*****/
+/** set vertical scroll bar to be displaying by default **/
+
+/*
+nav.sidenav-wrapper
+{
+	overflow-y: scroll;
+}
+*/
+
+/** set explicit width for sidenav to prevent moving when the scroll bar displays **/
+
+/*
+nav.sidenav-wrapper
+{
+	width: 480px;
+}
+
+ul.sidenav
+{
+	width: 470px;
+	padding-left: 5px;
+}
+*/
+
+/** removes previous sidenav icons **/
+
+ul.sidenav span.submenu-toggle
+{
+	border: none !important;
+}
+
+/** adds new sidenav icons for expand/collapse **/
+
+ul.sidenav span.submenu-toggle-container
+{
+	background-image: url('../Images/side-nav-menu/menu-open.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+ul.sidenav span.submenu-toggle-container[aria-expanded="true"]
+{
+	background-image: url('../Images/side-nav-menu/menu-close.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+ul.sidenav span.submenu-toggle-container:hover
+{
+	background-image: url('../Images/side-nav-menu/menu-open.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+ul.sidenav span.submenu-toggle-container[aria-expanded="true"]:hover
+{
+	background-image: url('../Images/side-nav-menu/menu-close.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/** adds padding to the sidenav to accomodate the new images for top-level TOC entries **/
+
+ul.sidenav > li > a
+{
+	padding-left: 30px;
+	padding-right: 2em;
+}
+
+ul.sidenav ul > li > a
+{
+	padding-left: 30px;
+	padding-top: 00.5em;
+	padding-right: 2em;
+}
+
+ul.sidenav ul ul > li > a
+{
+	padding-left: 40px;
+	padding-right: 2em;
+}
+
+/** removes bottom border on top-level expanded TOC entries **/
+
+ul.sidenav > li.tree-node.is-accordion-submenu-parent,
+ul.sidenav > li.tree-node.tree-node-leaf.tree-node-selected
+{
+	border-bottom: solid 1px #8aa5c8;
+}
+
+ul.sidenav li.tree-node.is-accordion-submenu-parent > a
+{
+	border-bottom: none !important;
+	padding-right: 2em;
+}
+
+ul.sidenav ul.is-accordion-submenu
+{
+	padding-bottom: 5px !important;
+}
+
+ul.sidenav li ul li.tree-node.is-accordion-submenu-parent
+{
+	border-bottom: none;
+}
+
+/** End Custom SideNav Styles **/
+/* Footer Start*/
+
+p.footer
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 14px;
+	color: #ffffff;
+	font-size: 12px;
+}
+
+/*footer styling*/
+
+.panel,
+.panel-holder
+{
+	margin: 0.5em;
+	background: #fff;
+	padding: 0.5em;
+	border-top: 2px solid #eee;
+	height: 60px;
+	width: 99%;
+	position: absolute;
+	bottom: 0;
+}
+
+.right-align
+{
+	position: absolute;
+	right: 14px;
+	bottom: 20px;
+	text-align: right;
+	font-family: 'Helvetica';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	color: #0572ed;
+	float: right;
+}
+
+.right-align-2
+{
+	position: absolute;
+	right: 14px;
+	bottom: 1px;
+	text-align: right;
+	font-family: 'Helvetica';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	color: #636363;
+	float: right;
+}
+
+.left-align
+{
+	text-align: left;
+	width: 80%;
+	float: left;
+	position: absolute;
+	bottom: 5px;
+	display: inline-block;
+}
+
+.left-align-2
+{
+	text-align: left;
+	float: left;
+	font-family: 'Helvetica';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	color: #636363;
+}
+
+a.footer1:link
+{
+	color: #0572ed;
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+a.footer1:visited
+{
+	color: #0572ed;
+	text-decoration: none;
+}
+
+a.footer1:hover
+{
+	color: #0572ed;
+	text-decoration: none;
+}
+
+a.footer1last:link
+{
+	margin-left: 10px;
+	color: #0572ed;
+	text-decoration: none;
+}
+
+a.footer1last:visited
+{
+	color: #0572ed;
+	text-decoration: none;
+}
+
+a.footer2:link
+{
+	color: #636363;
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+a.footer2:visited
+{
+	color: #636363;
+	text-decoration: none;
+}
+
+a.footer2:hover
+{
+	color: #636363;
+	text-decoration: none;
+}
+
+/* Footer End*/
+/* Remove gap from top of pages*/
+
+.body-container
+{
+	padding-top: 0em;
+}
+
+/* Containers for layout of OtherTopics master page */
+
+div.topic-body
+{
+	width: 80%;
+	float: left;
+	margin-right: 3%;
+	padding-bottom: 10%;
+}
+
+div.menu-container
+{
+	float: right;
+	width: 15%;
+	margin-right: 2%;
+}
+
+/* Add spacing in menu */
+
+ul.menu._Skins_topic_menu.mc-component li > a
+{
+	
+}
+
+/* Add vertical border to active menu item in right side mini TOC */
+
+ul.menu._Skins_topic_menu.mc-component > ul > li > a.selected,
+ul.menu._Skins_topic_menu.mc-component > ul > li > a.selected:hover,
+ul.menu._Skins_topic_menu.mc-component > ul > li > a:hover
+{
+	font-weight: bold;
+	border-left: 2px solid #FCBB51;
+	margin-left: -2px;
+}
+
+ul.menu._Skins_topic_menu.mc-component ul ul > li > a.selected,
+ul.menu._Skins_topic_menu.mc-component ul ul > li > a.selected:hover,
+ul.menu._Skins_topic_menu.mc-component ul ul > li > a:hover
+{
+	font-weight: bold;
+	border-left: 2px solid #FCBB51;
+	margin-left: -2px;
+}
+
+/* Add spacing to sub-menu items */
+
+ul.menu._Skins_topic_menu.mc-component ul > li > a
+{
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	text-align: left;
+}
+
+ul.menu > ul > li
+{
+	border-left: 1px solid #001649;
+}
+
+ul.menu > ul > ul > li
+{
+	border-left: 1px solid #001649;
+}
+
+.sticky-menu > .menu > li:nth-child(1)
+{
+	display: none;
+}
+
