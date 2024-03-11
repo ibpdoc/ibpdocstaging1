@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MadCapLog Protocol="2" Description="MadCap Flare 2023 r2 Generated IB Platform User Guide - HTML 2021.fltar" Date="2024-02-27T00:37:45.5136698+05:30" Branch="6.9.0.0" Commit="aa9e557d47f6c7762b9a1c892bb936ef7c437ec9">
+<MadCapLog Protocol="2" Description="MadCap Flare 2023 r2 Generated IB Platform User Guide - HTML 2021.fltar" Date="2024-03-11T18:47:49.1982247+05:30" Branch="6.9.0.0" Commit="aa9e557d47f6c7762b9a1c892bb936ef7c437ec9">
     <Messages>Compiling target IB Platform User Guide - HTML 2021...
 Removing previously generated content...
 Loading skin info...
@@ -3952,8 +3952,8 @@ Generated Skins\Default\Stylesheets\TextEffects.micro-content.css
 Generated Skins\Default\Stylesheets\Topic.micro-content.css
 Generated Default.htm
 Saving result set...
-Ignored Compiler Warnings: 753
-Output generated in 25 minute(s) and 18 second(s).
+Ignored Compiler Warnings: 754
+Output generated in 14 minute(s) and 3 second(s).
 
 Done
 Saving log to "D:\ib-doc-outputs\html-builds\Output\IB Platform User Guide - HTML 2021\IB Platform User Guide - HTML 2021.mclog"

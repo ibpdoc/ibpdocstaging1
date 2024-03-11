@@ -169,13 +169,13 @@
 			recommends the following:</p>
                                                 <ul>
                                                     <li>Use an instance of Tomcat dedicated to <span class="mc-variable IB.ProductName variable">Platform</span>. Download a version of Tomcat
-				that <span class="mc-variable IB.CompanyName variable">Infinite Blue</span> certifies.<div class="note"><b>Note: </b><p>If you are using Tomcat 8 or higher, you must prevent
-					Tomcat from scanning the <span class="mc-variable IB.ProductName variable">Platform</span> JAR file by adding the following line to the
+				that <span class="mc-variable IB.CompanyName variable">Infinite Blue</span> certifies.<div class="note"><b>Note: </b><p>If you are using Tomcat, you must prevent
+					it from scanning the <span class="mc-variable IB.ProductName variable">Platform</span> JAR file by adding the following line to the
 						<span class="filepath">context.xml</span> file in the <code>conf</code> folder of
 					the Tomcat installation:
 					<pre>
 &lt;JarScanner scanClassPath="false" scanAllFiles="false" scanAllDirectories="false"/&gt;
-					</pre></p></div></li>
+</pre></p><p>See <a href="Supported browsers and platforms.htm">Supported browsers and platforms</a> for more information on the latest version of Tomcat.</p></div></li>
                                                     <li>Start by using the default port 8080 for Tomcat. Later you can add
 				Apache as a gateway to your Tomcat instance (Apache typically runs on port 80).</li>
                                                     <li>Follow Apache's installation instructions. Once installed, start
@@ -192,8 +192,8 @@
 				documentation for details.</li>
                                                     <li>Set Tomcat up to use as much memory as you can spare for its initial
 				and maximum memory pools: for example, 1500MB in production on a 32-bit machine (you
-				can more than double this for a 64-bit OS). However, f you set memory requirements
-				too high Tomcat will fail to start.</li>
+				can more than double this for a 64-bit OS). However, if you set memory requirements
+				too high, Tomcat will fail to start.</li>
                                                     <li>Disable session persistence: un-comment the section of <span class="filepath">conf/context.xml</span> related to session persistence.</li>
                                                     <li>For proper UTF-8 support, add <span class="filepath">server.xml</span> include a URIEncoding attribute with value of <code>UTF-8</code> to all <code>Connector</code>
 				nodes:
@@ -202,14 +202,14 @@
 				the &lt;session-timeout&gt; node value in the <code>web.xml</code> configuration file in the <span class="filepath">conf</span> directory. The default timeout is 30 minutes. The appropriate
 				value depends on your application and end-users usage patterns.</li>
                                                     <li>After you have verified that the settings work well, you can set up the Tomcat
-				instance as a Windows Service or Linux Daemon. See your Tomcat documentation.</li>
+				instance as a Windows Service or Linux Daemon. Refer <a href="https://tomcat.apache.org/tomcat-8.5-doc/index.html">Tomcat documentation</a>.</li>
                                                     <li>Periodically delete files from Tomcat's log directory.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="menu-container">
-                                            <div data-sticky-container="" id="91EUS7mJYkaRMS9TTBxxwg">
-                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="91EUS7mJYkaRMS9TTBxxwg:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="small" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                            <div data-sticky-container="" id="KqjPwch_WE2Xbs52doj8_A">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="KqjPwch_WE2Xbs52doj8_A:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="small" data-scroll-container-on="only screen and (min-width: 1280px)">
                                                     <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_topic_menu mc-component">
                                                         <li><a href="#UsingyourowninstanceofTomcat">Using your own instance of Tomcat </a>
                                                         </li>
