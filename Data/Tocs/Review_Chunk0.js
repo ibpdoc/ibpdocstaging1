@@ -1,0 +1,1 @@
+define({'/Welcome.htm':{i:[0],t:['Welcome to Infinite Blue Platform Documentation'],b:['']},'/platform/What\u0027s New.htm':{i:[1],t:['What\u0027s New in Platform'],b:['']},'/release-history/Release_Notes.htm':{i:[2],t:['Release Notes'],b:['']}});
