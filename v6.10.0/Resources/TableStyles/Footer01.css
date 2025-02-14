@@ -1,0 +1,424 @@
+/* MadCap Table Style: */
+
+/*<meta Version="9" />*/
+
+mcTableStyle
+{
+	name: Footer01;
+	border-collapse: collapse;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #ffffff;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #ffffff;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	max-id: 3;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #ffffff;
+}
+
+mcTableColumnStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 1px;
+	separator-color: #ffffff;
+	name: Column1;
+	id: 0;
+}
+
+mcTableHeadStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 1px;
+	separator-color: #ffffff;
+	name: Header1;
+	id: 2;
+}
+
+mcTableBodyStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 1px;
+	separator-color: #ffffff;
+	name: Body1;
+	id: 1;
+}
+
+mcTableFootStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 1px;
+	separator-color: #ffffff;
+	name: Footer1;
+	id: 3;
+}
+
+
+/* Cell Styles: */
+ 
+.TableStyle-Footer01
+{
+	border-collapse: collapse;
+	background-color: #ffffff;
+	border-left-style: solid;
+	border-left-color: #ffffff;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-color: #ffffff;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	border-bottom-width: 1px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border-spacing: 0px 0px;
+}
+
+.TableStyle-Footer01-Column-Column1
+{
+	
+}
+
+.TableStyle-Footer01-Head-Header1
+{
+	
+}
+
+.TableStyle-Footer01-HeadI-Column1-Header1
+{
+	
+}
+
+.TableStyle-Footer01-HeadI-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-Footer01-HeadE-Column1-Header1
+{
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+}
+
+.TableStyle-Footer01-HeadE-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-Footer01-HeadF-Column1-Header1
+{
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+}
+
+.TableStyle-Footer01-HeadF-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-Footer01-HeadH-Column1-Header1
+{
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-Footer01-HeadH-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-Footer01-HeadD-Column1-Header1
+{
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+}
+
+.TableStyle-Footer01-HeadD-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-Footer01-HeadC-Column1-Header1
+{
+	
+}
+
+.TableStyle-Footer01-HeadC-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-Footer01-HeadB-Column1-Header1
+{
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-Footer01-HeadB-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-Footer01-HeadA-Column1-Header1
+{
+	
+}
+
+.TableStyle-Footer01-HeadA-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-Footer01-HeadG-Column1-Header1
+{
+	
+}
+
+.TableStyle-Footer01-HeadG-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-Footer01-Foot-Footer1
+{
+	
+}
+
+.TableStyle-Footer01-FootI-Column1-Footer1
+{
+	
+}
+
+.TableStyle-Footer01-FootI-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-Footer01-FootE-Column1-Footer1
+{
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+	border-top-width: 1px;
+	border-top-color: #ffffff;
+	border-top-style: solid;
+}
+
+.TableStyle-Footer01-FootE-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-Footer01-FootF-Column1-Footer1
+{
+	border-top-width: 1px;
+	border-top-color: #ffffff;
+	border-top-style: solid;
+}
+
+.TableStyle-Footer01-FootF-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-Footer01-FootH-Column1-Footer1
+{
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-Footer01-FootH-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-Footer01-FootD-Column1-Footer1
+{
+	border-top-width: 1px;
+	border-top-color: #ffffff;
+	border-top-style: solid;
+}
+
+.TableStyle-Footer01-FootD-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-Footer01-FootC-Column1-Footer1
+{
+	
+}
+
+.TableStyle-Footer01-FootC-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-Footer01-FootB-Column1-Footer1
+{
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-Footer01-FootB-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-Footer01-FootA-Column1-Footer1
+{
+	
+}
+
+.TableStyle-Footer01-FootA-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-Footer01-FootG-Column1-Footer1
+{
+	
+}
+
+.TableStyle-Footer01-FootG-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-Footer01-Body-Body1
+{
+	
+}
+
+.TableStyle-Footer01-BodyI-Column1-Body1
+{
+	
+}
+
+.TableStyle-Footer01-BodyI-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Footer01-BodyE-Column1-Body1
+{
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-Footer01-BodyE-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Footer01-BodyF-Column1-Body1
+{
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+}
+
+.TableStyle-Footer01-BodyF-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Footer01-BodyH-Column1-Body1
+{
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-Footer01-BodyH-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Footer01-BodyD-Column1-Body1
+{
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+}
+
+.TableStyle-Footer01-BodyD-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Footer01-BodyC-Column1-Body1
+{
+	
+}
+
+.TableStyle-Footer01-BodyC-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Footer01-BodyB-Column1-Body1
+{
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-Footer01-BodyB-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Footer01-BodyA-Column1-Body1
+{
+	
+}
+
+.TableStyle-Footer01-BodyA-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Footer01-BodyG-Column1-Body1
+{
+	
+}
+
+.TableStyle-Footer01-BodyG-Column1-Body1 p
+{
+	
+}
+
+

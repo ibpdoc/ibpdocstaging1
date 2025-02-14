@@ -1,0 +1,89 @@
+/*<meta />*/
+
+@media only screen and (max-device-width: 767px)
+{
+	.search-bar
+	{
+		width: 100%;
+	}
+
+	.knowledge-panel-container.micro-content-truncated-mode .micro-response
+	{
+		max-height: 200px;
+	}
+
+	ul.menu._Skins_topic_menu.mc-component
+	{
+		background-color: #ffffff;
+	}
+
+	ul.menu._Skins_topic_menu.mc-component a
+	{
+		
+	}
+
+	ul.menu._Skins_topic_menu.mc-component li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_topic_menu.mc-component ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_topic_menu.mc-component ul ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_topic_menu.mc-component ul ul ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_topic_menu.mc-component ul ul ul ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_topic_menu.mc-component li > a.selected
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_topic_menu.mc-component li > a:hover
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_topic_menu.mc-component ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_topic_menu.mc-component ul ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_topic_menu.mc-component ul ul ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_topic_menu.mc-component ul ul ul ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_topic_menu.mc-component li > a.selected:hover
+	{
+		background-color: transparent;
+	}
+}
+

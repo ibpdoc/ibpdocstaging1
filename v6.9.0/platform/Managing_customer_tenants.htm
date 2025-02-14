@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="concept _Skins_Side_Nav_2023_feb" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Advanced setup and administration|Installing and administering Private Cloud|Administration" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Managing customer tenants</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/ib_platform.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-164223934-1">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-164223934-1');
+	/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Welcome.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style=" text-align: right; color:white; font-size: 9pt; background:#001649 ; margin-bottom: 15px; padding: 4px 12px; ">Documentation Version 
+			<select id="versionSelect"><option value="v6.9.0">6.9.0</option><option value="v6.10.0">6.10.0</option><option value="default">6.11.0</option><option value="v6.8.0">6.8.0</option></select><script>/* <![CDATA[ */
+				const select = document.querySelector('#versionSelect');
+				select.addEventListener('change', function() {
+				const selectedVersion = this.value;
+				const currentUrl = window.location.href;
+				let newUrl = '';
+
+				if (selectedVersion !== "default") {
+				if (currentUrl.match(/\/v\d+(\.\d+(\.\d+)?)?\//) === null) {
+				const tempURL = new URL(currentUrl);
+				newUrl = tempURL.protocol + '//' + tempURL.hostname + '/' + selectedVersion + tempURL.pathname;
+				} else {
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, `/${selectedVersion}/`);
+				}
+				} else {
+				// If "default" is selected, remove the versioned part from the URL
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, '/');
+				}
+
+				window.location.href = newUrl;
+				});
+		/* ]]> */</script></div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div class="home-container">
+                                        <div class="topic-body">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 class="concepttitle" id="Managingcustomertenants" data-magellan-target="Managingcustomertenants">Managing customer tenants</h1>
+                                                <p>A customer tenant is a separate virtual space for Platform applications. For
+      Platform private cloud, master tenant administrators create and manage customer tenants using
+      the <span class="uicontrol">System Console</span> application:<div class="fig"><p><img alt="System Console Customers Tab" src="jbc1470763346360.jpg" /></p></div></p>
+                                                <p>To create a customer tenant, you create a <span class="uicontrol">Customer</span>
+      record. The <span class="uicontrol">Customer</span> record specifies configuration such as which
+      applications users of that customer tenant can access, where their data will be stored, and
+      the level of security. From the <span class="uicontrol">Customer</span> record, master tenant
+      administrators can log into the customer tenant with super-admin privileges (when this
+      functionality is enabled). Some fields of <span class="uicontrol">Customer</span>
+      records, like the address, can be edited by administrative users of the customer tenant
+      through their <span class="uicontrol">Account Setting</span> page.</p>
+                                                <p>The <span class="uicontrol">isActive</span> formula field determines
+      whether users can log in to the customer tenant. The default implementation for the <span class="uicontrol">IsActive</span> formula sets the <span class="uicontrol">Status</span> of newly created customer records to <span class="uicontrol">Active</span>. You can change this formula if desired. </p>
+                                                <p>The <span class="uicontrol">Subscribers</span> tab of the <span class="uicontrol">System Console</span> application lists all users in all customer
+      tenants. You cannot create these records directly. Platform creates them  when an
+      administrator in the customer tenant creates a <span class="uicontrol">User</span>
+      record. <span class="uicontrol">Subscriber</span> records are useful for marketing,
+      communication and other purposes such as sending mass emails. </p>
+                                                <p>If you delete a <span class="uicontrol">Customer</span> record, all records and
+      hosted files from that tenant will be deleted. Deletion cannot be reversed unless you have a
+      backup file. You can restore customer data from a backup file created on a different Platform
+      server, see <a href="Moving_and_restoring_customer_tenants.htm" class="MCXref xref">Moving and restoring customer tenants</a>. </p>
+                                                <div class="section"><a name="install"></a>
+                                                    <h2 class="sectiontitle" id="Installingapplicationsinnewtenantsautomatically" data-magellan-target="Installingapplicationsinnewtenantsautomatically">Installing applications in new tenants automatically</h2>
+                                                    <p>The <span class="uicontrol">Customer</span> record allows you to
+        specify a list of applications that Platform installs when it creates the new customer
+        tenant. The Platform application is required, and Platform installs the applications you
+        specify, in order. When an application includes a <span class="uicontrol">Post Customer
+          Create Script</span>, that script is executed after the application is installed. You
+        can use a <span class="uicontrol">Post Customer Create Script</span> to create a
+        tenant with no administrative users, and instead create a custom role that has some
+        administrative permissions. See <a href="Creating_a_tenant_with_no_administrative_users.htm" class="MCXref xref">Creating a tenant with no administrative users</a> for details.</p>
+                                                    <p>Sometimes multiple applications contain the same component with different
+        definitions. By default, Platform accepts additions to component definitions, such as a new
+        object field, but rejects conflicting changes, such as those to an existing field name.</p>
+                                                    <p>The <code>AppInstallOverridesChanges</code> property in
+        the <span class="filepath">Shared Properties</span> controls this behavior. If the
+        property value is <code>true</code>, and Platform installs an
+        application with a conflicting component definition, it accepts it. As Platform installs
+        applications, all conflicting component definitions override existing definitions.</p>
+                                                    <p>For example, suppose a Contact application includes the <span class="uicontrol">User</span> object,
+        which is also part of the Platform application. A developer makes two changes to the
+          <span class="uicontrol">User</span> object: a field addition, <code>favoriteTeam</code>; and a
+        field name change, <code>lastName</code> to <code>familyName</code>. An
+        administrator adds the Contact application to the list of applications to be installed in a
+        new tenant and creates a new customer tenant. The Platform application always installs
+        first. The <code>AppInstallOverridesChanges</code> property value determines what
+        happens to the <span class="uicontrol">User</span> object  when the Contact application is
+        installed: <ul><li>With the default value, <code>false</code>, Platform adds the new
+              <code>favoriteTeam</code> field to the <span class="uicontrol">User</span> object.</li><li>With a value of <code>true</code>, Platform adds the new
+              <code>favoriteTeam</code> field <span class="cite">and</span> changes the
+              <code>lastName</code> field's name to <code>familyName</code>.</li></ul></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu-container">
+                                            <div data-sticky-container="" id="irv1mZycjUCUGPnzZaMfbg">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="irv1mZycjUCUGPnzZaMfbg:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="small" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_topic_menu mc-component">
+                                                        <li class="tree-node"><a href="#Managingcustomertenants">Managing customer tenants</a>
+                                                        </li>
+                                                        <li>
+                                                            <ul>
+                                                                <li class="tree-node"><a href="#Installingapplicationsinnewtenantsautomatically">Installing applications in new tenants automatically</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="MCMiniTocBox_0 miniToc nocontent" data-mc-autonum="Related Topics:" data-mc-depth="1" data-mc-toc="True"><span class="autonumber"><span class="miniTocBoxTitle">Related Topics:</span></span>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="right-align"><a class="footer1" href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/linkedin-2--v1.png" alt="Linkedin" /></a><a class="footer1" href="https://twitter.com/InfiniteBlueHQ" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/twitter.png" alt="Twitter" /></a><a class="footer1last" href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/0572ed/youtube-play.png" alt="YouTube" /></a>
+                                        </div>
+                                        <div class="right-align-2"><a class="footer2" href="https://www.infiniteblue.com" target="_blank">Copyright © 2024 Infinite Blue. All Rights Reserved.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

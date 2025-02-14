@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Side_Nav_2023_feb" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Adding business logic " data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>UI Configurator</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/ib_platform.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-164223934-1">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-164223934-1');
+	/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Welcome.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style=" text-align: right; color:white; font-size: 9pt; background:#001649 ; margin-bottom: 15px; padding: 4px 12px; ">Documentation Version 
+			<select id="versionSelect"><option value="v6.8.0">6.8.0</option><option value="v6.9.0">6.9.0</option><option value="v6.10.0">6.10.0</option><option value="default">6.11.0</option></select><script>/* <![CDATA[ */
+				const select = document.querySelector('#versionSelect');
+				select.addEventListener('change', function() {
+				const selectedVersion = this.value;
+				const currentUrl = window.location.href;
+				let newUrl = '';
+
+				if (selectedVersion !== "default") {
+				if (currentUrl.match(/\/v\d+(\.\d+(\.\d+)?)?\//) === null) {
+				const tempURL = new URL(currentUrl);
+				newUrl = tempURL.protocol + '//' + tempURL.hostname + '/' + selectedVersion + tempURL.pathname;
+				} else {
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, `/${selectedVersion}/`);
+				}
+				} else {
+				// If "default" is selected, remove the versioned part from the URL
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, '/');
+				}
+
+				window.location.href = newUrl;
+				});
+		/* ]]> */</script></div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div class="home-container">
+                                        <div class="topic-body">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 id="UIConfigurator" data-magellan-target="UIConfigurator">UI Configurator</h1>
+                                                <p><span class="beta">THIS&#160;FEATURE&#160;IS&#160;CURRENTLY&#160;IN&#160;BETA</span>
+                                                </p>
+                                                <p>The UI Configurator is a simple UI Widget Mapper that represents an object's data in rich UI widgets. It also enhances the appearance and performance of the Platform’s UI components based on the REACT JS architecture.</p>
+                                                <p>For example, users can design an interactive dashboard using the  UI widgets. By default, a set of widgets are readily available for use where the users can start mapping the widgets with any object’s view data and record specific data.</p>
+                                                <p>
+                                                    <img src="../img/UI_Config_1.png" style="width: 464px;height: 216px;" alt="" />
+                                                </p>
+                                                <h2 id="WorkingwithUIConfigurator" data-magellan-target="WorkingwithUIConfigurator">Working with UI Configurator</h2>
+                                                <p>This UI configurator is accessible from the App Switcher. In order to access it, the UI toggle button must be set to Sapphire UI.</p>
+                                                <div class="note"><b>Note</b>: The UI Configurator can be accessed by a Master Admin only.</div>
+                                                <p>
+                                                    <img src="../img/ui__conf_11.png" style="width: 622px;height: 116px;" alt="" />
+                                                </p>
+                                                <p>The left pane of the User Dashboard displays the objects that enables the user to add mappings. Each mapping has a unique name. Each mapping is linked with an object view or record which can be mapped with any widget available</p>
+                                                <p>&#160;</p>
+                                                <p>
+                                                    <img src="../img/UI_Config_3.png" alt="" />
+                                                </p>
+                                                <p>To add a mapping, click the <b>+</b> icon</p>
+                                                <p>
+                                                    <img src="../img/UI_Config_4.png" style="width: 582px;height: 274px;" alt="" />
+                                                </p>
+                                                <p>A <b>New Mapping</b> pane slides from the right.</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>Select the visual widget for the mapping.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Enter the Mapping<b> Name</b>. This needs to remain unique across the Platform.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Select <b>Record/View</b> under <b>Mapping to</b>, and then choose the <b>Object</b> and <b>View</b>  against this mapping.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Enter a description for this mapping.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Click <b>Add</b> to complete the New Mapping addition.</p>
+                                                    </li>
+                                                </ul>
+                                                <p>
+                                                    <img src="../img/UI_Config_5.png" style="width: 528px;height: 246px;" alt="" />
+                                                </p>
+                                                <p>The newly added mapping should be available in <b>Mappings</b> of the left <b>Objects</b> pane.</p>
+                                                <p>The right pane of the <b>User Dashboard</b> displays the properties of any selected object mapping/widget.</p>
+                                                <p>
+                                                    <img src="../img/UI_Config_6.png" alt="" />
+                                                </p>
+                                                <h2 id="UserDashboard" data-magellan-target="UserDashboard">User Dashboard</h2>
+                                                <p>The user dashboard comprises of two tabs - <b>Design</b> and <b>onLoad</b>. In case of <b>Antd Slider</b> widget mapping, there is an additional <b>onChange</b> tab.</p>
+                                                <h3 id="Designtab" data-magellan-target="Designtab">Design tab</h3>
+                                                <p>This tab is for a preview purpose only. To preview any mapping, click on any available mapping under <b>Mappings</b> of the Objects pane. The mapping is previewed on the Design tab based on the Sample Data for the widget and its properties accordingly.</p>
+                                                <p> <img src="../img/UI_Config_7.png" style="width: 514px;height: 240px;" alt="" /></p>
+                                                <h3 id="OnLoadtab" data-magellan-target="OnLoadtab">OnLoad tab</h3>
+                                                <p>This tab enables the user to map the object’s view fields with the widget components. To map any widget, click on any available mapping under <b>Mappings</b> of the Objects pane. On the <b>OnLoad</b> tab, the user can start connecting the nodes between the view(s) of an object against the widget based on the requirement.</p>
+                                                <p><b>Note</b>: The mapping lines appear as blue dotted lines if the mapping is done correctly.</p>
+                                                <p> <img src="../img/ui__conf_12_onload.png" style="width: 604px;height: 150px;" alt="" /></p>
+                                                <p>Click <span class="uicontrol">Save</span> to save the mapping configuration.</p>
+                                                <h3 id="OnChangetab" data-magellan-target="OnChangetab">OnChange tab</h3>
+                                                <p>This tab only appears in the case of <b>Antd Slider</b> widget mapping. Once the user renders certain data using the onLoad tab, if further changes are made then the output from these changes made is represented on the onChange tab. Hence the slider’s changed values are mapped to the fields.</p>
+                                                <p>
+                                                    <img src="../img/UI_Config_9.png" style="width: 556px;height: 256px;" alt="" />
+                                                </p>
+                                                <h3 id="PicklistFieldAntdSliderWidgetMapping" data-magellan-target="PicklistFieldAntdSliderWidgetMapping">Picklist Field – Antd Slider Widget Mapping</h3>
+                                                <p>Picklist fields allow a user to select a field value from a list of values. For instance, in the screenshot below, we are creating a Picklist field named <b>TotalMarks</b> in the object FirstGradeMarks. This field can take up any one of the values specified in the <b>Values</b> text box. {D} is used for a default value, Medium in this case - however, this is not honoured in the case of Widgets. Click <b>Save</b> to save the field definition.</p>
+                                                <p>
+                                                    <img src="../img/ui_Conf_1.png" style="width: 626px;height: 238px;" alt="" />
+                                                </p>
+                                                <p><b>Note</b>: Currently only numeric values are supported for the picklist code.</p>
+                                                <p>Hence, when a new record is created in this object, the Picklist field <b>TotalMarks</b> shows 4 values to choose from.</p>
+                                                <p>&#160;</p>
+                                                <p>
+                                                    <img src="../img/ui_conf_13.png" style="width: 610px;height: 206px;" alt="" />
+                                                </p>
+                                                <p>Similarly, we can create a new <b>Antd Slider</b> widget mapping in the UI configurator, by filling in the required details. Since this is a record specific widget, Record is selected under <b>Mapping To</b>.</p>
+                                                <p>
+                                                    <img src="../img/UI_Config_12.png" style="width: 540px;height: 250px;" alt="" />
+                                                </p>
+                                                <div class="note"><b>Note</b>:  In case no views appear in the <b>View</b> dropdown list, switch to <b>Record</b> and then switch back to <b>View</b>. The available views in the object should appear after this switch.</div>
+                                                <p>Add the <b>Display Name</b> and select the <b>Is Marks</b> checkbox under <b>Properties</b>.</p>
+                                                <p>
+                                                    <img src="../img/UI_Conf_2.png" style="width: 206px;height: 592px;" alt="" />
+                                                </p>
+                                                <p>Now map the Picklist field <b>TotalMarks</b> to the <b>field.Marks</b> array on the <b>onLoad</b> tab. Click <b>Save</b> to save the mapping.</p>
+                                                <p>
+                                                    <img src="../img/ui_con_4.png" style="width: 582px;height: 260px;" alt="" />
+                                                </p>
+                                                <p>On the <b>onChange</b> tab, map the value back to the picklist field.</p>
+                                                <p>
+                                                    <img src="../img/ui_cong_3.png" style="width: 544px;height: 236px;" alt="" />
+                                                </p>
+                                                <h3 id="PageDesigner" data-magellan-target="PageDesigner">Page Designer</h3>
+                                                <p>On completion of mapping/widget configuration, the newly added mapping becomes available on the list of Available Components under the <span class="uicontrol">Widget Mapping Components</span>. The new mapping can be dragged and dropped when designing the <b>New</b>, <b>Edit</b> or <b>View</b> Record pages, using the <span class="uicontrol">Design this Page</span> option. For more information to add components, see <a href="Editing_pages.htm">Editing pages</a>.</p>
+                                                <p> <img src="../img/UI_Config_16.png" style="width: 524px;height: 138px;" alt="" /></p>
+                                                <p>
+                                                    <img src="../img/UI_Config_17.png" style="width: 241px;height: 248px;" alt="" />
+                                                </p>
+                                                <div class="note"><b>Important</b>: The existing Picklist field must be removed in order to add the newly created widget mapping. While designing a Record View page, both, the picklist field and the widget mapping can be accommodated. However, this is not supported in the case of a New Record page.</div>
+                                                <p>
+                                                    <img src="../img/UI_Config_18.png" style="width: 562px;height: 234px;" alt="" />
+                                                </p>
+                                                <p>The widget mapping can then be added. The screenshot below displays the final arrangement of the New Record page – the picklist field <b>TotalMarks</b> has been removed, and the widget mapping <b>TotalMarks</b> has been added. Click <b>Save</b> to save this design.</p>
+                                                <p>
+                                                    <img src="../img/UI_Config_19.png" style="width: 570px;height: 236px;" alt="" />
+                                                </p>
+                                                <p>The widget mapping <b>TotalMarks</b> appears on the New Record page. Select a value on the slider and save it.</p>
+                                                <p>
+                                                    <img src="../img/UI_Config_20.png" style="width: 566px;height: 160px;" alt="" />
+                                                </p>
+                                                <h2 id="RangewithIntegerFieldsAntdSliderWidgetMapping" data-magellan-target="RangewithIntegerFieldsAntdSliderWidgetMapping">Range with Integer Fields – Antd Slider Widget Mapping</h2>
+                                                <p>Similarly, a certain range of values can be represented on the slider. Since a range is defined by 2 values – one minimum limit and one maximum limit, we must first create 2 fields of <b>Integer</b> type. In this example, we have created 2 fields in the <b>Age Ranges</b> object.</p>
+                                                <p>&#160;</p>
+                                                <p>
+                                                    <img src="../img/UI_Config_21.png" style="width: 556px;height: 198px;" alt="" />
+                                                </p>
+                                                <p>In the UI configurator, create a new <b>Antd Slider</b> widget mapping, and select the <b>Is Range</b> checkbox under <b>Properties</b>. Click <b>Save</b>.</p>
+                                                <p>
+                                                    <img src="../img/UI_Config_22.png" style="width: 572px;height: 136px;" alt="" />
+                                                </p>
+                                                <p>On the <b>onLoad</b> tab, Map the minimum limit field (MinimumAge) with <b>Range From</b> and the maximum limit field (MaximumAge) with <b>Range To</b>. Click <b>Save</b></p>
+                                                <p>.<img src="../img/UI_Config_23.png" style="width: 522px;height: 228px;" alt="" /></p>
+                                                <p>On the <b>onChange</b> tab, map the values back to the Integer fields. Click <b>Save</b></p>
+                                                <p>
+                                                    <img src="../img/ui_conf_5.png" style="width: 610px;height: 292px;" alt="" />
+                                                </p>
+                                                <p>Design the New Record page (New Age Range page in this case) such that the minimum and maximum fields are removed and the widget mapping component is added to it. The screenshot below displays the final arrangement. Click <b>Save</b>.</p>
+                                                <p>
+                                                    <img src="../img/UI_Config_25.png" style="width: 562px;height: 232px;" alt="" />
+                                                </p>
+                                                <p>Hence the slider appears on the New Age Range page as shown below.</p>
+                                                <p>
+                                                    <img src="../img/UI_Config_26.png" style="width: 548px;height: 162px;" alt="" />
+                                                </p>
+                                                <h2 id="Views" data-magellan-target="Views">Views</h2>
+                                                <p>With UI Widget Mapping, you can change views by selecting the required view from the available views in the respective object for mapping. The required view can be selected and loaded by clicking the <b>Change View</b> icon.</p>
+                                                <p>
+                                                    <img src="../img/ui_conf_6_change_view.png" style="width: 608px;height: 282px;" alt="" />
+                                                </p>
+                                                <p>The <b>Change View</b> pop-up window appears. You can select the type of view you wish to load on the OnLoad tab.</p>
+                                                <p>
+                                                    <img src="../img/ui_conf_7_views.png" style="width: 666px;height: 314px;" alt="" />
+                                                </p>
+                                                <p>The field display names and their respective integration names appear once a view is selected. Click <b>Load</b> after you finalize a view.</p>
+                                                <p><b>Note</b>: Once a view is selected(loaded), all existing mappings are lost.</p>
+                                                <h2 id="SelectedFields" data-magellan-target="SelectedFields">Selected Fields</h2>
+                                                <p>If you wish to display certain fields of a view , and not all its fields, then this can be done by clicking the <b>Selected Fields</b> icon.</p>
+                                                <p><b>Note</b>: By default, 10 fields are shown, which are configured with the selected view. This icon appears only if the number of fields is greater than 10. </p>
+                                                <p>
+                                                    <img src="../img/ui_config_8_selected.png" style="width: 590px;height: 278px;" alt="" />
+                                                </p>
+                                                <p>The list of fields available in the selected view appear. Select the fields you wish to display, and click the <b>Selected Fields</b> icon once again to save.</p>
+                                                <p><b>Note</b>: You can left click and hold to drag the field list with 2 fingers on your touch-pad to be able to view the complete list.</p>
+                                                <p>
+                                                    <img src="../img/ui_confg_9_selected.png" style="width: 626px;height: 294px;" alt="" />
+                                                </p>
+                                                <p>As a result, only the selected fields of the view appear. Map them as required.</p>
+                                                <p>
+                                                    <img src="../img/ui_cong_10_sel_3.png" style="width: 608px;height: 282px;" alt="" />
+                                                </p>
+                                                <h2 id="UIWidgets" data-magellan-target="UIWidgets">UI Widgets</h2>
+                                                <p>Using this collection of intuitive and interactive widgets, stunning applications can be created effortlessly. The following images display some of the sample application pages using the UI widgets.</p>
+                                                <p data-mc-conditions="Default.ScreenOnly">
+                                                    <img src="../img/react-ui-20.png" style="width: 578px;height: 274px;" alt="" />
+                                                </p>
+                                                <p data-mc-conditions="Default.ScreenOnly">
+                                                    <img src="../img/react-ui-21.png" style="width: 572px;height: 272px;" alt="" />
+                                                </p>
+                                                <p data-mc-conditions="Default.ScreenOnly">
+                                                    <img src="../img/react-ui-22.png" style="width: 574px;height: 296px;" alt="" />
+                                                </p>
+                                                <p data-mc-conditions="Default.ScreenOnly">
+                                                    <img src="../img/react-ui-23.png" style="width: 580px;height: 276px;" alt="" />
+                                                </p>
+                                                <p>&#160;</p>
+                                            </div>
+                                        </div>
+                                        <div class="menu-container">
+                                            <div data-sticky-container="" id="L4g0N7M8x0WhD3Zj_jlHDw">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="L4g0N7M8x0WhD3Zj_jlHDw:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="small" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_topic_menu mc-component">
+                                                        <li class="tree-node"><a href="#UIConfigurator">UI Configurator</a>
+                                                        </li>
+                                                        <li>
+                                                            <ul>
+                                                                <li class="tree-node"><a href="#WorkingwithUIConfigurator">Working with UI Configurator</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#UserDashboard">User Dashboard</a>
+                                                                </li>
+                                                                <li>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#Designtab">Design tab</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#OnLoadtab">OnLoad tab</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#OnChangetab">OnChange tab</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#PicklistFieldAntdSliderWidgetMapping">Picklist Field – Antd Slider Widget Mapping</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#PageDesigner">Page Designer</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#RangewithIntegerFieldsAntdSliderWidgetMapping">Range with Integer Fields – Antd Slider Widget Mapping</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Views">Views</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#SelectedFields">Selected Fields</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#UIWidgets">UI Widgets</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="MCMiniTocBox_0 miniToc nocontent" data-mc-autonum="Related Topics:" data-mc-depth="1" data-mc-toc="True"><span class="autonumber"><span class="miniTocBoxTitle">Related Topics:</span></span>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="right-align"><a class="footer1" href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/linkedin-2--v1.png" alt="Linkedin" /></a><a class="footer1" href="https://twitter.com/InfiniteBlueHQ" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/twitter.png" alt="Twitter" /></a><a class="footer1last" href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/0572ed/youtube-play.png" alt="YouTube" /></a>
+                                        </div>
+                                        <div class="right-align-2"><a class="footer2" href="https://www.infiniteblue.com" target="_blank">Copyright © 2024 Infinite Blue. All Rights Reserved.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

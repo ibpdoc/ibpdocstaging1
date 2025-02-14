@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="task _Skins_HTML5___Side_Navigation_2021" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Business logic|Managing the check in process" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="192x192" href="../Skins/Favicons/IB_favicon_192x192.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/IB_favicon_96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/IB_favicon_32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/IB_favicon_16x16.png" /><title>Create a Check In object</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/ib_platform.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="192x192" href="../Skins/Favicons/IB_favicon_192x192.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/IB_favicon_96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/IB_favicon_32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/IB_favicon_16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Scripts/jira_issue_collector.js">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-164223934-1">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-164223934-1');
+	/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-device-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../qst-intro.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search our documentation..." />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div class="home-container">
+                                        <div role="main" id="mc-main-content">
+                                            <h1 class="tasktitle">Create a Check In object</h1>
+                                            <div class="context">
+                                                <p>When you used the Quick Create wizard to create the app, you were able to
+				create multiple objects and add fields and relationships to them in one flow. When
+				you create an object explicitly, you first create the object definition and then add
+				components such as fields and relationships. Because each <span class="uicontrol">Check
+					In</span> record will basically be a copy of a <span class="uicontrol">Check
+					Out</span> record, the <span class="uicontrol">Check In</span> object should have
+				the same fields and relationships. Follow these steps to add a <span class="uicontrol">Check In</span> object and add the appropriate fields and
+				relationships:</p>
+                                            </div>
+                                            <ol class="steps">
+                                                <li class="step" value="1">
+                                                    <p><span class="cmd">Create the object definition:</span>
+                                                    </p>
+                                                    <ol class="substeps" style="list-style-type: lower-roman;">
+                                                        <li class="substep" value="1">
+                                                            <p><span class="cmd">From the Platform menu, select <span class="uicontrol">New
+								Menu</span>.</span>
+                                                            </p>
+                                                            <p><span class="cmd"><img alt="Rollbase Tutorial - Create new object" src="rut1438805749215.jpg" /></span>
+                                                                <div class="stepresult">The <span class="uicontrol">What do you want
+								to create?</span> dialog opens.<p><img alt="Rollbase Tutorial - What do you want to&#xA;         create?" src="rut1438960242073.jpg" /></p></div>
+                                                            </p>
+                                                        </li>
+                                                        <li class="substep" value="2"><span class="cmd">Leave the default selection, <span class="uicontrol">A new Object (with Tab)</span>, and click <span class="uicontrol">Create</span>.</span>
+                                                            <div class="stepresult">The <span class="uicontrol">New
+								Object</span> screen opens.<p><img alt="Rollbase Tutorial - New object" src="rut1438960456248.jpg" /></p></div>
+                                                        </li>
+                                                        <li class="substep" value="3"><span class="cmd">For the <span class="uicontrol">Singular
+								Name</span>, enter <span class="uicontrol">Check
+								In</span>.</span>
+                                                        </li>
+                                                        <li class="substep" value="4"><span class="cmd">Click <span class="uicontrol">Save</span>.</span>
+                                                            <div class="stepresult">The <span class="uicontrol">New
+								Tab</span> screen opens.<p><img alt="Rollbase Tutorial - New Tab" src="rut1438960557986.jpg" /></p></div>
+                                                        </li>
+                                                        <li class="substep" value="5"><span class="cmd">In the <span class="uicontrol">User
+								Roles</span> table, make sure
+								<span class="uicontrol">Administrator</span> and <span class="uicontrol">Library
+								Employee</span> are selected. <span class="uicontrol">Library Member</span> should not be selected because members
+							should not be able to view these records.</span>
+                                                        </li>
+                                                        <li class="substep" value="6"><span class="cmd">Leave the default values for the other fields.</span>
+                                                        </li>
+                                                        <li class="substep" value="7"><span class="cmd">Click <span class="uicontrol">Save</span>.</span>
+                                                        </li>
+                                                    </ol>
+                                                    <div class="stepresult">A new <span class="uicontrol">Check Ins</span>
+					page opens in the application.</div>
+                                                </li>
+                                                <li class="step" value="2"><span class="cmd">Add two date fields to <span class="uicontrol">Check In</span> in the object definition:</span>
+                                                    <ol class="substeps" style="list-style-type: lower-roman;">
+                                                        <li class="substep" value="1"><span class="cmd">From the page menu, select <span class="uicontrol">Object definition</span>.</span>
+                                                        </li>
+                                                        <li class="substep" value="2"><span class="cmd">From the shortcut bar, select <span class="uicontrol">Fields</span>.</span>
+                                                        </li>
+                                                        <li class="substep" value="3"><span class="cmd">Click <span class="uicontrol">New Field</span>. </span>
+                                                            <div class="stepresult">The <span class="uicontrol">New
+								Field</span> screen opens.</div>
+                                                        </li>
+                                                        <li class="substep" value="4"><span class="cmd">For <span class="uicontrol">Field Type</span>,
+							select <span class="uicontrol">Date</span> and click <span class="uicontrol">Next</span>.</span>
+                                                        </li>
+                                                        <li class="substep" value="5"><span class="cmd">Enter the following values: </span>
+                                                            <div class="info">
+                                                                <ul>
+                                                                    <li>For <span class="uicontrol">Field
+										Label</span>, <span class="userinput">Date
+										Borrowed</span></li>
+                                                                    <li>For <span class="uicontrol">Integration Name</span>,
+										<span class="userinput">ci_date_borrowed</span> (adding "ci" makes
+									it easier to distinguish between this field and the one with the
+									same name in the <span class="uicontrol">Check
+										Out</span> object)</li>
+                                                                    <li>Leave the other fields with the default
+									settings.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="substep" value="6"><span class="cmd">Click <span class="uicontrol">Save</span>.</span>
+                                                            <div class="stepresult">The <span class="uicontrol">Add to Pages and
+								Views</span> screen opens.</div>
+                                                        </li>
+                                                        <li class="substep" value="7"><span class="cmd">Leave the default boxes checked and select the box to
+							add this field to the <span class="uicontrol">All Check
+								Ins</span> view.</span>
+                                                        </li>
+                                                        <li class="substep" value="8"><span class="cmd">Click <span class="uicontrol">Save &amp;
+								New</span>.</span>
+                                                        </li>
+                                                        <li class="substep" value="9"><span class="cmd">Use the same procedure to create a <span class="uicontrol">Date</span> field with the name <span class="uicontrol">Date Due</span> and an integration name of
+								<span class="uicontrol">ci_date_due</span>. Add it to
+								the<span class="uicontrol"> All Check Ins</span> view. Click <span class="uicontrol">Save
+								&amp; New</span>.</span>
+                                                        </li>
+                                                        <li class="substep" value="10"><span class="cmd">Use the same procedure to create a <span class="uicontrol">Date</span> field with the name <span class="uicontrol">Date Returned</span> and an integration name of
+								<span class="uicontrol">ci_date_returned</span>. Add it to
+							the <span class="uicontrol">All Check Ins</span> view and save it.</span>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li class="step" value="3"><span class="cmd">Create a relationship between the <span class="uicontrol">Check In</span> and
+						<span class="uicontrol">Title</span> objects:</span>
+                                                    <ol class="substeps" style="list-style-type: lower-roman;">
+                                                        <li class="substep" value="1"><span class="cmd">Use the shortcut bar to jump to the <span class="uicontrol">Relationships</span> section of the <span class="uicontrol">Check In</span> object definition.</span>
+                                                        </li>
+                                                        <li class="substep" value="2"><span class="cmd">Click <span class="uicontrol">New Relationship</span>.</span>
+                                                        </li>
+                                                        <li class="substep" value="3"><span class="cmd">Choose <span class="uicontrol">Title</span> as the related object, and click
+								<span class="uicontrol">Next</span>.</span>
+                                                        </li>
+                                                        <li class="substep" value="4"><span class="cmd">For <span class="uicontrol">Cardinality</span>, leave the default, <span class="uicontrol">Many Check Ins to Many Titles</span>. Since a
+							particular title will be checked out and back in repeatedly, this
+							cardinality allows the same title to be attached to multiple <span class="uicontrol">Check In</span> records. </span>
+                                                        </li>
+                                                        <li class="substep" value="5"><span class="cmd">In the <span class="uicontrol">Add Lookup Fields
+								to Pages</span> section, click <span class="uicontrol">Select All</span> for both <span class="uicontrol">Check
+								In Pages (Title lookup field)</span> and <span class="uicontrol">Check In Pages (Titles related list
+								view)</span>.</span>
+                                                        </li>
+                                                        <li class="substep" value="6"><span class="cmd">In the <span class="uicontrol">Add Related List
+								Views to Pages</span> section, click <span class="uicontrol">Select All</span> under <span class="uicontrol">Check In Pages (Title lookup field)</span> and
+								<span class="uicontrol">Check In Pages (Titles related list
+								view)</span>.</span>
+                                                        </li>
+                                                        <li class="substep" value="7"><span class="cmd">Save the relationship.</span>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li class="step" value="4"><span class="cmd">Use the same procedure to add a relationship between
+						<span class="uicontrol">Check In</span> and <span class="uicontrol">User</span> objects. Set the cardinality to <span class="uicontrol">Many Check Ins to One User</span>, and leave the
+					default values for <span class="uicontrol">Add Lookup Fields to
+						Pages</span> (all <span class="uicontrol">Check In</span>
+					pages are selected and <span class="uicontrol">User</span> Pages are
+					not).</span>
+                                                </li>
+                                                <li class="step" value="5"><span class="cmd">Return to the application <span class="uicontrol">Check
+						Ins</span> page and edit the <span class="uicontrol">All Check
+						Ins</span> view to include the fields associated with these
+					relationships: </span>
+                                                    <ol class="substeps" style="list-style-type: lower-roman;">
+                                                        <li class="substep" value="1"><span class="cmd">From the <span class="uicontrol">Viewing: All
+								Check Ins</span> menu, select <span class="uicontrol">Edit
+								this View</span>. </span>
+                                                        </li>
+                                                        <li class="substep" value="2"><span class="cmd">Move the <span class="uicontrol">Titles</span> and <span class="uicontrol">Users</span> fields from the
+								<span class="uicontrol">Available Columns</span> list to
+							the <span class="uicontrol">Selected Columns</span> list.</span>
+                                                        </li>
+                                                        <li class="substep" value="3"><span class="cmd">Use the up and down arrows to arrange the columns in a
+							logical order.</span>
+                                                        </li>
+                                                        <li class="substep" value="4"><span class="cmd">Save your changes.</span>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                            <div class="postreq">Next, create a trigger to <a href="Create a trigger to fire on check in.htm">automate the process of checking a record in</a>.</div>
+                                        </div>
+                                    </div>
+                                    <div class="home-footer">
+                                        <p class="footer" style="color: #4d4d4d; text-align: right; vertical-align: middle;">© 2021 <a style="color: #4d4d4d;" href="http://www.infiniteblue.com/">Infinite Blue Platform</a>. All rights reserved.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="concept _Skins_Side_Nav_2023_feb" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Adding business logic |Adaptive user interface|Cards and card containers|Creating and editing cards" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Editing a card in the card editor</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/ib_platform.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-164223934-1">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-164223934-1');
+	/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Welcome.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style=" text-align: right; color:white; font-size: 9pt; background:#001649 ; margin-bottom: 15px; padding: 4px 12px; ">Documentation Version 
+			<select id="versionSelect"><option value="v6.9.0">6.9.0</option><option value="v6.10.0">6.10.0</option><option value="default">6.11.0</option><option value="v6.8.0">6.8.0</option></select><script>/* <![CDATA[ */
+				const select = document.querySelector('#versionSelect');
+				select.addEventListener('change', function() {
+				const selectedVersion = this.value;
+				const currentUrl = window.location.href;
+				let newUrl = '';
+
+				if (selectedVersion !== "default") {
+				if (currentUrl.match(/\/v\d+(\.\d+(\.\d+)?)?\//) === null) {
+				const tempURL = new URL(currentUrl);
+				newUrl = tempURL.protocol + '//' + tempURL.hostname + '/' + selectedVersion + tempURL.pathname;
+				} else {
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, `/${selectedVersion}/`);
+				}
+				} else {
+				// If "default" is selected, remove the versioned part from the URL
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, '/');
+				}
+
+				window.location.href = newUrl;
+				});
+		/* ]]> */</script></div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div class="home-container">
+                                        <div class="topic-body">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 class="concepttitle" id="Editingacardinthecardeditor" data-magellan-target="Editingacardinthecardeditor">Editing a card in the card editor</h1>
+                                                <p>When you start a card from a layout or from a blank screen, or after you
+				have mapped the fields in the card, the card editor opens. The card editor is an
+				HTML editor that includes <span class="uicontrol">Card Tools</span> for
+				adding components and other features to the card. In the card editor, you have the
+				full power of HTML, CSS, and JavaScript hash templates at your disposal to create
+				very good looking and very powerful cards.</p>
+                                                <p>The card editor toolbar contains buttons for formatting and aligning text,
+			editing HTML, inserting images, videos, files, and tables, and for setting the text
+			direction (LTR or RTL) for a field in the card (Text direction for the card is based on
+			the user's language; you can override the direction for a field).</p>
+                                                <p>From the <span class="uicontrol">Values</span> and <span class="uicontrol">Labels</span> areas in the
+			sidebar, you can drag values and fields onto the card.</p>
+                                                <p>The <span class="uicontrol">Use this card</span> for buttons let you select the devices for which
+			to use this card.</p>
+                                                <p>The screen below shows the card editor for a new card created from the
+				<span class="uicontrol">2 Column</span> layout. When you create a card with
+			this layout, the card is pre-populated with an <span class="uicontrol">Object Name
+				Label</span>, an <span class="uicontrol">Object Name</span> value, and
+			an object view link that drills down to the View page for a record. You keep, edit, or
+			delete these as desired.<div class="fig"><p><img alt="Card Editor" src="xjq1471973287206.jpg" /></p></div></p>
+                                                <p>The card editor includes several card tools, available from the
+				<span class="uicontrol">Card Tools</span> area in the sidebar:<div class="fig"><p><img alt="Card Tools" src="pcf1478549334090.jpg" /></p></div></p>
+                                                <p><span class="uicontrol">Card Tools</span>  include:</p>
+                                                <ul>
+                                                    <li><span class="uicontrol">Add Object View Link</span> —
+								Places an object view link on the card. An object view link drills down to the
+								View page for a record.</li>
+                                                    <li><span class="uicontrol">Add Rating</span> — Lets you add a star
+				rating component to the card. A star rating component can represent an Integer,
+				Decimal, Currency, or Percentage field with a range of values between 1 and 10, or a
+				Formula or Expression field that returns an Integer or Decimal value between 1 and
+				10. You can select an icon for the component (defaults to a star), an icon color,
+				and apply CSS styles to the star rating. <span class="uicontrol">Preview
+					Rating</span> shows you what the resulting component will look like. If you
+				select the default icon or a Font Awesome star icon, Decimal values will render half
+				stars if the decimal part of the value is greater than or equal to 0.5. <div class="fig"><p><img alt="Add Rating Tool" src="luy1471974346158.jpg" /></p></div></li>
+                                                    <li><span class="uicontrol">Add Percentage Bar</span> — Lets you
+				add a percentage bar to the card. A percentage bar can represent an Integer,
+				Decimal, Currency, or Percentage field with a range of values between 0 and 100, or
+				a Formula or Expression field that returns an Integer or Decimal value between 0 and
+				100. You can select colors for the bar, apply CSS styles to the bar container, and
+				specify whether to display the percentage value and where to display it. <span class="uicontrol">Preview Percentage Bar</span> shows you what the resulting
+				component will look like.<div class="fig"><p><img alt="Percentage Bar Tool" src="mwg1471974625686.jpg" /></p></div></li>
+                                                    <li><span class="uicontrol">Add Color Side Bar</span> — Lets you
+				add a conditional color side bar to the card based on a Boolean value. A color side
+				bar can represent a Formula or Expression field with a Boolean return type or a
+				Checkbox field. You can choose the color for the bar when value is true or false and
+				you can choose the bar size. Preview Color Side Bar shows you what the resulting
+				component will look like.<div class="fig"><p><img alt="Color Side Bar Tool" src="dfe1471975013399.jpg" /></p></div></li>
+                                                    <li><span class="uicontrol">Add Card Dimension</span> — Lets you set the dimensions of a card to be
+				displayed in a horizontal card container. This tool is not available when editing a
+				card to be displayed in a vertical card container. You can set the card width for
+				desktop and tablet devices, the card height, and CSS styles to apply to the card
+				container. The screen below shows the <span class="uicontrol">Add Card
+					Dimension</span> dialog:<div class="fig"><p><img alt="Add Card Dimension" src="lhs1471891909622.jpg" /></p></div></li>
+                                                    <li><span class="uicontrol">Add Text Limit</span> —Lets you limit the amount of text displayed for text
+				fields. You can limit the text by specifying a line count or by specifying a
+				character limit. The screen below shows the <span class="uicontrol">Add Text
+					Limit </span>dialog:<div class="fig"><p><img alt="Add Text Limit" src="twy1471890966692.jpg" /></p></div></li>
+                                                </ul>
+                                                <p>At any time while editing a card, you can click the <span class="uicontrol">Code
+				View</span> button to view and edit the HTML source:<div class="fig"><p><img alt="Code View Button" src="zfm1471975400958.jpg" /></p></div></p>
+                                                <p>The HTML source opens:<div class="fig"><p><img alt="View HTML" src="rbi1471975601337.jpg" /></p></div></p>
+                                                <p>You can edit the HTML source in the card editor or you can copy the HTML source
+			and edit it in a different HTML editor. </p>
+                                                <p>When you insert a field using the card editor, Platform generates the following
+									HTML fragment (value or
+									label):</p><pre>&lt;span data-column-id=”fieldId” data-column-type=”value”&gt;
+	&lt;span data-column-id=”fieldId” data-column-type=”label”&gt;&lt;/span&gt;</pre>
+                                                <p>For example, the following HTML fragment was generated for a label
+											and value for a City field. Note that the <code>data-column-id</code> attribute uses the integration name of the City field,
+											which is <code>city</code>.</p><pre>&lt;span class="rbs-dataColumn-label" data-column-id="city" 
+	data-column-type="label" title="label - city"&gt;City&lt;/span&gt;
+&lt;span class="rbs-dataColumn-value" data-column-id="city" 
+	data-column-type="value" title="value - city"&gt;Austin&lt;/span&gt;</pre>
+                                                <p>You can use the <code>span</code> element to
+													simulate what the card editor does, especially if you want to work in your own HTML
+													editor.<div class="note"><b>Note: </b>If you are planning to work in your own HTML
+														editor, you can obtain the integration names for the fields you want to use by
+														creating a card from a blank canvas, adding a field label or value for each
+														field to the card, and viewing the HTML source. The source will contain the
+														integration name of each field in the <code>data-column-id</code> attribute. Copy the source and paste it into your
+														HTML editor to keep the integration names available.</div></p>
+                                                <p>The new card tools support the following:</p>
+                                                <ul>
+                                                    <li><span class="uicontrol">Add/Edit Card Script</span> — Lets
+				you customize a card by executing scripts. <div class="fig" data-mc-conditions="Audience.html"><p><img alt="Add Card Script" src="jsk1478549538090.jpg" class="thumb" /></p></div><ul><li>Script that you add in the first box runs as soon as data
+						is fetched from the server and before rendering the cards. It takes three
+							arguments:<ul><li><code>cardData</code> — An
+								array of the values used to render the card</li><li><code>dataSource</code> — The
+								Kendo <code>Datasource</code> used by the
+								card</li><li><code>cardListview</code> —
+								The <code>KendoListView</code> (<code>KendoMobileListView</code> for mobile devices
+								) component that renders card items</li></ul><p>The following example prepends <span class="uicontrol">Custom_</span> to the name of each title
+							record:<pre>  var someData = "Custom_" + cardData["name"];
+  cardData["name"] = someData;</pre></p><p>The following screen shows the resulting cards on a
+							tablet: <div class="fig"><p><img alt="Script Result" src="atv1478553393098.jpg" /></p></div></p></li><li>Script that you enter in the second box runs once after
+						rendering all cards on the page. It takes three arguments:<ul><li><code>cards</code> — A list of
+								all cards on the page</li><li><code>dataSource</code> — The
+								Kendo <code>Datasource</code> used by the
+								card</li><li><code>cardListview</code> —
+								The <code>KendoListView</code> (<code>KendoMobileListView</code> for mobile devices
+								) component that renders card items</li></ul><p>The following example adds a <code>kendoSlider</code> component to each card on the page:
+							<pre>   if(cards){
+    //Iterate through all card list item
+    for(var i=0;i&lt;cards.length;i++){
+           var card = $(cards[i]);
+           //Find an element where we want to render kendo slider
+           var tempSliderEle = card.find('.temperature');
+           tempSliderEle.show();
+           var tempSlider = tempSliderEle.data('kendoSlider');
+           var recUid = card.attr('data-uid');
+           if(recUid){
+             var rec = dataSource.getByUid(recUid);
+             var recId = rec["recordId"];
+             var currTempVal = rec["Set_Temperature"];
+             var confirmMsgEle = card.find('.confirmTempChange');
+             if(!tempSlider){
+               tempSliderEle.kendoSlider({
+                    max:100,
+                    min:0,
+                    value:currTempVal,
+                    dragHandleTitle:'Drag to change temparature',
+                    tickPlacement:'bottomRight',
+                    recId:recId,
+                    currTempVal:currTempVal,
+               });
+             }
+         }
+    }
+}						</pre></p><p>The following screen shows the resulting cards on the
+							page: <div class="fig"><p><img alt="Resulting Cards with Slider" src="asb1478553957699.jpg" /></p></div></p></li></ul></li>
+                                                    <li><span class="uicontrol">Add/Edit Card Style</span> — Lets
+				you add custom CSS styles. By default, the styles apply to all sections on a page.
+				This typically works just fine. But if a page contains multiple list views, and you
+				want different styles for each, you can make the style specific to the page section
+				that contains the list. To apply a style to a specific section, use the section
+				original ID prefixed by  . You can find the section ID by opening
+				the page in the page designer and selecting the section. For example, to identify a
+				section with the original ID of <code>ZR_XI0e5TUO5BQIVgzgeIA</code>, use:
+					<pre>&#160;</pre><div class="fig"><p><img alt="Add Card Style" src="ieg1478549556010.jpg" class="thumb" data-mc-conditions="Audience.html" /></p></div></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="menu-container">
+                                            <div data-sticky-container="" id="57f1Kc5uPEixNgecrdgI9Q">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="57f1Kc5uPEixNgecrdgI9Q:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="small" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_topic_menu mc-component">
+                                                        <li class="tree-node"><a href="#Editingacardinthecardeditor">Editing a card in the card editor</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="right-align"><a class="footer1" href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/linkedin-2--v1.png" alt="Linkedin" /></a><a class="footer1" href="https://twitter.com/InfiniteBlueHQ" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/twitter.png" alt="Twitter" /></a><a class="footer1last" href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/0572ed/youtube-play.png" alt="YouTube" /></a>
+                                        </div>
+                                        <div class="right-align-2"><a class="footer2" href="https://www.infiniteblue.com" target="_blank">Copyright © 2024 Infinite Blue. All Rights Reserved.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

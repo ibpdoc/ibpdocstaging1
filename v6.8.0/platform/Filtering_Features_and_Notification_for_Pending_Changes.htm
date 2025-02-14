@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="concept _Skins_Side_Nav_2023_feb" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Adding business logic " data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Filtering Features and Notification for Pending Changes</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/ib_platform.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-164223934-1">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-164223934-1');
+	/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Welcome.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style=" text-align: right; color:white; font-size: 9pt; background:#001649 ; margin-bottom: 15px; padding: 4px 12px; ">Documentation Version 
+			<select id="versionSelect"><option value="v6.8.0">6.8.0</option><option value="v6.9.0">6.9.0</option><option value="v6.10.0">6.10.0</option><option value="default">6.11.0</option></select><script>/* <![CDATA[ */
+				const select = document.querySelector('#versionSelect');
+				select.addEventListener('change', function() {
+				const selectedVersion = this.value;
+				const currentUrl = window.location.href;
+				let newUrl = '';
+
+				if (selectedVersion !== "default") {
+				if (currentUrl.match(/\/v\d+(\.\d+(\.\d+)?)?\//) === null) {
+				const tempURL = new URL(currentUrl);
+				newUrl = tempURL.protocol + '//' + tempURL.hostname + '/' + selectedVersion + tempURL.pathname;
+				} else {
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, `/${selectedVersion}/`);
+				}
+				} else {
+				// If "default" is selected, remove the versioned part from the URL
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, '/');
+				}
+
+				window.location.href = newUrl;
+				});
+		/* ]]> */</script></div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div class="home-container">
+                                        <div class="topic-body">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 class="concepttitle" id="FilteringFeaturesandNotificationforPendingChanges" data-magellan-target="FilteringFeaturesandNotificationforPendingChanges">Filtering Features and Notification for Pending Changes</h1>
+                                                <p>&#160;</p>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="Filteringfeatures" data-magellan-target="Filteringfeatures">Filtering features</h2>
+                                                    <p>This release includes two new filtering features:</p>
+                                                    <ul>
+                                                        <li>The ability to hide fields from filter options — When filtering the view on
+					a record list page, users can select fields on which to filter from a drop-down
+					list. You can now set an advanced property, <span class="uicontrol">Allow
+						filtering by this field in List Views</span>, on a field. When this
+					property is unchecked, the field will not appear in the drop-down list of
+						fields.<div class="fig"><p><img alt="Advanced Field Properties" src="cvc1452548845511.jpg" /></p></div></li>
+                                                        <li>By default, filter options for a record list include advanced filter
+					options, which include the ability to choose between
+						<span class="uicontrol">Standard</span>, <span class="uicontrol">Expression</span>, and
+						<span class="uicontrol">Formula</span> filters, as well as to choose whether
+						<span class="uicontrol">All (AND)</span> or <span class="uicontrol">Any (OR)</span> of the
+					filter conditions are met. You can now hide these advanced filter options for
+					record list components in the page editor — A new property on this component,
+						<span class="uicontrol">Hide Advanced Filters</span>, controls
+					whether these options appear on the page:<div class="fig"><p><img alt="Hide Advanced Filters" src="iyj1452548538538.jpg" /></p></div><p>When this property is checked, the advanced filter options
+						highlighted below will not appear on the page:</p><div class="fig"><p><img alt="Advanced Filter Options" src="lne1452548425558.jpg" /></p></div></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="Notificationwhenusernavigatesfrompagewithpendingchanges" data-magellan-target="Notificationwhenusernavigatesfrompagewithpendingchanges">Notification when user navigates from page with pending changes</h2>
+                                                    <p>If a user modifies a record on a new, edit, or status change page and attempts
+				to leave the page by navigating away or closing it before saving the changes, a
+					<span class="uicontrol">Confirm Navigation</span> dialog will appear.
+				This dialog gives the user a chance to return to the page and save their
+				changes.</p>
+                                                    <div class="fig">
+                                                        <p>
+                                                            <img alt="Confirm Navigation Dialog" src="yec1450799774206.jpg" />
+                                                        </p>
+                                                    </div>
+                                                    <p>This feature is not available on quick create pages.</p>
+                                                    <p>You can control whether users are notified using the following:</p>
+                                                    <ul>
+                                                        <li>The property <code>rb.newui.options.notify.onLeavingDirtyPage</code> —
+						This property has the value <code>true</code> by default.
+						To disable the notifications, set its value to <code>false</code>. See <a href="onLeavingDirtyPage.htm" class="MCXref xref">onLeavingDirtyPage</a> for
+						details.</li>
+                                                        <li>The <a href="PageContext.htm" class="MCXref xref">PageContext</a> class method addDirtyPageNotifier()
+						— Enables the notifications</li>
+                                                        <li>The <a href="PageContext.htm" class="MCXref xref">PageContext</a> class method removeDirtyPageNotifier() — Disables the
+						notifications</li>
+                                                    </ul>
+                                                    <p>A new <a href="PageContext.htm" class="MCXref xref">PageContext</a> method, <code>isPageDirty()</code>, returns <code>true</code> if the
+				page has an object record form with modifications.</p>
+                                                    <p>See the newly documented JavaScript object <a href="PageContext.htm" class="MCXref xref">PageContext</a> and client-side method <a href="rbf_getPageContext__.htm" class="MCXref xref">rbf_getPageContext()</a> for more
+				information.</p>
+                                                    <div class="note"><b>Note: </b>This feature uses a built-in browser feature that is not supported on Safari for the iPad.</div>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="rbfgetPicklistCodeandrbfgetPicklistCodesclientsideAPIsnowworkwithotherfieldtypes" data-magellan-target="rbfgetPicklistCodeandrbfgetPicklistCodesclientsideAPIsnowworkwithotherfieldtypes">rbf_getPicklistCode() and rbf_getPicklistCodes() client-side APIs now work
+				with other field types</h2>
+                                                    <p>These APIs now work with the following field types:<ul><li><code>rbf_getPicklistCode()</code>: Picklist, Picklist (Multi-Select), Group of
+						Checkboxes, Radio Buttons</li><li><code>rbf_getPicklistCodes()</code>: Picklist, Picklist (Multi-Select), Group of
+						Checkboxes</li></ul></p>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="NewparametertorbfshowOrHideField" data-magellan-target="NewparametertorbfshowOrHideField">New parameter to <code>rbf_showOrHideField()</code></h2>
+                                                    <p>The client-side function <a href="rbf_showOrHideField__.htm"><code xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">rbf_showOrHideField()</code></a>
+				has a new, optional, Boolean parameter named <code>doNotHideResponsiveColumn</code>. This parameter lets you control the
+				responsive behavior on view and edit pages when a field is hidden. The signature of
+				the function is now <code>rbf_showOrHideField(fieldName,
+					showField, doNotHideResponsiveColumn</code>. </p>
+                                                    <p>The value of the new parameter specifies whether to overwrite the column occupied by
+				the hidden field:</p>
+                                                    <ul>
+                                                        <li>When <code>true</code>, Platform hides only the value of the field, not
+						the column itself. The column for the hidden field maintains its position
+						regardless of the screen size.</li>
+                                                        <li>When <code>false</code>, Platform hides both the value of the field and
+						its column. The value in the next column will take its position.</li>
+                                                        <li>When not provided, defaults to <code>false</code>.</li>
+                                                    </ul>
+                                                    <p>See <a href="rbf_showOrHideField__.htm"><code xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">rbf_showOrHideField()</code></a> for details and examples.</p>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="JavaScriptfilesavailableinuncompressedformat" data-magellan-target="JavaScriptfilesavailableinuncompressedformat">JavaScript files available in uncompressed format</h2>
+                                                    <p>The following JavaScript files are now available in an uncompressed format:</p>
+                                                    <ul>
+                                                        <li><span class="filepath">Options.js</span> — Contains the default user interface
+						options for the New UI</li>
+                                                        <li><span class="filepath">CustomEvents.js</span> — Contains definitions of custom
+						events, event listeners, and event handlers</li>
+                                                    </ul>
+                                                    <p>If you customize the UI with JavaScript, it will be helpful to review the
+				contents of these files. You can find these files at the following locations:<ul><li>Platform Private Cloud: <span class="filepath">http://localhost:8830/prod1/js/newui/</span> — For example, to view
+							<span class="filepath">Options.js</span> when using a tenant
+						running the PAS server, you would use the URL <span class="filepath">http://localhost:8830/prod1/js/newui/Options.js</span>.</li><li>Hosted Platform: <span class="filepath">https://www.<span>rollbase</span>.com/prod1/js/newui/</span> — For example, to
+						view <span class="filepath">Options.js</span>, you would use the URL
+							<span class="filepath">https://app.infiniteblue.com/prod1/js/newui/Options.js</span>.</li></ul></p>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="PerformanceimprovementswhenusingOpenEdgeDataObjects" data-magellan-target="PerformanceimprovementswhenusingOpenEdgeDataObjects">Performance improvements when using OpenEdge Data Objects</h2>
+                                                    <p>This release introduces the following features that improve performance when using OpenEdge
+				Data Objects from an OpenEdge Data Object Service:<ul><li>Ability to cache OpenEdge Data Objects — Platform now caches Data Objects
+						instead of fetching them from the Data Object Service each time they need to
+						be accessed. A new property on the object definition, <span class="uicontrol">Clear
+							Record Cache After</span>, allows you to specify the number of
+						seconds after which to clear the cache.</li><li>Improved implementation for counting OpenEdge Data Objects — Prior to this
+						release, Platform fetched all records from the Data Object Service to count
+						them when rendering a record list view. This release introduces the
+						capability for Platform to invoke a count operation on the Data Object
+						Service to return the count without fetching the records. Enabling this
+						behavior requires the following:<ul><li>The OpenEdge Data Object Service must implement a <code>count</code> operation that returns the total
+								number of records.</li><li>You must enable count on the object definition by checking a new
+								property on the object definition, <span class="uicontrol">Service Object supports count operation</span>.</li></ul></li></ul></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu-container">
+                                            <div data-sticky-container="" id="Qs7YRc4cNkOql371BQCN-Q">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="Qs7YRc4cNkOql371BQCN-Q:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="small" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_topic_menu mc-component">
+                                                        <li class="tree-node"><a href="#FilteringFeaturesandNotificationforPendingChanges">Filtering Features and Notification for Pending Changes</a>
+                                                        </li>
+                                                        <li>
+                                                            <ul>
+                                                                <li class="tree-node"><a href="#Filteringfeatures">Filtering features</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Notificationwhenusernavigatesfrompagewithpendingchanges">Notification when user navigates from page with pending changes</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#rbfgetPicklistCodeandrbfgetPicklistCodesclientsideAPIsnowworkwithotherfieldtypes">rbf_getPicklistCode() and rbf_getPicklistCodes() client-side APIs now work
+				with other field types</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#NewparametertorbfshowOrHideField">New parameter to rbf_showOrHideField()</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#JavaScriptfilesavailableinuncompressedformat">JavaScript files available in uncompressed format</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#PerformanceimprovementswhenusingOpenEdgeDataObjects">Performance improvements when using OpenEdge Data Objects</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="right-align"><a class="footer1" href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/linkedin-2--v1.png" alt="Linkedin" /></a><a class="footer1" href="https://twitter.com/InfiniteBlueHQ" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/twitter.png" alt="Twitter" /></a><a class="footer1last" href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/0572ed/youtube-play.png" alt="YouTube" /></a>
+                                        </div>
+                                        <div class="right-align-2"><a class="footer2" href="https://www.infiniteblue.com" target="_blank">Copyright © 2024 Infinite Blue. All Rights Reserved.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

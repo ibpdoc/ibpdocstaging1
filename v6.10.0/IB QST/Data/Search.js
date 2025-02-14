@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../qst-intro.htm'],s:['\u0027ll','calculated','ecti','ggps7cavcewifezvg','iza','nis','plic','see','turned'],p:[['0000000',11],['formula',22],['select',36]]});

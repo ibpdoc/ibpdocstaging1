@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="concept _Skins_IBP_sidenav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Adding business logic |Reports, charts, and gauges|Working with reports|About Custom Reports" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Working with the Report Builder</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Main_Styles.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/TableStyles/ib-table.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-164223934-1">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-164223934-1');
+	/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Welcome.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="sel-dropdown">Documentation Version 
+			<select id="versionSelect"><option value="v6.10.0">6.10.0</option><option value="v6.9.0">6.9.0</option><option value="v6.8.0">6.8.0</option><option value="default">6.11.0</option></select><script>/* <![CDATA[ */
+				const select = document.querySelector('#versionSelect');
+				select.addEventListener('change', function() {
+				const selectedVersion = this.value;
+				const currentUrl = window.location.href;
+				let newUrl = '';
+
+				if (selectedVersion !== "default") {
+				if (currentUrl.match(/\/v\d+(\.\d+(\.\d+)?)?\//) === null) {
+				const tempURL = new URL(currentUrl);
+				newUrl = tempURL.protocol + '//' + tempURL.hostname + '/' + selectedVersion + tempURL.pathname;
+				} else {
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, `/${selectedVersion}/`);
+				}
+				} else {
+				// If "default" is selected, remove the versioned part from the URL
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, '/');
+				}
+
+				window.location.href = newUrl;
+				});
+		/* ]]> */</script></div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div class="home-container">
+                                        <div class="topic-body">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 class="concepttitle" id="WorkingwiththeReportBuilder" data-magellan-target="WorkingwiththeReportBuilder">Working with the Report Builder</h1>
+                                                <p>As the name indicates, the <span class="uicontrol">Report Builder </span>
+			is a WYSIWIG editor that you use to design the  custom reports. Use the <span class="uicontrol">Report Builder</span> to create and organize your custom report
+			sections, to edit the header and footer information that will appear on each page of the
+			report, and to save and preview the report. A custom report can contain multiple
+			sections and sub-sections, a table of content, headers and footers. You can configure
+			the sections to generate content from object records. </p>
+                                                <p>Here's a sample view of the Report Builder.</p>
+                                                <p>
+                                                    <img src="qeq1537551767428.jpg" style="width: 671.649963378906;height: 327.600006103516;" alt="" />
+                                                </p>
+                                                <p><b>Interface</b>
+                                                </p>
+                                                <p>The Report Builder editor comprises capabilities that are described in the table below, using
+			which, you can perform specific actions while creating a custom report. </p>
+                                                <p>
+                                                    <table class="TableStyle-ibplatform01 TableStyle-ib-table" style="mc-table-style: url('../Resources/TableStyles/ib-table.css');" cellspacing="0">
+                                                        <tbody>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><span class="uicontrol">Report Name</span>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">
+                                                                    <p>This is the auto-generated name of the custom report. By default, the
+							report name is a combination of the date/time stamp of the report
+							created. Click the associated edit icon to edit the default name and to
+							reflect a suitable name. You can also edit the report name from the
+								<span class="uicontrol">General</span> tab of the <span class="uicontrol"> Report Properties</span>. </p>
+                                                                    <p>When saved by clicking the associated <span class="uicontrol">Tick</span> icon ,
+							the report name appears on the top of your custom report.</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><span class="uicontrol">Report Properties</span>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">
+                                                                    <p>This appears as a gear or settings icon on top of the report builder.
+							Click this icon to view the Report Properties comprising the following
+							tab views:</p>
+                                                                    <p>
+                                                                        <ul>
+                                                                            <li><span class="uicontrol">General</span>: In this view, you can perform primary actions such as
+									editing the Report Name, choosing a format for the Report Name
+									Template, adding a Description for the report. For the report
+									name template, you may use the date, month, and/or year tokens
+									and special characters are converted to underscores in file
+									names. Select the <span class="uicontrol">Private Report</span> option
+									if you want to flag your report as private. Private reports are
+									available only to the report creator. Select the <a href="PDF_Report_Options_for_Custom_Reports.htm"><b xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Render as PDF</b></a> option and configure the
+									page specifications to render a PDF version of the report
+									output. The <b>Context Record Specific</b> label is a read-only
+									only flag that appears only if the report is context specific. </li>
+                                                                            <li><span class="uicontrol">Styling</span>: This view displays the
+									default CSS for the custom report. Start typing your custom CSS
+									in the blank text area. Alternatively, choose to select
+										the<span class="uicontrol"> Add Hosted CSS
+										File</span> option to select your custom CSS file.<p> See <a href="Hosted_files.htm">Hosted
+											files</a> and <a href="Custom_CSS.htm">Custom
+											CSS</a> for more information.</p><p><div class="note"><b>Note: </b><p>When selecting a report to render as PDF,  apply the CSS rules that
+												support PD4ML. Refer <a target="_blank" href="http://pd4ml.com/css.htm">http://pd4ml.com/css.htm</a> to know more.</p></div></p></li>
+                                                                            <li><span class="uicontrol">Permissions</span>: This view displays
+									the available list of user roles and individual users associated
+									with the application. As an administrator, provide view report
+									permissions to required user role(s) or select a specific
+									user(s) to view the report. See <a href="Access_control.htm" class="MCXref xref">Access control</a> for more
+									information about setting permissions.</li>
+                                                                        </ul>
+                                                                    </p>
+                                                                    <p>Click <span class="uicontrol">OK</span> to save and exit from the specified
+							report properties.</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><span class="uicontrol">Report Header</span>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">
+                                                                    <p>The <span class="uicontrol">Report Header</span> appears as a
+							horizontal bar with an accordian-like collapse/expand functionality and
+							contains the <span class="uicontrol">Header Properties</span>.
+							This is a mandatory and pre-defined section type with fixed position and
+							cannot be removed.</p>
+                                                                    <p>Configure required header information which you would like to see in the
+							report header using the rich HTML editor and the <span class="uicontrol">Token Helper</span> from the <span class="uicontrol">Header Properties</span>. When the render as
+							PDF option is selected, custom report tokens let you add page numbers,
+							values from records, and other text to headers and footers. Tokens are
+							resolved when the report is generated. For more details on tokens, see
+								<a href="Using_tokens_in_custom_reports.htm">Using Tokens in Custom Reports</a>.</p>
+                                                                    <p>For example, if you want the report's Header to contain the name of the
+							report, you can insert the <span class="uicontrol">Page Title</span> token. If
+							the render as PDF option is not selected, you will be able to view only
+							the Current User and Current Customer tokens.</p>
+                                                                    <p>
+                                                                        <div class="note"><b>Note: </b>The report header and footer content is repeated in every page if
+								you render a report as PDF. When a custom report is rendered as
+								HTML, the Header information appears at the top of the
+								report.</div>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyE-Column1-Body1"><span class="uicontrol">Report Footer</span>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyD-Column1-Body1">
+                                                                    <p>The <span class="uicontrol">Report Footer</span> appears as a
+							horizontal bar with an accordian-like collapse/expand functionality and
+							contains the <span class="uicontrol">Footer Properties</span>.
+							This is a mandatory and pre-defined section type with fixed position and
+							cannot be removed.</p>
+                                                                    <p>Configure required header information which you would like to see in the
+							report footer using the rich HTML editor and the <span class="uicontrol">Token Helper</span> from the <span class="uicontrol">Footer Properties</span>. When the render as
+							PDF option is selected, custom report tokens let you add page numbers,
+							values from records, and other text to headers and footers. Tokens are
+							resolved when the report is generated. For more details, see <a href="Using_tokens_in_custom_reports.htm">Using
+								Tokens in Custom Reports</a>.</p>
+                                                                    <p>
+                                                                        <div class="note"><b>Note: </b>The report header and footer content is repeated in every page when
+								the report is rendered as a PDF output. When a custom report is
+								rendered as HTML, the Footer information appears at the bottom of
+								the report.</div>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ib-table-Body-Body1">
+                                                                <td class="TableStyle-ib-table-BodyB-Column1-Body1"><span class="uicontrol">Add New Section</span>
+                                                                </td>
+                                                                <td class="TableStyle-ib-table-BodyA-Column1-Body1">
+                                                                    <p>This appears as a <b>Plus</b> icon in the Report Builder.
+							Click this icon to add a new report section(s) to your report. Note that
+							each newly added section appears within the <span class="uicontrol">Report Header</span> and <span class="uicontrol">Report
+								Footer</span> bars. </p>
+                                                                    <p>Sections form the crux of the custom reports functionality because the real
+							capability to customize your report design lies within the configuration
+							of sections and sub-sections. There is no limit on adding sections and
+							sub sections to a custom report. For information on how to configure
+							multiple sections of various types to the report, see Section Types and
+							Section Properties.</p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </p>
+                                                <p><b>Action Buttons</b>
+                                                </p>
+                                                <p>Actions buttons in the Report Builder editor enable you to perform the
+			following actions:</p>
+                                                <p>
+                                                    <ul>
+                                                        <li><b>At the report level:</b> Report level action buttons
+					provide access to <span class="uicontrol">Report Properties</span> and
+						<span class="uicontrol">Help &amp; Documentation</span>.</li>
+                                                        <li><b>At the report Header/Footer level: </b>The action button
+					provides access to the report header/footer properties and the rich HTML
+						editor.<ul><li><b>Access section properties</b>: Click the left arrow
+							button to quickly access the Section Properties if you have hidden it
+							earlier from the view in the right pane of the <span class="uicontrol">Report Builder</span> and click the right
+							arrow button (if expanded) to collapse the section properties view.</li></ul></li>
+                                                        <li><b>At the section/sub-section level: </b> The action
+					buttons allow you to perform specific actions such as: <p><ul><li><b>Create a new report section: </b>When you click this
+								icon which is represented as a <b>Plus</b> sign,
+								you will be prompted to choose from <span class="uicontrol"> Add
+									Section Above</span>, <span class="uicontrol">Add
+									Section Below</span> and <span class="uicontrol">Add
+									Subsection</span>. Select the required positioning of the
+								section. Selectiong <span class="uicontrol">Add Subsection
+								</span>creates a new section as a subsection within the section
+								in context. There is no limit to the number and types of sections
+								that you might want to add within or beyond a section.</li><li><b>Create a copy of this section: </b>Creates a new section that a
+								copy of the current section.</li><li><b>Delete this section:</b> Deletes the selected section from the
+								custom report.</li><li><span class="uicontrol"> Full Screen</span> and <span class="uicontrol">Restore Down</span> options for every
+								section.</li></ul></p></li>
+                                                        <li><b>Report Actions:</b> As the name indicates, you can perform these actions on
+					top of a custom report.<ul><li><b>Save and Preview:</b> Saves the custom report and
+							generates a <span class="uicontrol">Preview</span> in the new
+							tab of your browser. <p><div class="note"><b>Note: </b>Ensure that the pop-up blocker of your browser is disabled for
+									the custom report <span class="uicontrol">Preview</span> to
+									appear.</div></p></li><li><b>Save:</b> Saves changes to the custom report allowing
+							you to continue with designing the report further.<p><div class="note"><b>Note: </b> Alternatively, you can save your changes by using a keyboard
+									shortcut that uses the accesskey attribute on the save button
+									(accesskey="S"). For example, if you use Chrome browser, you
+									must use the keyboard shortcut ALT+S to save. Refer <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey</a> to know about other
+									browser keyboard shortcuts. In custom reports, this is the only
+									action that has an access key attribute.</div></p></li><li><b>Close</b>: Cancels an action if the custom report is
+							not saves. Exits view from the <span class="uicontrol">Report
+								Builder</span> and navigates the view to the object definiton
+							view of your base object.</li></ul></li>
+                                                    </ul>
+                                                </p>
+                                                <p><b>Next Task:</b><a href="Designing_a_Custom_Report.htm">Designing a Custom
+				Report</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="menu-container">
+                                            <div data-sticky-container="" id="iVnSWOuKP0C0PW0bTyZUWQ">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="iVnSWOuKP0C0PW0bTyZUWQ:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="small" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_topic_menu mc-component">
+                                                        <li class="tree-node"><a href="#WorkingwiththeReportBuilder">Working with the Report Builder</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="MCMiniTocBox_0 miniToc nocontent" data-mc-autonum="Related Topics:" data-mc-depth="1" data-mc-toc="True"><span class="autonumber"><span class="miniTocBoxTitle">Related Topics:</span></span>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="right-align"><a class="footer1" href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="../Resources/Images/Home/linkedin.png" alt="Linkedin" style="width: 35px;height: 35px;" /></a><a class="footer1last" href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="../Resources/Images/Home/youtube.png" alt="YouTube" style="width: 35px;height: 35px;" /></a>
+                                        </div>
+                                        <div class="right-align-2"><a class="footer2" href="https://www.infiniteblue.com" target="_blank">Copyright © 2024 Infinite Blue. All Rights Reserved.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="concept _Skins_Side_Nav_2023_feb" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Adding business logic " data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Pagination Control, Responsive Image Fields,  and Custom Reports</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/ib_platform.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-164223934-1">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-164223934-1');
+	/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Welcome.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style=" text-align: right; color:white; font-size: 9pt; background:#001649 ; margin-bottom: 15px; padding: 4px 12px; ">Documentation Version 
+			<select id="versionSelect"><option value="v6.8.0">6.8.0</option><option value="v6.9.0">6.9.0</option><option value="v6.10.0">6.10.0</option><option value="default">6.11.0</option></select><script>/* <![CDATA[ */
+				const select = document.querySelector('#versionSelect');
+				select.addEventListener('change', function() {
+				const selectedVersion = this.value;
+				const currentUrl = window.location.href;
+				let newUrl = '';
+
+				if (selectedVersion !== "default") {
+				if (currentUrl.match(/\/v\d+(\.\d+(\.\d+)?)?\//) === null) {
+				const tempURL = new URL(currentUrl);
+				newUrl = tempURL.protocol + '//' + tempURL.hostname + '/' + selectedVersion + tempURL.pathname;
+				} else {
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, `/${selectedVersion}/`);
+				}
+				} else {
+				// If "default" is selected, remove the versioned part from the URL
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, '/');
+				}
+
+				window.location.href = newUrl;
+				});
+		/* ]]> */</script></div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div class="home-container">
+                                        <div class="topic-body">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 class="concepttitle" id="PaginationControlResponsiveImageFieldsandCustomReports" data-magellan-target="PaginationControlResponsiveImageFieldsandCustomReports">Pagination Control, Responsive Image Fields,  and Custom Reports</h1>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="Paginationcontrolattopforrecordlistcomponents" data-magellan-target="Paginationcontrolattopforrecordlistcomponents">Pagination control at top for record list components</h2>
+                                                    <p>The property <span class="uicontrol">Show Pagination at Top</span>,
+				is available in the page editor for record list components. When checked, the
+				component includes a pagination control at the top of the component in addition to
+				the bottom of the component.  This property is managed by the administrator. If enabled by the <b>System Administrator</b>,&#160;<b>Tenant Administrators</b> cannot disable this property.</p>
+                                                    <div class="fig">
+                                                        <p>
+                                                            <img alt="Show Pagination at Top" src="ett1455290711056.jpg" />
+                                                        </p>
+                                                    </div>
+                                                    <p>The following screen shows a Records List page with this property enabled:</p>
+                                                    <div class="fig">
+                                                        <p>
+                                                            <img alt="Pagination Controls" src="lfc1455219958454.jpg" />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="SizingrecordlistcolumnsasanHTMLtable" data-magellan-target="SizingrecordlistcolumnsasanHTMLtable">Sizing record list columns as an HTML table</h2>
+                                                    <p>Platform now sizes record list columns as an HTML table by default. This
+				reduces white space in columns and allows more columns to be visible when not all
+				columns fit on the screen. If you do not want this feature enabled, you can turn it
+				off by deselecting the component's property <span class="uicontrol">Size Column as Html
+					Table</span> in the page editor:</p>
+                                                    <div class="fig">
+                                                        <p>
+                                                            <img alt="Size Column as HTML Table" src="vsp1455305787342.jpg" />
+                                                        </p>
+                                                    </div>
+                                                    <p>The following screen shows a record list page that where columns are not sized as an HTML
+				table:</p>
+                                                    <div class="fig">
+                                                        <p>
+                                                            <img alt="Columns Not Sized as HTMLTable" src="zyj1455306459864.jpg" />
+                                                        </p>
+                                                    </div>
+                                                    <p>The following screen shows the same page where columns are sized as an HTML
+				table. Note that more columns fit on the screen:</p>
+                                                    <div class="fig">
+                                                        <p>
+                                                            <img alt="Columns Sized as HTML Table" src="nde1455306486559.jpg" />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="Responsiveimagefields" data-magellan-target="Responsiveimagefields">Responsive image fields</h2>
+                                                    <p>You can now specify that all Image Upload and Shared Image fields are
+				responsive to the device size. The following screens show a responsive image field
+				on different screen widths.</p>
+                                                    <div class="fig">
+                                                        <p>
+                                                            <img alt="Photo Large" src="qkg1455721748372.jpg" />
+                                                        </p>
+                                                    </div>
+                                                    <div class="fig">
+                                                        <p>
+                                                            <img alt="Photo Small" src="puj1455721784515.jpg" />
+                                                        </p>
+                                                    </div>
+                                                    <p>If you want image fields to be responsive, set the property <code>rb.newui.options.useResponsiveImage</code> to <code>true</code> in a custom sidebar script that executes before
+				the UI starts.  If responsive images are enabled, Platform ignores the width and
+				height properties set for images in the page editor. See <a href="useResponsiveImage.htm" class="MCXref xref">useResponsiveImage</a> for more information.</p>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="Rolebasedlandingpages" data-magellan-target="Rolebasedlandingpages">Role-based landing pages</h2>
+                                                    <p>You can now configure a landing page for a role. The configured landing page includes the application page and the tab to open. 
+				When a user with that role logs into Platform, the configured page opens with the configured tab selected.</p>
+                                                    <p>To configure a landing page for a role:</p>
+                                                    <ol>
+                                                        <li value="1">Navigate to the <span class="wintitle">Setup Home</span> page.</li>
+                                                        <li value="2">Select <span class="uicontrol">Roles</span>.</li>
+                                                        <li value="3">Select <span class="uicontrol">Pages</span> next to the role for which you want to
+					configure the landing page. <div class="fig"><p><img alt="Role Pages" src="nor1455631308792.jpg" /></p></div>The <span class="wintitle">Assign Page Versions</span> page opens.</li>
+                                                        <li value="4">Select the <span class="uicontrol">Configure landing page for the role</span> check
+					box.</li>
+                                                        <li value="5">From the <span class="uicontrol">Select Application</span> drop-down list, select an
+					application.</li>
+                                                        <li value="6">From the <span class="uicontrol">Select Tab</span> drop-down list, select a tab.<div class="fig"><p><img alt="Assign Landing Page" src="rmm1455631332932.jpg" /></p></div></li>
+                                                        <li value="7">Click <span class="uicontrol">Save</span>. When a user with that
+					role logs in, the configured application will open with the configured tab
+					selected.</li>
+                                                    </ol>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="AbilitytochangeuploadedfilewithoutchangingitsURL" data-magellan-target="AbilitytochangeuploadedfilewithoutchangingitsURL">Ability to change uploaded file without changing its URL</h2>
+                                                    <p>Prior to this release, if you changed a File Upload field by uploading a
+				different file, a new URL would be generated for the uploaded file. This could
+				result in outdated links for applications using that URL. In this release, the URL
+				for the newly uploaded file does not change. <div class="note"><b>Note: </b>This feature is
+					only for File Upload fields that are publicly available. Configure a File Upload
+					field to be publicly available by selecting <span class="uicontrol">Make
+						files publicly available</span> for that field. </div></p>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="AdditionalpagesizesforPDFs" data-magellan-target="AdditionalpagesizesforPDFs">Additional page sizes for PDFs</h2>
+                                                    <p>For document templates, HTML template reports, and document template reports, Platform now
+				supports all PD4ML-supported sizes for <span class="uicontrol">Page Size</span> as well as
+				custom sizing. In all cases, you must select <span class="uicontrol">Render as PDF</span> to
+				enable the <span class="uicontrol">Page Size</span> option.</p>
+                                                    <p>The following screen shows the <span class="uicontrol">Page Size</span> options for a document
+					template:<div class="fig"><p><img alt="Page Size for PDF" src="eqj1456330892305.jpg" /></p></div></p>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="Conditionalfieldlevelpermissions" data-magellan-target="Conditionalfieldlevelpermissions">Conditional field-level permissions</h2>
+                                                    <p>You can now specify conditional formulas for field-level view and edit
+				permissions. Each formula must return <code>true</code> or
+					<code>false</code>. If the formula returns <code>true</code>, that permission is granted for the specified
+				role. If the formula returns <code>false</code>, that
+				permission is not granted for the specified role.</p>
+                                                    <p>For <span class="uicontrol">View</span> or
+					<span class="uicontrol">Edit</span> permission, you can specify <span class="uicontrol">Yes</span>, <span class="uicontrol">No</span>, or
+					<span class="uicontrol">Conditional Formula</span> by selecting a radio
+				button for each role as shown below:</p>
+                                                    <div class="fig">
+                                                        <p>
+                                                            <img alt="Field Level Permissions" src="zny1456168650337.jpg" />
+                                                        </p>
+                                                    </div>
+                                                    <p>The following screen shows a condition formula. In this example, the
+					<span class="uicontrol">createdBy</span> field (whose value is a user link), must equal
+				the current user to grant edit permission on the <span class="uicontrol">Comments</span>
+				field.</p>
+                                                    <div class="fig">
+                                                        <p>
+                                                            <img alt="Conditional Formula" src="vtj1455821140106.jpg" />
+                                                        </p>
+                                                    </div>
+                                                    <p>Note the following when implementing conditional edit permission:</p>
+                                                    <ul>
+                                                        <li>For performance reasons, keep conditional formulas short.</li>
+                                                        <li>To grant edit permission on a field, you must also grant view permission on that
+					field. This applies to both non-conditional and conditional permissions.</li>
+                                                        <li>Edit permission is granted for any use that creates or updates records,
+					including Edit pages, Mass Update pages, and inline editing.</li>
+                                                        <li>For mass updates, Platform updates only those records for which the
+						condition formula returns <code>true</code>.</li>
+                                                        <li>When updating records using SOAP, REST, and Server APIs, Platform does not use
+					conditional permissions. </li>
+                                                    </ul>
+                                                    <p>The REST method <code>getPermissionsByRole</code> now outputs <code>conditional</code>
+				for fields with conditional permissions. See <a href="getPermissionsByRole.htm" class="MCXref xref">getPermissionsByRole</a> for details.</p>
+                                                    <p>The REST method <code>setPermissionsByRole</code> now includes the following parameters
+				for conditional permissions:<ul><li><code>viewConditionScript</code> — The condition script for
+							<code>view</code> permission as a base64-encoded string. To grant
+						conditional <code>view</code> permission, specify <code>view</code>
+						in the <code>permissions</code> parameter in addition to this
+						parameter.</li><li><code>editConditionScript</code> — The condition script for
+							<code>edit</code> permission as a base64-encoded string. To grant
+						conditional <code>edit</code> permission, specify <code>edit</code>
+						in the <code>permissions</code> parameter in addition to this
+						parameter.</li></ul> See <a href="setPermissionsByRole.htm" class="MCXref xref">setPermissionsByRole</a> for details.</p>
+                                                    <p>For more information about field-level permissions, see <a href="Setting_field-level_permissions.htm" class="MCXref xref">Setting field-level permissions</a></p>
+                                                </div>
+                                                <div class="section"><a name="non-admin"></a>
+                                                    <h2 class="sectiontitle" id="Newadministrativepermissionsfornonadministrativeroles" data-magellan-target="Newadministrativepermissionsfornonadministrativeroles">New administrative permissions for non-administrative roles</h2>
+                                                    <p>This release introduces new administrative permissions for non-administrative roles. This
+				allows you to appoint users with a particular role to be able to manage roles and
+				users, and to enable and disable support access from the master tenant, without
+				granting them full administrative permissions.</p>
+                                                    <p>The following permissions are now available:</p>
+                                                    <ul>
+                                                        <li><span class="uicontrol">Manage Roles</span> — Users with this permission can create and edit roles.
+					They can only create roles with the same set of permissions as their own role or
+					with a subset of those permissions. They cannot manage the Administrator role or
+					their own role. They cannot assign any administrative permissions to any
+					role.</li>
+                                                        <li><span class="uicontrol">Manage Users</span> — Users with this
+					permission can edit users if they have the appropriate permissions on the User
+					object. They cannot assign the Administrator role to a user.</li>
+                                                        <li><span class="uicontrol">Configure Support Access</span> — Users with this permission can
+					enable and disable support access from the master tenant.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="section"><a name="post-install-script"></a>
+                                                    <h2 class="sectiontitle" id="Newpostinstallscriptforapplications" data-magellan-target="Newpostinstallscriptforapplications">New post install script for applications</h2>
+                                                    <p>You can now create a post install script that will be executed after an
+				application is installed during customer creation. For example, if you want the new
+				customer's first user to have a custom role instead of the default Administrator
+				role, you can write a post install script for the Platform application that changes
+				the first user's role to a custom role (see <a href="#non-admin" class="MCXref xref">Pagination Control, Responsive Image Fields,  and Custom Reports</a>). If
+				multiple applications are installed during customer creation, Platform executes each
+				application's post install script in the order in which the applications are
+				installed.</p>
+                                                    <p>To create a post install script for an application:</p>
+                                                    <ol>
+                                                        <li value="1">Navigate to the setup page for an application to be installed during
+						customer creation.</li>
+                                                        <li value="2">Click <span class="uicontrol">Post Install Script</span>.<div class="fig"><p><img alt="Click Post Install Script" src="pbk1456326412191.jpg" /></p></div></li>
+                                                        <li value="3">Click <span class="uicontrol">Edit Post Install Script</span>.</li>
+                                                        <li value="4">Edit the script as desired.<div class="note"><b>Note: </b><p>If the post install script's purpose is to
+							create a tenant with no administrator, you can access the automatically
+							created user with the Administrator role and change the role to a custom
+							role with some administrative permissions. For
+							example:</p><pre>var objId = rbv_api.selectNumber
+   ("SELECT id FROM USER where role =90"); // Administrator role's original ID is always 90
+var role = rbv_api.stringToJson(rbv_api.getRoleById("868114")); // Custom role with admin permissions
+rbv_api.setFieldValue("USER",objId,"role",role.code); // Set user's role to custom role</pre></div></li>
+                                                        <li value="5">Click <span class="uicontrol">Save</span>.</li>
+                                                    </ol>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="NewsharedpropertyAllowAdminLessTenant" data-magellan-target="NewsharedpropertyAllowAdminLessTenant">New shared property AllowAdminLessTenant</h2>
+                                                    <p>The new shared property <code>AllowAdminLessTenant</code>, when set to <code>true</code>, enables tenants without administrative users.
+				Does not apply to the master tenant. Defaults to <code>false</code>. </p>
+                                                    <p>See <a href="#non-admin" class="MCXref xref">Pagination Control, Responsive Image Fields,  and Custom Reports</a> for
+				information about administrative permissions for non-administrative roles.</p>
+                                                    <p>See <a href="#post-install-script" class="MCXref xref">Pagination Control, Responsive Image Fields,  and Custom Reports</a> for
+				information about creating a tenant without administrative users.</p>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="Customreportsbeta" data-magellan-target="Customreportsbeta">Custom reports (beta)</h2>
+                                                    <p>This release includes a beta version of custom reports. A custom report can
+				include multiple sections and sub-sections with no limit on the number of sections
+				or the depth of sub-sections. You can use custom reports to build rich, highly
+				customized documents to present your application's data. </p>
+                                                    <p>Features of custom reports include:</p>
+                                                    <ul>
+                                                        <li>A <span class="wintitle">Report Builder</span> where you design
+					and organize report sections and sub-sections</li>
+                                                        <li>Special tokens you can use to easily access records used in the
+					report</li>
+                                                        <li>The ability to preview a report directly from the <span class="wintitle">Report
+							Builder</span></li>
+                                                        <li>A Table of Contents section that you can place anywhere in a report</li>
+                                                        <li>A section that loops through a list of records. You can control the order
+					of execution and filter the set of records on which to execute the loop.</li>
+                                                        <li>A Sub-Report section that inserts an existing report into the custom
+					report.</li>
+                                                    </ul>
+                                                    <p>For more information about custom reports, see <a href="Selecting_a_Custom_Report_Type.htm" class="MCXref xref">Selecting a Custom Report Type</a>.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu-container">
+                                            <div data-sticky-container="" id="7Ee0XLb80U2KfPeV9n9t5g">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="7Ee0XLb80U2KfPeV9n9t5g:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="small" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_topic_menu mc-component">
+                                                        <li class="tree-node"><a href="#PaginationControlResponsiveImageFieldsandCustomReports">Pagination Control, Responsive Image Fields,  and Custom Reports</a>
+                                                        </li>
+                                                        <li>
+                                                            <ul>
+                                                                <li class="tree-node"><a href="#Paginationcontrolattopforrecordlistcomponents">Pagination control at top for record list components</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#SizingrecordlistcolumnsasanHTMLtable">Sizing record list columns as an HTML table</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Responsiveimagefields">Responsive image fields</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Rolebasedlandingpages">Role-based landing pages</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#AbilitytochangeuploadedfilewithoutchangingitsURL">Ability to change uploaded file without changing its URL</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#AdditionalpagesizesforPDFs">Additional page sizes for PDFs</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Conditionalfieldlevelpermissions">Conditional field-level permissions</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Newadministrativepermissionsfornonadministrativeroles">New administrative permissions for non-administrative roles</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Newpostinstallscriptforapplications">New post install script for applications</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#NewsharedpropertyAllowAdminLessTenant">New shared property AllowAdminLessTenant</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Customreportsbeta">Custom reports (beta)</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="right-align"><a class="footer1" href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/linkedin-2--v1.png" alt="Linkedin" /></a><a class="footer1" href="https://twitter.com/InfiniteBlueHQ" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/twitter.png" alt="Twitter" /></a><a class="footer1last" href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/0572ed/youtube-play.png" alt="YouTube" /></a>
+                                        </div>
+                                        <div class="right-align-2"><a class="footer2" href="https://www.infiniteblue.com" target="_blank">Copyright © 2024 Infinite Blue. All Rights Reserved.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

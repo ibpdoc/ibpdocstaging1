@@ -1,0 +1,68 @@
+﻿/*Tab Version Selector*/ 
+
+.tabs 
+{ 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+    position: relative; 
+    z-index: 0; 
+} 
+
+.tabs:after 
+{ 
+    position: absolute; 
+    content: ""; 
+    width: 100%; 
+    bottom: 0; 
+    left: 0; 
+    border-bottom: 1px solid grey; 
+    z-index: 1; 
+} 
+
+.tab-link 
+{ 
+    display: inline-block; 
+    float: left; 
+    margin-bottom: 0; 
+    position: relative; 
+} 
+
+.tab-link > a 
+{ 
+    display: block; 
+    color: black; 
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none; 
+} 
+
+.tab-link > a:hover 
+{ 
+    background-color: #e3f1f7; 
+    font-weight: bold; 
+    color: #783fad; 
+    cursor: pointer; 
+} 
+
+.tab-link > a:active 
+{ 
+    font-weight: bolder; 
+} 
+
+.tab-link.current 
+{ 
+    border-right: 1px solid grey; 
+    border-top: 1px solid grey; 
+    border-left: 1px solid grey; 
+    border-bottom: 0px solid white; 
+    background: white; 
+    z-index: 100; 
+} 
+
+.tab-link.current > a 
+{ 
+    color: #4b0082; 
+    font-weight: bold; 
+} 

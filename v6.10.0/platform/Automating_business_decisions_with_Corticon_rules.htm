@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="concept _Skins_IBP_sidenav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Adding business logic " data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Automating business decisions with Corticon rules</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Main_Styles.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-164223934-1">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-164223934-1');
+	/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Welcome.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="sel-dropdown">Documentation Version 
+			<select id="versionSelect"><option value="v6.10.0">6.10.0</option><option value="v6.9.0">6.9.0</option><option value="v6.8.0">6.8.0</option><option value="default">6.11.0</option></select><script>/* <![CDATA[ */
+				const select = document.querySelector('#versionSelect');
+				select.addEventListener('change', function() {
+				const selectedVersion = this.value;
+				const currentUrl = window.location.href;
+				let newUrl = '';
+
+				if (selectedVersion !== "default") {
+				if (currentUrl.match(/\/v\d+(\.\d+(\.\d+)?)?\//) === null) {
+				const tempURL = new URL(currentUrl);
+				newUrl = tempURL.protocol + '//' + tempURL.hostname + '/' + selectedVersion + tempURL.pathname;
+				} else {
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, `/${selectedVersion}/`);
+				}
+				} else {
+				// If "default" is selected, remove the versioned part from the URL
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, '/');
+				}
+
+				window.location.href = newUrl;
+				});
+		/* ]]> */</script></div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div class="home-container">
+                                        <div class="topic-body">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 class="concepttitle" id="AutomatingbusinessdecisionswithCorticonrules" data-magellan-target="AutomatingbusinessdecisionswithCorticonrules">Automating business decisions with Corticon rules</h1>
+                                                <p>Progress Corticon is a Business Rules Management
+			System with a patented rules engine that enables you to automate sophisticated decisions
+			without writing code. To add these capabilities to your app, use a <span class="uicontrol">Corticon Decision
+				Service</span> trigger. The trigger sends application data in a request. The
+			Decision Service uses the request values as input to its rules and sends the results
+			back to the trigger. You can configure the results to be mapped into existing and/or new
+				<span class="mc-variable IB.ProductName variable">Platform</span> records. </p>
+                                                <p>For example, a trigger might send information about an insurance applicant —
+			such as age, gender, and health history — to a Decision Service configured with complex
+			rules defining cost and coverage. The Decision Service could return a quote along with
+			information that explains the decision.</p>
+                                                <p>To configure a <span class="uicontrol">Corticon Decision Service</span> trigger, you need the
+				following:<ul><li>Access to a Decision Service compiled on and deployed using
+						Corticon server version 5.6 or
+					later. </li><li>An understanding of the data expected by the Decision Service
+					and expected results.</li></ul></p>
+                                                <p>When configuring a trigger to invoke a Decision Service, you use a visual
+			mappper to associate fields from <span class="mc-variable IB.ProductName variable">Platform</span>
+			objects with attributes and messages of Corticon entities. The Decision Service generates messages to
+			communicate the results of rule execution. You can map object fields to entity
+			attributes and messages of compatible data types or data types for which <span class="mc-variable IB.ProductName variable">Platform</span> can provide conversion. The visual mapper
+			indicates the data type next to object and entity fields, as shown below, where age is
+			an integer and gender is text.<div class="fig"><p><img alt="Data Type Icons" src="nye1477579968932.jpg" /></p></div></p>
+                                                <p>You can map fields from the object on which the trigger is defined and from
+			objects directly related to it. For example, if a trigger belongs to object A and object
+			A has a relationship with object B, while object B has a relationship with object C, you
+			can map fields from A and B — but not from C, as illustrated below. The same rule
+			applies to Corticon entities. <img alt="Supported mapping between Rollbase and Corticon" src="seu1479324079324.jpg" /></p>
+                                                <p>The trigger supports mappings between related objects and entities with
+			"to-many" cardinalities. When multiple related records and entities exist on both sides,
+			the trigger handles them in the request and response. If the cardinality of the
+			relationship for mapped items does not match, the trigger limits the scope of recursion.
+			For example, if a field in an object with many records is mapped to an attribute in an
+			entity with a cardinality of one, the trigger sends only the values from the first
+			related record in the request. Likewise, on the decision service side. When a mapping
+			exists from an entity or message with a to-many association cardinality to a field in an
+			object with a cardinality of one, only the response or message from the first matching
+			entity will be returned. See <a href="Supported_relationships_for_request_mapping.htm" class="MCXref xref">Supported relationships for request mapping</a> and <a href="Supported_relationships_for_response_mapping.htm" class="MCXref xref">Supported relationships for response mapping</a> for details.</p>
+                                                <p><span class="mc-variable IB.ProductName variable">Platform</span> relationship and Corticon association cardinality notation displays in
+			the mapping tool as follows:<ul><li> (*) — Indicates a multiple relationship with the base object or
+					base entity</li><li>(1) — Indicates a single relationship with the base object or
+					base entity</li></ul></p>
+                                                <p>The following screen shows the cardinality notation of the relationships
+			between <span class="uicontrol">Car</span> and <span class="uicontrol">Message</span> and <span class="uicontrol">Car</span> to <span class="uicontrol">Person</span>:<div class="fig"><p><img alt="Relationship Cardinality" src="jkc1478008133417.jpg" /></p></div></p>
+                                                <p>See the following topics for detailed information about how relationships and
+			cardinality affect mapping:<ul><li><a href="Supported_relationships_for_request_mapping.htm" class="MCXref xref">Supported relationships for request mapping</a></li><li><a href="Supported_relationships_for_response_mapping.htm" class="MCXref xref">Supported relationships for response mapping</a></li></ul>The visual mapper allows you to filter entities in its tree structure so that you
+			can focus on the items of interest. You can select different sets of entities to display
+			in the request mapping and in the response mapping. If no entities are selected, the
+			tree structure displays all entities in the Decision Service. Filtering has no effect on
+			the mappings. Although they disappear when filtered out, just remove the filter to view
+			them again.</p>
+                                                <p><span class="mc-variable IB.ProductName variable">Platform</span> generates the trigger formula to access the Corticon Decision Service and handle the response. A portion of
+			the formula contains methods that you can override to provide custom functionality. For
+			example, you might want to insert logic in the generated trigger code to capture
+			information about the Decision Service and save it as <span class="mc-variable IB.ProductName variable">Platform</span> data. Information such as time when a Decision Service was
+			invoked, the request data, and the response data could be useful when debugging or to
+			review events that occurred during normal operation.</p>
+                                            </div>
+                                        </div>
+                                        <div class="menu-container">
+                                            <div data-sticky-container="" id="ZQXf0VbnL0W5AnyDqqdf0g">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="ZQXf0VbnL0W5AnyDqqdf0g:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="small" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_topic_menu mc-component">
+                                                        <li class="tree-node"><a href="#AutomatingbusinessdecisionswithCorticonrules">Automating business decisions with Corticon rules</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="MCMiniTocBox_0 miniToc nocontent" data-mc-autonum="Related Topics:" data-mc-depth="1" data-mc-toc="True"><span class="autonumber"><span class="miniTocBoxTitle">Related Topics:</span></span>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="right-align"><a class="footer1" href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="../Resources/Images/Home/linkedin.png" alt="Linkedin" style="width: 35px;height: 35px;" /></a><a class="footer1last" href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="../Resources/Images/Home/youtube.png" alt="YouTube" style="width: 35px;height: 35px;" /></a>
+                                        </div>
+                                        <div class="right-align-2"><a class="footer2" href="https://www.infiniteblue.com" target="_blank">Copyright © 2024 Infinite Blue. All Rights Reserved.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

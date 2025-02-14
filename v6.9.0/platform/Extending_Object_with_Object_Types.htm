@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Side_Nav_2023_feb" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Designing a Platform application|Application foundation|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Extending Object with Object Types</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/ib_platform.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-164223934-1">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-164223934-1');
+	/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Welcome.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style=" text-align: right; color:white; font-size: 9pt; background:#001649 ; margin-bottom: 15px; padding: 4px 12px; ">Documentation Version 
+			<select id="versionSelect"><option value="v6.9.0">6.9.0</option><option value="v6.10.0">6.10.0</option><option value="default">6.11.0</option><option value="v6.8.0">6.8.0</option></select><script>/* <![CDATA[ */
+				const select = document.querySelector('#versionSelect');
+				select.addEventListener('change', function() {
+				const selectedVersion = this.value;
+				const currentUrl = window.location.href;
+				let newUrl = '';
+
+				if (selectedVersion !== "default") {
+				if (currentUrl.match(/\/v\d+(\.\d+(\.\d+)?)?\//) === null) {
+				const tempURL = new URL(currentUrl);
+				newUrl = tempURL.protocol + '//' + tempURL.hostname + '/' + selectedVersion + tempURL.pathname;
+				} else {
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, `/${selectedVersion}/`);
+				}
+				} else {
+				// If "default" is selected, remove the versioned part from the URL
+				newUrl = currentUrl.replace(/\/v\d+(\.\d+(\.\d+)?)?\//, '/');
+				}
+
+				window.location.href = newUrl;
+				});
+		/* ]]> */</script></div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div class="home-container">
+                                        <div class="topic-body">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 id="ExtendingObjectwithObjectTypes" data-magellan-target="ExtendingObjectwithObjectTypes">Extending Object with Object Types</h1>
+                                                <p>The object type feature enables the app developers to define entities within the context of Object Type and the application which includes these “<b>Object Type</b>” to implement these entities. After enabling the “<b>Object Type</b>” attribute, the app developer can view an additional pop-up screen in the flow of entities created to select the “<b>Object Type</b>” for which the entity needs to be created.</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object.png" style="width: 311px;height: 106px;" alt="" />
+                                                </p>
+                                                <p>The object types extensibilities are explained for the following components:</p>
+                                                <ul style="list-style-type: square;">
+                                                    <li>
+                                                        <p><a href="#Fields">Fields</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Relationships">Relationships</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Pages">Pages</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Views">Views</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Templates">Templates</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Reports">Reports</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Triggers">Triggers</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Workflow">Workflow</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Batch_jobs">Batch jobs</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Data">Data Maps</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Card_View">Card View</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Import_Records">Import Records</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="#Application_Import/Export">Application Import/Export</a>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <p>&#160;</p>
+                                                <h2 id="Fields" data-magellan-target="Fields"><a name="Fields"></a>Fields</h2>
+                                                <p>Object types can inherit all the fields (as listed in the following Use-Case) from the “<b>Default</b>” type where the app developer can add more fields to the context of the specific object type except the ones mentioned in the <a href="#Limitations">limitations</a>.</p>
+                                                <h3 id="UseCase" data-magellan-target="UseCase">Use-Case</h3>
+                                                <p>For the object “<b>Issue</b>” which can have multiple sub-types with additional fields as shown in the following illustration:
+ 
+				</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Contents_1.png" style="width: 360px;height: 316px;" alt="" />
+                                                </p>
+                                                <p>The fields listed under the “<b>Default</b>” type are common across all other object types and each type is extended from the Default by adding its own fields and workflow.</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_1.png" style="width: 577px;height: 380px;" alt="" />
+                                                </p>
+                                                <h3 id="TextField" data-magellan-target="TextField">Text Field</h3>
+                                                <p>All the fields including the text field display the context of the “<b>Object Type</b>” for which it is being created. This information is also available on the field Edit &amp; View pages.
+				</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_2.png" style="width: 569px;height: 270px;" alt="" />
+                                                </p>
+                                                <h3 id="FormulaField" data-magellan-target="FormulaField">Formula Field</h3>
+                                                <p>In the Formula field, the template helper has all fields from the “<b>Default</b>” type and “<b>Epic</b>” object type.</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_3.png" style="width: 523px;height: 321px;" alt="" />
+                                                </p>
+                                                <h3 id="DocumentEmailTemplateField" data-magellan-target="DocumentEmailTemplateField">Document/Email Template Field</h3>
+                                                <p>The document/email template field can be created in the context of the Object Type. The “<b>Default Template</b>” field shown in the list of templates is defined for the corresponding object type.</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_4.png" style="width: 501px;height: 261px;" alt="" />
+                                                </p>
+                                                <h3 id="RelatedField" data-magellan-target="RelatedField">Related Field</h3>
+                                                <p>A related field can also be created in the context of Object type and the only corresponding relationship appears in the “<b>Related Object</b>” for defining the related field.</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_5.png" style="width: 568px;height: 245px;" alt="" />
+                                                </p>
+                                                <h3 id="IntegrationLinkField" data-magellan-target="IntegrationLinkField">Integration Link Field</h3>
+                                                <p>An integration link field can be created in the context of the corresponding object type and the template helper shows the fields related to the Object type along with the “<b>Default</b>” type.
+				</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_6.png" style="width: 424px;height: 386px;" alt="" />
+                                                </p>
+                                                <div class="note">
+                                                    <p><b>Note</b>:</p>
+                                                    <ul>
+                                                        <li>All other fields have a common behavior for the default type as described for the Text Field.</li>
+                                                        <li>Fields for “Default” types are supported as normal objects. But for other object types, some fields are not supported as mentioned in the <a href="#Limitations">Limitations</a>.</li>
+                                                    </ul>
+                                                </div>
+                                                <h2 id="Relationships" data-magellan-target="Relationships"><a name="Relationships"></a>Relationships</h2>
+                                                <p>Relationships for object types are supported as a normal object where the app developer can define the relationship between:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>“<b>Object Type</b>” and other “<b>Objects</b>”</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>“<b>Object Type</b>” and another object’s “<b>Object Type</b>”</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>“<b>Object Type</b>” and same “<b>Object Type</b>” within the same object (Hierarchical relationship)</p>
+                                                    </li>
+                                                </ul>
+                                                <p>Currently, relationships are not supported between 
+</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>any extensible and external objects.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>an “<b>Object Type</b>” to “<b>other Object Type</b>” within the same object.
+</p>
+                                                    </li>
+                                                </ul>
+                                                <p>Relationships can be created with the default object type with access to all object types and individual grid controls for every object type of that related object could be configured.
+For more information on grid control, see <a href="Adding_a_grid_control_to_a_page.htm">Adding a grid control to a page</a>.</p>
+                                                <p>
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_29.png" style="width: 953px;height: 150px;" alt="" />
+                                                </p>
+                                                <p>
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_30.png" style="width: 960px;height: 234px;" alt="" />
+                                                </p>
+                                                <h2 id="Pages" data-magellan-target="Pages"><a name="Pages"></a>Pages</h2>
+                                                <p>In Platform, pages are auto generated on the creation of an Object. Object type also supports dedicated pages for each object type. By default, pages are not auto generated by the system on the creation of any “<b>Object Type</b>”. All pages are inherited until the page for specific object type is created and assigned by the administrator. Pages for any object type can be created manually by the app developer using the “<b>Clone</b>” action over existing pages.</p>
+                                                <p>Pages can also be auto generated on the following actions:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>In addition to the fields of specific “<b>Object Type</b>” and “<b>Add to Pages and Views</b>” if any field is selected to be added on any of the “<b>Default</b>” type pages.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>In addition to the relationship of Object Type and adding the lookup field on the pages.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Customizing the Create/Edit/View pages using page designer.</p>
+                                                    </li>
+                                                </ol>
+                                                <h3 id="AssignPages" data-magellan-target="AssignPages">Assign Pages</h3>
+                                                <p>An app developer can add more than one page for a specific action of an object type like Create, Edit, Mass Update, etc. Each of these pages can be assigned to any role from the Assign Page Versions section as shown in the following screenshot.</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_7.png" style="width: 295px;height: 389px;" alt="" />
+                                                </p>
+                                                <h2 id="Views" data-magellan-target="Views"><a name="Views"></a>Views</h2>
+                                                <p>Views are also supported for the Object Types like Objects. On enabling the “<b>Object Type</b>” attribute a default view “<b>All &lt;Object Name&gt; (All type&gt;)</b>” is created which will show all records of all type. Along with it on creation of any “Object Type”, an “<b>All &lt;Object name&gt;  (&lt;Object Type&gt;)</b>” is also created. This view works within the context of the specific object type. This view created for the specific object type has all the fields of “<b>Default</b>” type and the fields added to that specific type and will not include fields from any other user-defined object type.</p>
+                                                <p>As the above use-case mentioned Issue object has an “<b>Epic</b>” object type. So the “<b>All Issues (Epics)</b>” view has access to all the fields of “<b>Default</b>” type and all the fields of the “<b>Epic</b>” type marked with type name in braces. So for the “<b>Epic</b>” object type, the app developer can create views around the following fields:
+</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_8.png" style="width: 432px;height: 224px;" alt="" /><![CDATA[ 
+]]></p>
+                                                <div class="note">
+                                                    <p><b>Note:</b>
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            <p>On enabling the “<b>Object Type</b>” for the object, a system-defined view (which cannot be deleted) is created which shows records from All Type with all “<b>Default</b>” type fields, as they are common across all types.</p>
+                                                            <p>
+                                                                <img src="../img/Extensible_Objects/Extending_Object_with_Object_9.png" style="width: 479px;height: 89px;" alt="" />
+                                                            </p>
+                                                        </li>
+                                                        <li>Cloning an "<b>All Type</b>" view carries forwards the "<b>All Types</b>" property and which can be used by the app developer to enable different views.</li>
+                                                    </ul>
+                                                </div>
+                                                <h3 id="ConfiguringObjectTypesonListView" data-magellan-target="ConfiguringObjectTypesonListView">Configuring Object Types on List View </h3>
+                                                <p>New Object type records can be quickly and easily created  from the application's list view. With this, specific object type record creations can be configured from the <b>Page Editor</b>. To add/remove any object types from the available list of object types, do the following:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Navigate to the application's object you want to edit and click <span class="uicontrol">Design This Page</span> to open the Page Editor.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Open the object's list view properties.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>The Selected Object Types section list out the object types which are available for list views and record creations.</p>
+                                                        <p>
+                                                            <img src="../img/Extensible_Objects/Extending_Object_with_Object_31.png" alt="" />
+                                                        </p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Save the page.</p>
+                                                    </li>
+                                                </ol>
+                                                <h2 id="Templates" data-magellan-target="Templates"><a name="Templates"></a>Templates</h2>
+                                                <p>All types of templates support the object type attribute and the app developer can create the templates for any specific object types. The context for this template is the “<b>Object Type</b>” which is selected while creating the template. The app developers can see all fields in the Template Helper related to Object Type &amp; Default only. The templates defined for the “<b>Default</b>” type are available at all other Object types as all the object types extend the “<b>Default</b>” type.</p>
+                                                <p>When a relationship is created against the default object type, tokens for all types are listed under one object <code>Related Object Name&gt;(Default)</code> and are grouped based on object type.</p>
+                                                <h3 id="EmailTemplate" data-magellan-target="EmailTemplate">Email Template</h3>
+                                                <p>Email template within object type will provide capability to define a email template for specific object type and it works only with Default &amp; corresponding object type fields, can be used only for corresponding object type records. Entities created for corresponding object type can only have access to the template defined within the object type.</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_10.png" style="width: 544px;height: 380px;" alt="" />
+                                                </p>
+                                                <h3 id="DocumentTemplate" data-magellan-target="DocumentTemplate">Document Template</h3>
+                                                <p>Document template within specific object type are meant to work for records of corresponding object type.</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_11.png" style="width: 545px;height: 336px;" alt="" />
+                                                </p>
+                                                <h3 id="RecordTemplate" data-magellan-target="RecordTemplate">Record Template</h3>
+                                                <p>Record template as well can be defined for any object type for specific record of that type to use as template and it will work for corresponding object type only. This will be available in corresponding type of entity for further usage.</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_12.png" style="width: 515px;height: 154px;" alt="" />
+                                                </p>
+                                                <p> 
+		For example, while creating a template for Epic type, the app developer can view the following options in the template helper. All the fields of the “<b>Default</b>” type and “<b>Epic</b>” type can be accessed by the app developer where the Epic type fields are marked with object type name appended with the field name.</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_13.png" style="width: 476px;height: 348px;" alt="" />
+                                                </p>
+                                                <h2 id="Reports" data-magellan-target="Reports"><a name="Reports"></a>Reports</h2>
+                                                <p>The object type attribute supports all types of reports. Reports can be defined in the context of the Object Type. Similar to other entities, reports have the accessibility of fields and union of “<b>Default</b>” and specific object type.</p>
+                                                <p>Reports defined for the “<b>Default</b>” type are available for other Object types as all object types extend the “<b>Default</b>” type.
+The following are the instances for different reports which can be created for the “<b>Epic</b>” type:</p>
+                                                <h3 id="TabularReport" data-magellan-target="TabularReport">Tabular Report</h3>
+                                                <p>The tabular report can be built for any specific object type and the context for the reports is the “<b>object Type</b>” for which the report is created. This report is not available in other Object Type. For example, a tabular report is created for Epic status by Fix Version, sorted by Workflow Status &amp; Assigned to and can have further layers (using Epic-Release relationship) added if the Epic is spread across versions/releases.</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_14.png" style="width: 581px;height: 352px;" alt="" />
+                                                </p>
+                                                <h3 id="DocumentTemplateReport" data-magellan-target="DocumentTemplateReport">Document Template Report</h3>
+                                                <p>A document template report works similar to other reports where the app developer can select the “<b>Object</b>” to create a “<b>Document Template Report</b>” and then set the context for the report. Based on the object type in the context, the report provisions the fields to be used which is “<b>Default</b>” and the specific object type. </p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_16.png" style="width: 512px;height: 481px;" alt="" />
+                                                </p>
+                                                <h3 id="HTMLTemplateReport" data-magellan-target="HTMLTemplateReport">HTML Template Report</h3>
+                                                <p>An HTML template report can be created for “<b>Object type</b>” and similar to other entities the context is as per the selection of object type.
+For example, the following HTML Template report is created for the “<b>Epic</b>” object type and the template helper shows the fields in the context of <b>Epic</b> &amp; <b>Default</b> type.
+</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_17.png" alt="" />
+                                                </p>
+                                                <h3 id="JavascriptReport" data-magellan-target="JavascriptReport">Javascript Report</h3>
+                                                <p>A javascript report can be created for the “<b>Object Type</b>” and the report needs to be in the context of the corresponding object type for which the report is created.
+For example, the following javascript report for the “<b>Epic</b>” type shows views of “<b>Default</b>” and “<b>Epic</b>” type for looping.</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_18.png" alt="" />
+                                                </p>
+                                                <h3 id="RecordSpecificCustomReport" data-magellan-target="RecordSpecificCustomReport">Record Specific Custom Report</h3>
+                                                <p>A record specific custom report can be created for a specific “<b>Object Type</b>” where all the fields are listed from the “<b>Default</b>” and “<b>Object type</b>”.
+For example, the following report is built for the “<b>Epic</b>” object type and the token helper shows all the fields from the “<b>Default</b>” and “<b>Epic</b>” object type.</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_19.png" alt="" />
+                                                </p>
+                                                <h3 id="AllRecordsCustomReport" data-magellan-target="AllRecordsCustomReport">All Records Custom Report</h3>
+                                                <p>All records custom reports can be created for the “<b>Object Type</b>” and the custom reports can work with any objects within that application. So the context for the report is based on the selected source object and related object and object type. 
+</p>
+                                                <p>All section types do support the object types. For Sub-Report <i>Section Type</i>, the report drop-down populates the non-custom reports of the Default type and the type of the parent report. For example, the following All record custom report is created for the “<b>Epic</b>” object type and in the source object dropdown, only types associated with the application are listed if app context is available.</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_20.png" style="width: 549px;height: 453px;" alt="" />
+                                                </p>
+                                                <h2 id="Triggers" data-magellan-target="Triggers"><a name="Triggers"></a>Triggers</h2>
+                                                <p>Triggers can be created for any specific “<b>Object Type</b>” and are invoked in the context of the records belonging to the corresponding object type. Similar to other entities, triggers defined for the “<b>Default</b>” Type is inherited to the object type.</p>
+                                                <p>
+For example, if an app developer creates an “<b>on create</b>” timing Trigger for the “<b>Epic</b>” object type and if “<b>Default</b>” object type also has an “<b>on create</b>” timing trigger defined. </p>
+                                                <p>The following behavior can be observed:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p><b>Default Record create</b>: On creating the “<b>Default</b>” type record, “<b>Default Triggers</b>” is invoked without invoking any other trigger.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p><b>Epic record creat</b>e: On creating the “<b>Epic</b>” type record, both “<b>Default Trigger</b>” and “<b>Epic Trigger</b>” are invoked (as epic type inherits all the triggers of “<b>Default</b>”).</p>
+                                                        <p style="text-align: center;">
+                                                            <img src="../img/Extensible_Objects/Extending_Object_with_Object_21.png" style="width: 473px;height: 102px;" alt="" />
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <p>All different triggers show the fields and information with the context of the corresponding “<b>object Type</b>” and “<b>Default</b>” type.</p>
+                                                <h3 id="RunTriggerScope" data-magellan-target="RunTriggerScope">Run Trigger Scope</h3>
+                                                <p>Select the object type for the Run Triggers action scope. Any selection made against the	non-default type, lists all the triggers tagged against the default object type and the selected object type (if any). Selected triggers will run for all the records tagged against selected object type. Even if  the "<b>Default</b>" trigger is selected for "<b>type-1</b>" run triggers action - the trigger runs only on all "<b>type-1</b>" records.</p>
+                                                <h3 id="UniqueRecordsCombinationTriggersScope" data-magellan-target="UniqueRecordsCombinationTriggersScope">Unique Records Combination Triggers Scope</h3>
+                                                <p>Select the object type while creating this trigger.</p>
+                                                <p><u>For triggers created against the default object type</u> - Unique combination of fields are evaluated against all the records. This is due to the default fields being a part of all the records of the object definition irrespective of type.</p>
+                                                <p><u>For triggers created against non-default object type</u> - Unique combination of fields are evaluated against the records tagged with non-default object type (even if they are default or non-default fields).</p>
+                                                <h3 id="RunTriggersonRelatedRecords" data-magellan-target="RunTriggersonRelatedRecords">Run Triggers on Related Records</h3>
+                                                <p>A trigger can be created against any related object type by selecting the appropriate type from the drop-down menu during the creation process. Selected related triggers from the <b>Group of Triggers</b> run based on the above <b>Relationship Object Type</b>.</p>
+                                                <h2 id="Workflow" data-magellan-target="Workflow"><a name="Workflow"></a>Workflow</h2>
+                                                <p>Workflow can be defined for any object type where each process belongs to a specific object type. The process defined for the “<b>Default</b>” type is available for every other object. The same implies to “<b>Workflow Action</b>” and “<b>Workflow Status</b>”.</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_22.png" style="width: 648px;height: 420px;" alt="" />
+                                                </p>
+                                                <div class="note"><![CDATA[ 
+			]]><b>Note:</b><ul><li><p>There can be more than one process for the specific Object Type (as the Default type process is common across all types). A Process Selector is needed on the record Create/Edit page. By default, all “Object Type” defaults are selected to the “Default” process.</p></li><li><p>It is mandatory for an “Object Type” to create or select an existing Workflow Process for its Workflow Status &amp; Workflow Action.</p></li></ul></div>
+                                                <h2 id="Batchjobs" data-magellan-target="Batchjobs"><a name="Batch_jobs"></a>Batch jobs</h2>
+                                                <p>Batch jobs (Scheduled FTP Import and Data Maintenance) which used to work on a single object scope can now be selected against a single object type scope in order to get support on extensible objects. This determines the scope of the set of records against which the batch job action is performed. This provides flexibility on defining operation to work on records belonging to the same object type only. Likewise, in order to perform the similar action on all other records of extensible object, batch job should be defined per object type.
+</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_23.png" style="width: 562px;height: 158px;" alt="" />
+                                                </p>
+                                                <p><a name="Data_Maps"></a>
+                                                </p>
+                                                <h2 id="DataMaps" data-magellan-target="DataMaps"><a name="Data"></a>Data Maps</h2>
+                                                <p>Object Type can have “<b>Data Maps</b>“ defined for every object type. Similar to other entities, data maps also work in the context of the Object type and have access to all the fields of “<b>Default</b>” and corresponding type.</p>
+                                                <p>For example, the following data map is created to convert the record of “<b>Epic</b>” to “<b>Bug</b>” type.</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_24.png" style="width: 459px;height: 379px;" alt="" />
+                                                </p>
+                                                <div class="note"><b>Note:</b>
+                                                    <ul>
+                                                        <li>
+                                                            <p>Data import is allowed per “<b>Object Type</b>” where the Object type column is required for the import.  It is not required for the object type column in spreadsheet or csv file to be mentioned. It is pre-selected via UI controls, Batch jobs or Data maps at the metadata layer.</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <h2 id="CardView" data-magellan-target="CardView"><a name="Card_View"></a>Card View</h2>
+                                                <p>Alike the list views, a Card view can also be created against the Object Type attribute. While creating new a card view, the choice of the object type can be read seamlessly from current list view. List of the available fields for the card design is based on the card’s object type.</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_25.png" style="width: 589px;height: 266px;" alt="" />
+                                                </p>
+                                                <h2 id="ImportRecords" data-magellan-target="ImportRecords"><a name="Import_Records"></a>Import Records</h2>
+                                                <p>Like the other entities, Platform also enables the Import Record flow to support the Object type attribute. The app developer can import record to a specific object type from the import menu.
+</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_26.png" style="width: 616px;height: 170px;" alt="" />
+                                                </p>
+                                                <p>From the existing use-case scenario, on selection of a specific object type (<b>Epic</b>), the subsequent pages display Issue (<b>Epic</b>) accordingly. In the field mapping screen, only the object type specific and all the default type fields are displayed. That includes the object type displaying the set value (<b>Epic</b>).</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_27.png" style="width: 637px;height: 364px;" alt="" />
+                                                </p>
+                                                <h2 id="ApplicationImportExport" data-magellan-target="ApplicationImportExport"><a name="Application_Import/Export"></a>Application Import/Export</h2>
+                                                <p>Application Import or Export via application’s xml file carries all object types attached to the application. It is only possible to export a single object type of any extensible object of the application. The “<b>Default</b>” object type is always exported irrespective of its choice in the application attachment. Information about object types that are part of application can be viewed at the application’s tree diagram. </p>
+                                                <p>During the application xml export/import, selection of any entity is possible at the object type level even for a partial locked application. Herewith, selecting "<b>TYPE-1</b>" also ensures all other fields, triggers etc which are part of <b>TYPE-1</b> are also selected.
+ 
+</p>
+                                                <p style="text-align: center;">
+                                                    <img src="../img/Extensible_Objects/Extending_Object_with_Object_28.png" style="width: 607px;height: 387px;" alt="" />
+                                                </p>
+                                                <div class="note">Note: Other entities like Charts, Gauges, Button and Permissions will be supported in the upcoming releases.</div>
+                                            </div>
+                                        </div>
+                                        <div class="menu-container">
+                                            <div data-sticky-container="" id="zATgm_alUUiZYj7gFERUKw">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="zATgm_alUUiZYj7gFERUKw:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="small" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_topic_menu mc-component">
+                                                        <li class="tree-node"><a href="#ExtendingObjectwithObjectTypes">Extending Object with Object Types</a>
+                                                        </li>
+                                                        <li>
+                                                            <ul>
+                                                                <li class="tree-node"><a href="#Fields">Fields</a>
+                                                                </li>
+                                                                <li>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#UseCase">Use-Case</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#TextField">Text Field</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#FormulaField">Formula Field</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#DocumentEmailTemplateField">Document/Email Template Field</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#RelatedField">Related Field</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#IntegrationLinkField">Integration Link Field</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Relationships">Relationships</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Pages">Pages</a>
+                                                                </li>
+                                                                <li>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#AssignPages">Assign Pages</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Views">Views</a>
+                                                                </li>
+                                                                <li>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#ConfiguringObjectTypesonListView">Configuring Object Types on List View </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Templates">Templates</a>
+                                                                </li>
+                                                                <li>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#EmailTemplate">Email Template</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#DocumentTemplate">Document Template</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#RecordTemplate">Record Template</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Reports">Reports</a>
+                                                                </li>
+                                                                <li>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#TabularReport">Tabular Report</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#DocumentTemplateReport">Document Template Report</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#HTMLTemplateReport">HTML Template Report</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#JavascriptReport">Javascript Report</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#RecordSpecificCustomReport">Record Specific Custom Report</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#AllRecordsCustomReport">All Records Custom Report</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Triggers">Triggers</a>
+                                                                </li>
+                                                                <li>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#RunTriggerScope">Run Trigger Scope</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#UniqueRecordsCombinationTriggersScope">Unique Records Combination Triggers Scope</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#RunTriggersonRelatedRecords">Run Triggers on Related Records</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Workflow">Workflow</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Batchjobs">Batch jobs</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#DataMaps">Data Maps</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#CardView">Card View</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#ImportRecords">Import Records</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#ApplicationImportExport">Application Import/Export</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="right-align"><a class="footer1" href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/linkedin-2--v1.png" alt="Linkedin" /></a><a class="footer1" href="https://twitter.com/InfiniteBlueHQ" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/twitter.png" alt="Twitter" /></a><a class="footer1last" href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/0572ed/youtube-play.png" alt="YouTube" /></a>
+                                        </div>
+                                        <div class="right-align-2"><a class="footer2" href="https://www.infiniteblue.com" target="_blank">Copyright © 2024 Infinite Blue. All Rights Reserved.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+﻿table {
+  font-family: Segoe UI;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th {
+	font: Segoe UI;
+    font-size: 11pt;
+    color: #023660;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+
+td {
+	font: Segoe UI;
+    font-size: 10pt;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+
+tr:nth-child(even) {
+  background-color: #7cd0ea;
+}

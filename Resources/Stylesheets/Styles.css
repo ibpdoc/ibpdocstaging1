@@ -1,8 +1,26 @@
 /*<meta />*/
 
+@font-face 
+{
+	font-family: 'Inter';
+	src: url(../Fonts/Inter-Regular.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Inter Black';
+	src: url(../Fonts/Inter-Black.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Inter ExtraBold';
+	src: url(../Fonts/Inter-ExtraBold.ttf);
+}
+
 body
 {
-	font-family: Inter;
+	font-family: 'Inter';
 	font-size: 11pt;
 }
 
@@ -27,7 +45,7 @@ h1
 	font-weight: bold;
 	font-size: 2em;
 	color: #45494c;
-	font-family: Inter;
+	font-family: 'Inter';
 }
 
 h2
@@ -53,7 +71,7 @@ h4
 p
 {
 	font-size: 1em;
-	font-family: Inter;
+	font-family: 'Inter';
 }
 
 ol,
@@ -303,7 +321,7 @@ div.home-footer > div:nth-child(2)
 p.footer-sub
 {
 	color: #000;
-	font-family: Inter;
+	font-family: 'Inter';
 	font-size: 10pt;
 	margin: 0pt;
 }
@@ -483,7 +501,7 @@ p.select
 	line-height: 21px;
 	margin-top: 0pt;
 	margin-bottom: 0pt;
-	font-family: Inter;
+	font-family: 'Inter';
 }
 
 /* Select Dropdown styles End */
