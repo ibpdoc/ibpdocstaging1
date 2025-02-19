@@ -1,12 +1,8 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_sidenav2025" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Security and access control|User authentication" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_EB_IB_Topnav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
-        <meta http-equiv="Expires" content="0" />
-        <meta http-equiv="Pragma" content="no-cache" />
-        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
         <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
@@ -65,8 +61,8 @@
                     </ul>
                 </aside>
                 <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
-                    <div>
-                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (min-width: 1280px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
                             <div class="middle title-bar-section outer-row clearfix">
                                 <div class="menu-icon-container relative clearfix">
                                     <div class="central-account-wrapper">
@@ -165,118 +161,190 @@
                                         <div class="topic-body">
                                             <div role="main" id="mc-main-content">
                                                 <h1 id="MultiFactorAuthentication" data-magellan-target="MultiFactorAuthentication">Multi-Factor Authentication</h1>
-                                                <p>Multi-Factor Authentication (also termed as Two-Factor authentication or 2FA) is an authentication method in which a user is granted access to the <span class="mc-variable IB.ProductName variable">Platform</span> instance only after successfully demonstrating two pieces of evidence (or factors).</p>
-                                                <ol>
-                                                    <li value="1">
-                                                        <p>Knowledge (Known to the user) - <b>Password</b> (Login Credentials)</p>
-                                                    </li>
-                                                    <li value="2">
-                                                        <p>Possession (Possessed by the user) - <b>Security Token</b> (generated from any third-party authenticator app)</p>
-                                                    </li>
-                                                </ol>
-                                                <p>This mechanism provides an extra security layer by protecting the user from an unknown person breaching-in to gain access of the <span class="mc-variable IB.ProductName variable">Platform</span> instance. </p>
-                                                <p>A third-party authenticator mobile application like <a href="https://authy.com/" style="text-decoration: underline; font-weight: bold;">Authy</a> or <b style="text-decoration: underline;">Google Authenticator</b> enables two-factor authentication, usually by showing a randomly-generated and constantly refreshing code to use for authentication.</p>
-                                                <div class="note"><b>Note</b>: By default, this authentication setup is open for configuration on every tenant.</div>
-                                                <h2 id="Prerequisites" data-magellan-target="Prerequisites">Pre-requisites</h2>
+                                                <p>Multi-Factor Authentication (MFA), also known as Two-Factor Authentication (2FA), is an authentication method that grants users access to the platform only after successfully verifying two independent authentication factors. This enhances security by adding an extra layer of protection against unauthorized access.</p>
+                                                <p>MFA typically involves:</p>
                                                 <ul>
                                                     <li>
-                                                        <p>This authentication mechanism is only applicable if existing user profiles are authenticated via <b>Password</b> and not applicable to users if tied to any other authentication profiles like <b>SAML</b>, <b>Kerberos</b>, <b>LDAP</b>.</p>
+                                                        <p>Knowledge Factor (Something the user knows): Password (Login Credentials)</p>
                                                     </li>
                                                     <li>
-                                                        <p>If any user profile has both the security questions and multi-factor authentication enabled, the <b>Multi-Factor Authentication</b> verification shall take the precedence.</p>
+                                                        <p>Possession Factor (Something the user has): Security Token (Generated via a third-party authenticator app such as <a href="https://authy.com/" style="text-decoration: underline; font-weight: bold;">Authy</a> or <b style="text-decoration: underline;">Google Authenticator</b>)</p>
                                                     </li>
                                                 </ul>
-                                                <h2 id="FirstTimeConfiguration" data-magellan-target="FirstTimeConfiguration">First Time Configuration</h2>
-                                                <p>Once Multi-Factor Authentication is enabled for any user, on it's subsequent login, the user is displayed with a QR code which has to be scanned for a first time configuration. </p>
-                                                <p>The user can <u>scan the QR code</u> or <u>type the Client Secret key</u> in any third-party authenticator app (Authy/Google Authenticator) installed on the user's smartphone to initiate the configuration.</p>
-                                                <p style="text-align: left;">
-                                                    <img src="../img/MFA_1.png" style="width: 287px;height: 305px;" alt="" /> </p>
-                                                <p style="text-align: left;">
-                                                    <img src="../img/MFA_2.PNG" style="width: 233px;height: 303px;" alt="" />
-                                                </p>
-                                                <p>A security token (as seen in the image above) is  generated which needs to be entered in the <b>Verification Code</b> field of the login screen to complete the login into <span class="mc-variable IB.ProductName variable">Platform</span>.</p>
-                                                <p>This should complete the user's first time configuration for the Multi-Factor Authentication.</p>
-                                                <h2 id="LoginVerification" data-magellan-target="LoginVerification">Login Verification</h2>
-                                                <p>Once Multi-Factor Authentication is succesfully configured, anytime the user logs into <span class="mc-variable IB.ProductName variable">Platform</span> using the <b>User Name</b> and <b>Password</b>, the <b>MFA</b> verification screen is displayed as seen below.</p>
-                                                <ul>
-                                                    <li>
-                                                        <p>Enter and submit the security token generated from the registered third-party authenticator application to complete the login.</p>
-                                                        <p>
-                                                            <img src="../img/MFA_3.png" style="width: 468px;height: 202px;" alt="" />
+                                                <p>Implementing MFA significantly reduces the risk of unauthorized access, ensuring better security for user accounts and platform data.</p>
+                                                <h2 id="ThirdPartyAuthenticatorApps" data-magellan-target="ThirdPartyAuthenticatorApps">Third-Party Authenticator Apps</h2>
+                                                <p>Users can enable MFA using third-party authenticator applications like <a href="https://authy.com/" style="text-decoration: underline; font-weight: bold;">Authy</a> or <b style="text-decoration: underline;">Google Authenticator</b>. These apps generate a randomly refreshed security code required for authentication.</p>
+                                                <div class="note"><b>Note</b>: MFA is available for configuration on every tenant by default.</div>
+                                                <h2 id="Prerequisites" data-magellan-target="Prerequisites">Prerequisites</h2>
+                                                <p>MFA is applicable only if user authentication is based on a password. It is not applicable to users authenticated through other methods such as <b>SAML</b>, <b>Kerberos</b>, or <b>LDAP</b>.</p>
+                                                <p>If a user has both security questions and MFA enabled, MFA takes precedence over security question verification.</p>
+                                                <h2 id="FirstTimeConfiguration" data-magellan-target="FirstTimeConfiguration">First-Time Configuration</h2>
+                                                <p>Once MFA is enabled for a user, the next login will prompt the user to configure it by scanning a QR code or manually entering a <span class="uicontrol">Client Secret Key</span> in an authenticator app.</p>
+                                                <p>To setup MFA for the first time:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Scan the <b>QR Code</b> displayed on the login screen using an authenticator app (e.g., Authy or Google Authenticator).</p>
+                                                        <p style="text-align: left;">
+                                                            <img src="../img/MFA_1.png" style="width: 287px;height: 305px;" alt="" />
                                                         </p>
                                                     </li>
-                                                </ul>
-                                                <h2 id="ConfiguringMultiFactorAuthentication" data-magellan-target="ConfiguringMultiFactorAuthentication">Configuring Multi-Factor Authentication</h2>
-                                                <p>The <b>Master Administrator</b> can manage Multi-Factor Authentication settings globally by modifying the <code>userMFA</code> properties under the security levels. Follow these steps:</p>
+                                                    <li value="2">
+                                                        <p>Alternatively, manually enter the <span class="uicontrol">Client Secret Key</span> into the authenticator app.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>The authenticator app will generate a security token (one-time password).</p>
+                                                        <p style="text-align: left;">
+                                                            <img src="../img/MFA_2.PNG" style="width: 233px;height: 303px;" alt="" />
+                                                        </p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Enter this security token in the <span class="uicontrol">Verification Code</span> field on the login screen.</p>
+                                                    </li>
+                                                    <li value="5">
+                                                        <p>After successful verification, MFA setup is complete.</p>
+                                                    </li>
+                                                </ol>
+                                                <h2 id="LoginVerification" data-magellan-target="LoginVerification">Login Verification</h2>
+                                                <p>Once MFA is configured, users must verify their identity every time they log in by entering the security token generated from their registered authenticator app.</p>
+                                                <p>
+                                                    <img src="../img/MFA_3.png" style="width: 468px;height: 202px;" alt="" />
+                                                </p>
+                                                <p>To Log In <span class="mc-variable Variables.ProductName variable">Platform</span> with MFA:</p>
                                                 <ol>
                                                     <li value="1">
-                                                        <p style="font-weight: bold;">Navigate to the Security Settings</p>
-                                                        <p>Go to <b>Control Panel</b> → <b>Configuration</b> → <b>Security Level</b>.</p>
-                                                        <p>
+                                                        <p>Enter your <span class="uicontrol">Username</span> and <span class="uicontrol">Password</span>.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>On the MFA verification screen, enter the security token generated by your authenticator app.</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>Click <span class="uicontrol">Submit</span> to complete the login process.</p>
+                                                    </li>
+                                                </ol>
+                                                <h2 id="ConfiguringMultiFactorAuthentication" data-magellan-target="ConfiguringMultiFactorAuthentication">Configuring Multi-Factor Authentication</h2>
+                                                <p>The <b>Master Administrator</b> can globally manage MFA settings by modifying the <code>userMFA</code> properties under security levels.</p>
+                                                <p>To configure MFA, do the following:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Navigate to <b>Control Panel</b> → <b>Configuration</b> → <b>Security Level</b>.</p>
+                                                        <p style="font-weight: bold;">
                                                             <img src="../img/sec-level.png" title="Security Levels" alt="Security Levels" />
                                                         </p>
                                                     </li>
-                                                </ol>
-                                                <ol data-mc-continue="true">
                                                     <li value="2">
-                                                        <p style="font-weight: bold;">Modify MFA Settings</p>
-                                                        <p>Set the <code>userMFA</code> property to true to enable MFA or false to disable it for users.</p>
+                                                        <p>Locate the <code>userMFA</code> property.</p>
                                                     </li>
                                                     <li value="3">
-                                                        <p style="font-weight: bold;">Save Changes</p>
-                                                        <p>Click <b>Save</b> to apply the updated settings.</p>
+                                                        <p>Set <code>userMFA</code> to:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p><code>true</code> to enable MFA</p>
+                                                            </li>
+                                                            <li>
+                                                                <p><code>false</code> to disable MFA</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Click <span class="uicontrol">Save</span> to apply the changes.</p>
                                                     </li>
                                                 </ol>
                                                 <h2 id="EnablingMultiFactorAuthentication" data-magellan-target="EnablingMultiFactorAuthentication">Enabling Multi-Factor Authentication</h2>
+                                                <p>Administrators can enable MFA for specific authentication profiles.</p>
+                                                <p>To enable MFA for any user:</p>
                                                 <ol>
                                                     <li value="1">
-                                                        <p>Navigate to <b>Setup Home</b> → <b>Administration Setup</b> → <b>Authentication</b>.</p>
+                                                        <p>Navigate to <span class="uicontrol">Setup Home</span> → <span class="uicontrol">Administration Setup</span> → <span class="uicontrol">Authentication</span>.</p>
                                                     </li>
                                                     <li value="2">
-                                                        <p>Select the Authentication Profiles section for which you desire to enable MFA.</p>
-                                                        <div class="noteCaution">MFA is currently applicable only to <b>Password</b> Authentication Profiles.</div>
+                                                        <p>Select the <span class="uicontrol">Authentication Profiles</span> section.</p>
+                                                        <div class="noteCaution"><b>Note</b>: MFA applies only to Password Authentication Profiles.</div>
                                                         <p>
                                                             <img src="../img/9feef58b-7a01-4e6e-a5af-2479921dcc91.png" title="Authentication profiles enabled with MFA" alt="Authentication profiles enabled with MFA" />
                                                         </p>
                                                     </li>
                                                     <li value="3">
-                                                        <p>Choose <b>Low</b>, <b>Medium</b>, <b>High</b> or <b>Very High</b> from the <b>Security Level</b> dropdown. These levels are predefined in the Control Panel, and the selected level determines whether Multi-Factor Authentication (MFA) is enabled or disabled by default.</p>
+                                                        <p>From the <span class="uicontrol">Security Level</span> dropdown, choose:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>Low</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Medium</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>High</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Very High</p>
+                                                            </li>
+                                                        </ul>
+                                                        <p>These levels are predefined in the <span class="uicontrol">Control Panel</span> and determine whether MFA is enabled by default.</p>
                                                     </li>
                                                     <li value="4">
-                                                        <p>However, users can override this setting by manually enabling or disabling MFA using the <b>Multi-Factor Authentication (MFA)</b> checkbox.</p>
+                                                        <p>Users can override this setting by manually enabling or disabling MFA using the MFA checkbox.</p>
                                                         <p>
                                                             <img src="../img/81550bbe-44b8-41de-9bec-de85f9eb8679.png" title="MFA checkbox" alt="MFA checkbox" />
                                                         </p>
                                                     </li>
                                                     <li value="5">
-                                                        <p>Click <b>Save</b> to enable Multi-Factor Authentication (MFA).</p>
-                                                        <p>If you choose to disable Multi-Factor Authentication (MFA), a warning message may appear to alert you of the potential security implications.</p>
+                                                        <p>Click <span class="uicontrol">Save</span> to enable MFA.</p>
+                                                    </li>
+                                                    <li value="6">
+                                                        <p>If you disable MFA, a warning message may appear, highlighting potential security risks.</p>
                                                         <p>
                                                             <img src="../img/6e397b8c-1d42-484d-9a88-d6030fd02c37.png" title="Disable MFA Warning" alt="Disable MFA Warning" />
                                                         </p>
                                                     </li>
                                                 </ol>
                                                 <h2 id="ResettingMultiFactorAuthentication" data-magellan-target="ResettingMultiFactorAuthentication"><a name="ResetMFA"></a>Resetting&#160;Multi-Factor Authentication</h2>
-                                                <p>A user can reset it's account's MFA from the <b>Change My Password</b> page. See <a href="Change_My_Password.htm#ResetMFA-ChangeMyPassword">Reset MFA from Change My Password</a> for more information. A <b>MASTER</b> or <b>TENANT</b> administrator can also reset any user's MFA from the User(s) Record List view page.</p>
-                                                <p>To reset MFA for user(s), the <b>MASTER</b> or <b>TENANT</b>&#160;administrator can select the desired user(s) from the User Record List view page.</p>
-                                                <p>From the <b>Group Actions</b> menu, select <b>Reset MFA</b>.</p>
-                                                <p>
-                                                    <img src="../img/MFA_5.png" alt="" />
-                                                </p>
-                                                <p>A confirmation is requested on attempting to reset the user MFA. Once confirmed, an email notification with instructions to reset the MFA is sent to the selected user(s).</p>
+                                                <p>Users can reset their MFA settings if they lose access to their authenticator app.</p>
+                                                <p>MFA reset can be done by any of the following methods:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p><b>Self-Service Reset</b>: Users can reset their MFA via the Change My Password page. See Reset MFA from Change My Password for more information.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p><b>Administrator Reset</b>: MASTER or TENANT administrators can reset MFA for users from the <span class="uicontrol">User Record List View</span>.</p>
+                                                    </li>
+                                                </ol>
+                                                <p>To reset MFA for any user, the administrator can do the following:</p>
+                                                <ol>
+                                                    <li value="1">
+                                                        <p>Navigate to the <b>User Record List View</b>.</p>
+                                                    </li>
+                                                    <li value="2">
+                                                        <p>Select the desired user(s).</p>
+                                                    </li>
+                                                    <li value="3">
+                                                        <p>From the <span class="uicontrol">Group Actions</span> menu, select <span class="uicontrol">Reset MFA</span>.</p>
+                                                        <p>
+                                                            <img src="../img/MFA_5.png" alt="" />
+                                                        </p>
+                                                    </li>
+                                                    <li value="4">
+                                                        <p>Confirm the <span class="uicontrol">Reset</span> action.</p>
+                                                    </li>
+                                                    <li value="5">
+                                                        <p>The user(s) will receive an email notification with instructions to reset MFA.</p>
+                                                    </li>
+                                                </ol>
+                                                <p>&#160;</p>
                                             </div>
                                         </div>
                                         <div class="menu-container">
-                                            <div data-sticky-container="" id="57tEM5I560m524s-3l1X7w">
-                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="57tEM5I560m524s-3l1X7w:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="small" data-scroll-container-on="only screen and (min-width: 1280px)">
-                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_topic_menu mc-component">
+                                            <div data-sticky-container="" id="aMAXKInaiUKRPGzUcdiEWg">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="aMAXKInaiUKRPGzUcdiEWg:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container-on="small" class="nocontent menu _Skins_topic_menu mc-component">
                                                         <li class="tree-node"><a href="#MultiFactorAuthentication">Multi-Factor Authentication</a>
                                                         </li>
                                                         <li>
                                                             <ul>
-                                                                <li class="tree-node"><a href="#Prerequisites">Pre-requisites</a>
+                                                                <li class="tree-node"><a href="#ThirdPartyAuthenticatorApps">Third-Party Authenticator Apps</a>
                                                                 </li>
-                                                                <li class="tree-node"><a href="#FirstTimeConfiguration">First Time Configuration</a>
+                                                                <li class="tree-node"><a href="#Prerequisites">Prerequisites</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#FirstTimeConfiguration">First-Time Configuration</a>
                                                                 </li>
                                                                 <li class="tree-node"><a href="#LoginVerification">Login Verification</a>
                                                                 </li>
