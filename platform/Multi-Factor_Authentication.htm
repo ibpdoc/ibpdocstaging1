@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_EB_IB_Topnav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_sidenav2025" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Security and access control|User authentication" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
         <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
@@ -61,8 +65,8 @@
                     </ul>
                 </aside>
                 <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
-                    <div data-sticky-container="" class="title-bar-container">
-                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (min-width: 1280px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
                             <div class="middle title-bar-section outer-row clearfix">
                                 <div class="menu-icon-container relative clearfix">
                                     <div class="central-account-wrapper">
@@ -249,6 +253,7 @@
                                                         <p>Click <span class="uicontrol">Save</span> to apply the changes.</p>
                                                     </li>
                                                 </ol>
+                                                <div class="note"><b>Note</b>: The <b>High</b> and <b>Very High</b> security levels have <code>userMFA</code> enabled by default. However, this setting can be manually switched off from the <span class="uicontrol">Authentication Profile</span> or <span class="uicontrol">Security Level</span>, if required.</div>
                                                 <h2 id="EnablingMultiFactorAuthentication" data-magellan-target="EnablingMultiFactorAuthentication">Enabling Multi-Factor Authentication</h2>
                                                 <p>Administrators can enable MFA for specific authentication profiles.</p>
                                                 <p>To enable MFA for any user:</p>
@@ -302,7 +307,7 @@
                                                 <p>MFA reset can be done by any of the following methods:</p>
                                                 <ol>
                                                     <li value="1">
-                                                        <p><b>Self-Service Reset</b>: Users can reset their MFA via the Change My Password page. See Reset MFA from Change My Password for more information.</p>
+                                                        <p><b>Self-Service Reset</b>: Users can reset their MFA via the Change My Password page. See <a href="Change_My_Password.htm#ResetMFA-ChangeMyPassword">Reset MFA from Change My Password</a> for more information.</p>
                                                     </li>
                                                     <li value="2">
                                                         <p><b>Administrator Reset</b>: MASTER or TENANT administrators can reset MFA for users from the <span class="uicontrol">User Record List View</span>.</p>
@@ -329,13 +334,14 @@
                                                         <p>The user(s) will receive an email notification with instructions to reset MFA.</p>
                                                     </li>
                                                 </ol>
+                                                <div class="note"><b>Note</b>: Every password user within a tenant would receive an email notification upon an MFA reset. This email template, named <code>resetMFANotification</code>, is available under the <b>User Object</b> and can be customized if needed.</div>
                                                 <p>&#160;</p>
                                             </div>
                                         </div>
                                         <div class="menu-container">
-                                            <div data-sticky-container="" id="aMAXKInaiUKRPGzUcdiEWg">
-                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="aMAXKInaiUKRPGzUcdiEWg:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
-                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container-on="small" class="nocontent menu _Skins_topic_menu mc-component">
+                                            <div data-sticky-container="" id="0PVHfy3QP0qWTdpK6iWcMA">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="0PVHfy3QP0qWTdpK6iWcMA:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="small" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_topic_menu mc-component">
                                                         <li class="tree-node"><a href="#MultiFactorAuthentication">Multi-Factor Authentication</a>
                                                         </li>
                                                         <li>

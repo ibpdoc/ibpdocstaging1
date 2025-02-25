@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MadCapLog Protocol="2" Description="MadCap Flare 2024 Generated IBP UG - HTML.fltar" Date="2025-02-14T12:38:17.1963869+05:30" Branch="6.11.0.0" Commit="b6515937612c8080dfe5fef70f4f52c9a927466a">
+<MadCapLog Protocol="2" Description="MadCap Flare 2024 Generated IBP UG - HTML.fltar" Date="2025-02-25T14:30:46.2434032+05:30" Branch="6.11.0.0" Commit="84e302b2c0d248204fd93907d12c7c78b308966b">
     <Messages>Compiling target IBP UG - HTML...
 Removing previously generated content...
 Loading skin info...
@@ -4400,7 +4400,7 @@ Generated Skins\Default\Stylesheets\Topic.micro-content.css
 Generated Default.htm
 Saving result set...
 Ignored Compiler Warnings: 2075
-Output generated in 10 minute(s) and 5 second(s).
+Output generated in 8 minute(s) and 52 second(s).
 
 Done
 Saving log to "D:\ib-doc-outputs\html-builds\Output\IBP UG - HTML\IBP UG - HTML.mclog"
