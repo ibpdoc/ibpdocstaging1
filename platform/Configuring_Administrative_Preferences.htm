@@ -201,10 +201,6 @@
                                                             <p><a href="#AuthSettings">Authentication Settings</a>
                                                             </p>
                                                         </li>
-                                                        <li value="8">
-                                                            <p><a href="#git-int">GIT Integration</a>
-                                                            </p>
-                                                        </li>
                                                     </ol>
                                                 </div>
                                                 <div class="section">
@@ -419,57 +415,12 @@
                                                         </p>
                                                         <p>For more information on authentication settings, see the authentication configuration section in the <a href="Control_Panel.htm#Authentication" target="_blank">Control Panel</a>.</p>
                                                     </div>
-                                                    <div class="section">
-                                                        <h2 class="sectiontitle" id="GITIntegration" data-magellan-target="GITIntegration"><a name="git-int"></a>GIT Integration</h2>
-                                                        <p>This section displays settings to enable GIT&#160;Integration, which is available for both <b>MASTER</b>&#160;and <b>TENANT</b> administrator(s). The following settings of GIT&#160;Integration are available for selection in this section.</p>
-                                                        <p>
-                                                            <ul>
-                                                                <li>
-                                                                    <p><span class="uicontrol">Default</span>:  By default, this option is selected. In the <b>Default</b> setting, the GIT integration configured by the <b>MASTER</b> in the Control Panel (instance level) is preferred.</p>
-                                                                    <p>
-                                                                        <img src="../img/configuring-admin-pref-git-int-1.png" style="width: 390px;height: 48px;" alt="" />
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p><span class="uicontrol">Branch</span>: In the <b>Branch</b> setting, the GIT integration configured by the <b>MASTER</b> in the control panel is preferred but the <b>TENANT ADMIN</b> has a provision to enter any other existing GIT&#160;Branch to be used across the tenant-level. A GIT&#160;job is queued by default once the configuration is saved and an email notification is sent upon the job completion.</p>
-                                                                    <div class="note"><b>Note</b>: Selection of a sub-directory in the branch is currently not supported.</div>
-                                                                    <p>
-                                                                        <img src="../img/configuring-admin-pref-git-int-2.png" style="width: 390px;height: 78px;" alt="" />
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p><span class="uicontrol">Custom</span>: In the <span class="uicontrol">Custom</span> setting, the GIT Integration can be custom configured  by entering the following GIT&#160;properties.</p>
-                                                                    <ul style="list-style-type: circle;">
-                                                                        <li>
-                                                                            <p><span class="uicontrol">SSH&#160;URL</span>: The GIT&#160;SSH&#160;URL providing access to a GIT repository.</p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p><span class="uicontrol">Branch</span>: <b>TENANT ADMIN</b> has the provision to enter any existing branches of the GIT&#160;Repository to be used across the tenant-level.</p>
-                                                                            <div class="note"><b>Note</b>: <ul><li><p>If the entered branch does not exist, a new branch with the entered field value is created.</p></li><li><p>Selection of a sub-directory in the branch is currently not supported.</p></li></ul></div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p><span class="uicontrol">SSH&#160;Passphrase</span>: An optional encryption key enacting as an extra layer of security to the SSH Private key. For more information, see <a href="https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh">Connecting to GitHub with SSH.</a></p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p><span class="uicontrol">SSH Private Key</span>: A user private key which is stored in the computer to use the GIT services.</p>
-                                                                            <div class="note"><b>Note</b>: Currently, RSA type SSH Private Key is only supported.</div>
-                                                                            <p>A GIT&#160;job is queued by default once the configuration is saved and an email notification is sent upon the job completion.</p>
-                                                                        </li>
-                                                                    </ul>
-                                                                    <p>
-                                                                        <img src="../img/configuring-admin-pref-git-int-3.png" style="width: 358px;height: 162px;" alt="" />
-                                                                    </p>
-                                                                </li>
-                                                            </ul>
-                                                        </p>
-                                                        <p>For more information on an instance-wide GIT configuration, see <a href="Control_Panel.htm#GIT_Integration">Git Integration</a> in the Control Panel.</p>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="menu-container">
-                                            <div data-sticky-container="" id="WVZ5SdvwK0W5As6gI4GiWQ">
-                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="WVZ5SdvwK0W5As6gI4GiWQ:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="small" data-scroll-container-on="only screen and (min-width: 1280px)">
+                                            <div data-sticky-container="" id="Zn7fqAjWp0mvM7TI4y0xWA">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="Zn7fqAjWp0mvM7TI4y0xWA:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="small" data-scroll-container-on="only screen and (min-width: 1280px)">
                                                     <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_topic_menu mc-component">
                                                         <li class="tree-node"><a href="#ConfiguringAdministrativePreferences">Configuring Administrative Preferences</a>
                                                         </li>
@@ -488,8 +439,6 @@
                                                                 <li class="tree-node"><a href="#LoggingPreferences">Logging Preferences</a>
                                                                 </li>
                                                                 <li class="tree-node"><a href="#AuthenticationSettings">Authentication Settings</a>
-                                                                </li>
-                                                                <li class="tree-node"><a href="#GITIntegration">GIT Integration</a>
                                                                 </li>
                                                             </ul>
                                                         </li>

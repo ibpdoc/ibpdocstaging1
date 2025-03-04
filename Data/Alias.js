@@ -108,7 +108,6 @@ xmlAliasData += '    <Map Name=\"rb_css\" Link=\"platform/Platform_CSS_Styles_fo
 xmlAliasData += '    <Map Name=\"rb_field_types\" Link=\"platform/Field_types.htm\" ResolvedId=\"1113\" />';
 xmlAliasData += '    <Map Name=\"rb_soap_api\" Link=\"platform/Platform_SOAP_Methods.htm\" ResolvedId=\"1114\" />';
 xmlAliasData += '    <Map Name=\"rb_dedicated\" Link=\"platform/Dedicated_Tables.htm\" ResolvedId=\"1115\" />';
-xmlAliasData += '    <Map Name=\"rb_git\" Link=\"platform/Control_Panel.htm#GIT_Integration\" ResolvedId=\"1116\" />';
 xmlAliasData += '    <Map Name=\"add_column_to_database\" Link=\"platform/Adding_columns_to_a_Private_Cloud_database.htm\" ResolvedId=\"1117\" />';
 xmlAliasData += '    <Map Name=\"enable_exchange\" Link=\"platform/Enabling_Microsoft_Exchange_Integration.htm\" ResolvedId=\"1000\" />';
 xmlAliasData += '    <Map Name=\"rb_access_control_1\" Link=\"platform/Access_control_1.htm\" ResolvedId=\"1118\" />';
@@ -487,7 +486,7 @@ xmlAliasData += '    <Map Name=\"rb_formula_field\" Link=\"platform/Formula_Fiel
 xmlAliasData += '    <Map Name=\"rb_formula_return_types\" Link=\"platform/Formula_return_types.htm\" ResolvedId=\"1491\" />';
 xmlAliasData += '    <Map Name=\"rb_functions\" Link=\"platform/Functions.htm\" ResolvedId=\"1492\" />';
 xmlAliasData += '    <Map Name=\"rb_general_actions\" Link=\"platform/General_actions.htm\" ResolvedId=\"1493\" />';
-xmlAliasData += '    <Map Name=\"rb_generate_and_push_xml_to_git\" Link=\"platform/Generate_and_Push_XML_to_GIT.htm\" ResolvedId=\"1494\" />';
+xmlAliasData += '    <Map Name=\"rb_generate_and_push_xml_to_git\" Link=\"obsolete/Generate_and_Push_XML_to_GIT.htm\" ResolvedId=\"1494\" />';
 xmlAliasData += '    <Map Name=\"rb_generating_portal_page_urls\" Link=\"platform/Generating_portal_page_URLs.htm\" ResolvedId=\"1495\" />';
 xmlAliasData += '    <Map Name=\"rb_getallauthenticationprofiles\" Link=\"platform/getAllAuthenticationProfiles.htm\" ResolvedId=\"1496\" />';
 xmlAliasData += '    <Map Name=\"rb_getapplicationdef()\" Link=\"platform/getApplicationDef__.htm\" ResolvedId=\"1497\" />';
@@ -576,8 +575,8 @@ xmlAliasData += '    <Map Name=\"rb_inline_editing\" Link=\"platform/Inline_edit
 xmlAliasData += '    <Map Name=\"rb_install\" Link=\"platform/install.htm\" ResolvedId=\"1580\" />';
 xmlAliasData += '    <Map Name=\"rb_installation_issues\" Link=\"platform/Installation_issues.htm\" ResolvedId=\"1581\" />';
 xmlAliasData += '    <Map Name=\"rb_installbyappid_\" Link=\"platform/installByAppId_.htm\" ResolvedId=\"1582\" />';
-xmlAliasData += '    <Map Name=\"rb_installing_an_application_from_git_commit_history\" Link=\"platform/Installing_an_application_from_GIT_Commit_History.htm\" ResolvedId=\"1583\" />';
-xmlAliasData += '    <Map Name=\"rb_installing_an_application_from_git\" Link=\"platform/Installing_an_application_from_GIT.htm\" ResolvedId=\"1584\" />';
+xmlAliasData += '    <Map Name=\"rb_installing_an_application_from_git_commit_history\" Link=\"obsolete/Installing_an_application_from_GIT_Commit_History.htm\" ResolvedId=\"1583\" />';
+xmlAliasData += '    <Map Name=\"rb_installing_an_application_from_git\" Link=\"obsolete/Installing_an_application_from_GIT.htm\" ResolvedId=\"1584\" />';
 xmlAliasData += '    <Map Name=\"rb_installing_an_application_from_the_marketplace\" Link=\"platform/Installing_an_application_from_the_Marketplace.htm\" ResolvedId=\"1585\" />';
 xmlAliasData += '    <Map Name=\"rb_installing_and_administering_private_cloud\" Link=\"platform/Installing_and_administering_Private_Cloud.htm\" ResolvedId=\"1586\" />';
 xmlAliasData += '    <Map Name=\"rb_installing_and_updating_applications_from_the_marketplace_app\" Link=\"platform/Installing_and_updating_applications_from_the_Marketplace_App.htm\" ResolvedId=\"1587\" />';
@@ -585,7 +584,7 @@ xmlAliasData += '    <Map Name=\"rb_installing_application_updates\" Link=\"plat
 xmlAliasData += '    <Map Name=\"rb_installing_applications\" Link=\"platform/Installing_applications.htm\" ResolvedId=\"1589\" />';
 xmlAliasData += '    <Map Name=\"rb_installing_nginx\" Link=\"platform/Installing_NGINX.htm\" ResolvedId=\"1590\" />';
 xmlAliasData += '    <Map Name=\"rb_integer_field\" Link=\"platform/Integer_field.htm\" ResolvedId=\"1591\" />';
-xmlAliasData += '    <Map Name=\"rb_integrating_apps_using_cloud_data_objects\" Link=\"platform/Integrating_apps_using_Cloud_Data_Objects.htm\" ResolvedId=\"1592\" />';
+xmlAliasData += '    <Map Name=\"rb_integrating_apps_using_cloud_data_objects\" Link=\"obsolete/Integrating_apps_using_Cloud_Data_Objects.htm\" ResolvedId=\"1592\" />';
 xmlAliasData += '    <Map Name=\"rb_integrating_with_microsoft_exchange_server\" Link=\"platform/Integrating_with_Microsoft_Exchange_Server.htm\" ResolvedId=\"1593\" />';
 xmlAliasData += '    <Map Name=\"rb_integrating_with_outside_sources\" Link=\"platform/Integrating_with_outside_sources.htm\" ResolvedId=\"1594\" />';
 xmlAliasData += '    <Map Name=\"rb_integration_link_field\" Link=\"platform/Integration_Link_Field.htm\" ResolvedId=\"1595\" />';
@@ -1178,7 +1177,7 @@ xmlAliasData += '    <Map Name=\"rb_ui_notification_center\" Link=\"platform/UI_
 xmlAliasData += '    <Map Name=\"rb_undeploy_a_web_application_(undeploy)\" Link=\"platform/Undeploy_a_Web_application__undeploy_.htm\" ResolvedId=\"2185\" />';
 xmlAliasData += '    <Map Name=\"rb_unique_fields_combination\" Link=\"platform/Unique_Fields_Combination.htm\" ResolvedId=\"2186\" />';
 xmlAliasData += '    <Map Name=\"rb_update_field_value\" Link=\"platform/Update_Field_Value.htm\" ResolvedId=\"2187\" />';
-xmlAliasData += '    <Map Name=\"rb_update_from_git\" Link=\"platform/Update_from_GIT.htm\" ResolvedId=\"2188\" />';
+xmlAliasData += '    <Map Name=\"rb_update_from_git\" Link=\"obsolete/Update_from_GIT.htm\" ResolvedId=\"2188\" />';
 xmlAliasData += '    <Map Name=\"rb_update_from_xml\" Link=\"platform/Update_from_XML.htm\" ResolvedId=\"2189\" />';
 xmlAliasData += '    <Map Name=\"rb_update()\" Link=\"platform/update__.htm\" ResolvedId=\"2190\" />';
 xmlAliasData += '    <Map Name=\"rb_update\" Link=\"platform/update.htm\" ResolvedId=\"2191\" />';
